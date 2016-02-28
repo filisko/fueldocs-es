@@ -3,5 +3,5 @@ Este repositorio está dedicado a la traducción al castellano de la documentaci
 
 Si estás interesado en contribuir serás bienvenido.
 
-* [Ir a la página oficial de FuelPHP](http://fuelphp.com/docs/)
+* [Ir a la página oficial de FuelPHP](http://fuelphp.com/)
 * [Ir a la documentación original](http://fuelphp.com/docs/)
