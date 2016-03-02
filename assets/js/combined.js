@@ -605,7 +605,7 @@ panes.orm = {
 			"Has Many (Tiene muchos)":		"packages/orm/relations/has_many.html",
 			"Many to Many (Muchos a muchos)":	"packages/orm/relations/many_many.html"
 		},
-		"Modelos": {
+		"Modelos extendidos": {
 			"Soft Delete (Eliminación suave)":        "packages/orm/model/soft.html",
 			"Temporales/Revisiones": "packages/orm/model/temporal.html",
 			"NestedSets (Conjuntos anidados)":         "packages/orm/model/nestedset.html"
@@ -614,7 +614,7 @@ panes.orm = {
 		"Observers (Observadores)": {
 			"Introducción":			"packages/orm/observers/intro.html",
 			"Observers incluídos":	"packages/orm/observers/included.html",
-			"Creando el tuyo propio":		"packages/orm/observers/creating.html"
+			"Creando los tuyos propios":		"packages/orm/observers/creating.html"
 		}
 	}
 };

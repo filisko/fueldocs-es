@@ -10,7 +10,7 @@
 		var path = './';
 	</script>
 	<script src="./assets/js/combined.js"></script>
-	<title>Requirements - FuelPHP Documentation</title>
+	<title>Requisitos - FuelPHP Documentación</title>
 </head>
 <body>
 	<div id="container">
@@ -44,59 +44,57 @@
 
 		<div id="main">
 
-			<h2>Requirements</h2>
-			<h5 id="web_server">Web Server</h5>
+			<h2>Requisitos</h2>
+			<h5 id="web_server">Servidor Web</h5>
 			<ul>
-				<li>Any web server.  Fuel has been tested on Apache, IIS and Nginx.</li>
-				<li>Works on all major operating systems including *nix and Windows.</li>
+				<li>Cualquier servidor web.  Fuel fue testeado en Apache, IIS y Nginx.</li>
+				<li>Funciona en todos los sistemas operativos más importantes, incluyendo *Unix y Windows./li>
 			</ul>
-			<h5 id="php_version">PHP Version</h5>
+			<h5 id="php_version">Versión PHP</h5>
 			<ul>
-				<li>Version 5.3.3 or greater is required.</li>
+				<li>Version 5.3.3 o mayor requerida</li>
 			</ul>
-			<h5 id="php_extensions">PHP Extensions</h5>
+			<h5 id="php_extensions">Extensiones PHP</h5>
 			<p>
-				Fuel uses functionality that PHP defines as "extensions". To avoid any possible compatibility issues, Fuel only uses extensions that
-				are part of the PHP code as documented on the <a href="http://php.net">PHP website</a>. If extensions are used that are part of the
-				PECL repository (which need to be installed manually by a system administrator), Fuel will use them if present, and work around it if not.
+                            Fuel usa funcionalidad la cual PHP define como "extensiones". Para Fuel uses functionality that PHP defines as "extensions". Para evitar cualquier problema posible de incompatibilidad, Fuel solo usa extensiones que son parte del código PHP documentado en el <a href="http://php.net">sitio web de PHP</a>. Si las extensiones usadas son parte del repositorio PECL (que necesitan ser instaladas manualmente por el administrador de sistemas), Fuel las usará si están presentes, y se las arreglará si no.
 			</p>
-			<p>This is a list of extensions used, and the classes that use them:</p>
+			<p>Esta es una lista de las extensiones usadas, y las clases que las usan:</p>
 			<table class="config valign">
 				<tbody>
 					<tr>
-						<th class="small">Extension</th>
-						<th class="small">Used in</th>
-						<th>Comments</th>
+						<th class="small">Extensión</th>
+						<th class="small">Usada en</th>
+						<th>Comentarios</th>
 					</tr>
 					<tr>
 						<td>fileinfo</td>
-						<td>Upload</td>
-						<td><a href="http://php.net/manual/en/book.fileinfo.php">Documentation</a>.<br />
-						Note that on Windows platforms, a manual installation of a DLL might be needed.</td>
+						<td>Clase Upload</td>
+						<td><a href="http://php.net/manual/es/book.fileinfo.php">Documentación</a>.<br />
+						Tenga en cuenta que en plataformas Windows, una instalación manual de un DLL podría ser necesario.</td>
 					</tr>
 					<tr>
 						<td>mbstring</td>
 						<td>n/a</td>
-						<td><a href="http://php.net/manual/en/book.mbstring.php">Documentation</a>.<br />
-						If not present, the framework has no multibyte support. You can check the MBSTRING constant to see if your installation has multibyte support enabled.</td>
+						<td><a href="http://php.net/manual/es/book.mbstring.php">Documentación</a>.<br />
+						Si no está presente, el framework no tendrá soporte multibyte. Puedes comprobar la constante MBSTRING para ver si tu instalación tiene el soporte multibyte habilitado.</td>
 					</tr>
 					<tr>
 						<td>mcrypt</td>
-						<td>Crypt</td>
-						<td><a href="http://php.net/manual/en/book.mcrypt.php">Documentation</a>.<br />
-						If not present, PHPSecLib is used to emulate its functionality.</td>
+						<td>Clase Crypt</td>
+						<td><a href="http://php.net/manual/es/book.mcrypt.php">Documentación</a>.<br />
+						Si no está presente, PHPSecLib será usado para emular su funcionalidad.</td>
 					</tr>
 				</tbody>
 			</table>
 			<h5 id="php_unit">PHPUnit</h5>
 			<ul>
-				<li><a href="http://phpunit.de/manual/current/en/index.html">PHPUnit</a> version 3.7 or greater is required if you want to run unit tests.</li>
+				<li>La versión 3.7 o mayor de <a href="http://phpunit.de/manual/current/en/index.html">PHPUnit</a> es requerida si quieres ejecutar tests unitarios.</li>
 			</ul>
 
-			<h3 id="recommended">Recommended</h3>
+			<h3 id="recommended">Recomendado</h3>
 			<ul>
-				<li>Web Server - Apache 2.4+, running on *nix.</li>
-				<li>mod_rewrite - To remove the index.php from the URL.</li>
+				<li>Servidor Web - Apache 2.4+, siendo ejecutado en *nix.</li>
+				<li>mod_rewrite - Para remover el index.php de la URL.</li>
 			</ul>
 
 		</div>
