@@ -46,53 +46,48 @@
 
 		<div id="main">
 
-			<h2>Coding Standards</h2>
+			<h2>Estándares de código</h2>
 
-			<p>These standards for code formatting and documentation must be followed by anyone contributing to Fuel. Any
-				contributions that do not meet these guidelines will not be accepted.</p>
+			<p>Estos estándares de formateo de código y documentación deben ser seguidos por cualquiera que contribuya a Fuel. Cualquier contribución que no cumpla con estas directrices no será aceptada.</p>
 
-			<h3 id="file_formatting">File Formatting</h3>
+			<h3 id="file_formatting">Formato del archivo</h3>
 
-			<h5 id="closing_php_tag">Closing PHP Tag</h5>
+			<h5 id="closing_php_tag">Cerrando el tag PHP</h5>
 
-			<p>Files containing only PHP code should always omit the closing PHP tag (?>). This prevents many of the
-				elusive white screens of death.</p>
+			<p>Los archivos que solo contienen código PHP deberían omitir siempre el tag de cierre de PHP. (?>). Esto previene muchos pantallos blancos.</p>
 
-			<h5 id="indentation">Indentation</h5>
+			<h5 id="indentation">Indentación</h5>
 
-			<p>All indentation should be done using real tabs, NOT spaces.<br />
-				But aligning things after the indentation should be done using spaces, NOT tabs.</p>
+			<p>Toda la indentación debería ser hecha usando tabulaciones reales, NO espacios.<br />
+				Pero la alineación después de la indentación con tabulaciones debería de estar siempre hecha con espacios, NO tabulaciones.</p>
 
-			<pre class="php"><code>		// indented 2 tabs
-		$var       = 'something';  // indented with tabs and aligned value &amp; comments
-		$variable  = 'else';       // with those above/below using spaces</code></pre>
+			<pre class="php"><code>		// 2 tabulaciones indentadas
+		$var       = 'something';  // indentado con tabulaciones, y valor y comentarios alineados
+		$variable  = 'else';       // usando espacios</code></pre>
 
-			<h5 id="line_endings">Line Endings</h5>
+			<h5 id="line_endings">Finales de línea</h5>
 
-			<p>Line endings should be Unix-style LF.</p>
+			<p>Los finales de línea deben ser LF al estilo Unix.</p>
 
-			<h5 id="file_naming">File Naming</h5>
+			<h5 id="file_naming">Nombres de archivos</h5>
 
-			<p>All file names must be all lower case. No exceptions.</p>
+			<p>TODOS los nombres de los archivos deben estar en minúsculas. Sin excepciones.</p>
 
-			<h5 id="encoding">Encoding</h5>
+			<h5 id="encoding">Codificación</h5>
 
-			<p>Files should be saved with UTF-8 encoding and the BOM should not be used.</p>
+			<p>Los archivos deben ser guardados con codificación UTF-8 y BOM no debe ser utilizado.</p>
 
-			<h3 id="naming_conventions">Naming Conventions</h3>
+			<h3 id="naming_conventions">Convenciones de nomenclatura</h3>
 
-			<h5 id="namespaces">Namespaces</h5>
+			<h5 id="namespaces">Espacios de nombre</h5>
 
-			<p>All core classes must be under the Fuel\Core namespace.</p>
+			<p>Todas las clases del núcleol deben estar bajo el espacio de nombres  Fuel\Core.</p>
 
 			<pre class="php"><code>namespace Fuel\Core;</code></pre>
 
-			<h5 id="classes">Classes</h5>
+			<h5 id="classes">Clases</h5>
 
-			<p>Class names should use underscores to separate words, and each word in the class name should begin with a
-				capital letter. An underscore will, however, be converted to a directory separator during autoloading. The
-				use of camelcase is discouraged but cannot be prevented in some cases when putting the class in a
-				subdirectory makes no sense.</p>
+			<p>Las clases deberían usar guiones bajos para separar las palabras, y cada palabra de la clase debería comenzar con una letra capital. Y el guión bajo se convierte en un separador de directorio durante la carga automática (autoloader). El uso de CamelCase está desaconsejado, pero no se puede prevenir en algunos casos, por ejemplo cuando poner una clase en un subdirectorio no tiene sentido.</p>
 
 			<pre class="php"><code>namespace Fuel\Core;
 
@@ -108,24 +103,22 @@ class Session_Cookie extends Session_Driver
 
 }</code></pre>
 
-			<p>This would result in the following file path:</p>
+			<p>Esto daría lugar a la siguiente ruta de archivo:</p>
 
 			<pre class="php"><code>core/classes/session.php
 core/classes/session/cookie.php</code></pre>
 
-			<h5 id="methods_standards">Methods</h5>
+			<h5 id="methods_standards">Métodos</h5>
 
-			<p>Like class names, method names should use underscores to separate words, not CamelCase. Method names should
-				also be all lower case. Visibility should always be included (public, protected, private).<br />
-				An underscore can be used at the beginning of the name to make it clear the method is protected/private or
-				to signify it should be considered as such when you need it public.</p>
+                        <p>Al igual que los nombres de clases, los nombres de los métodos deben usar guiones para separar las palabras, no CamelCase. Los nombres de los métodos también debería de estar todos en minúscula. La visibilidad debería de estar siempre incluída (public, protected, private). <br />
+                            Y los guiones bajos pueden ser usados al principio del nombre del método para que quede claro que el método está protegido o es privado para que el método sea considerado como tal cuando es necesario hacerlo público.</p>
 
 			<pre class="php"><code>class Session
 {
 
 	public static function get_flash($name, $data)
 	{
-		// Some code here
+		// Algún código aquí
 	}
 
 }</code></pre>
@@ -133,115 +126,107 @@ core/classes/session/cookie.php</code></pre>
 			<pre class="php"><code>class View
 {
 
-	// Array of global view data
+	// Array de datos de visión global
 	protected static $_global_data = array();
 
 	protected static function capture($view_filename, array $view_data)
 	{
-		// Some code here
+		// Algún código aquí
 	}
 
 }</code></pre>
 
 			<h5 id="variables">Variables</h5>
 
-			<p>Variable names should be concise and contain only lower case letters and underscores. Loop iterators should
-				be short, preferably a single character.</p>
+			<p>El nombre de las variables deberían ser concisos y contener solo letras en minúscula y guiones para separar las palabras. Variable names should be concise and contain only lower case letters and underscores. Los iteradores bucle deberían ser cortos, preferiblemente de un solo carácter.</p>
 
-			<pre class="php"><code>$first_name
+			<pre class="php"><code>$primer_nombre
 $buffer
 for ($i = 0; $i &lt; $max; $i++)</code></pre>
 
-			<h5 id="constants">Constants</h5>
+			<h5 id="constants">Constantes</h5>
 
-			<p>Constants follow the same guide lines as variables with the exception that constants should be all upper
-				case.</p>
+			<p>Las constantes siguen las mismas directrices que las variables pero con la excepción de que todas las constantes debería de estar en mayúscula</p>
 
-			<pre class="php"><code>MY_CONSTANT
-TEMPLATE_PATH
-TEXT_DEFAULT</code></pre>
+			<pre class="php"><code>MI_CONSTANTE
+RUTA_PLANTILLA
+TEXTO_PREDETERMINADO</code></pre>
 
-			<h3 id="keywords">Keywords</h3>
+			<h3 id="keywords">Palabras clave</h3>
 
-			<p>Keywords such as <kbd>true</kbd>, <kbd>false</kbd>, <kbd>null</kbd>, <kbd>as</kbd>, etc should be all lower case, as upper case is reserved for
-				constants. Same goes for primitive types like <kbd>array</kbd>, <kbd>integer</kbd>, <kbd>string</kbd>.</p>
+			<p>Las palabras clave como <kbd>true</kbd>, <kbd>false</kbd>, <kbd>null</kbd>, <kbd>as</kbd>, etc debería de estar todas en minúscula, ya que las mayúsculas están reservadas para las constantes. Lo mismo ocurre con los tipos primitivos como <kbd>array</kbd>, <kbd>integer</kbd>, <kbd>string</kbd>.</p>
 
 			<pre class="php"><code>$var = true;
 $var = false;
 $var = null;
 foreach ($array as $key => $value)
-public function my_function(array $array)
-function my_function($arg = null)</code></pre>
+public function mi_funcion(array $array)
+function mi_funcion($arg = null)</code></pre>
 
-			<h3 id="control_structures">Control Structures</h3>
+			<h3 id="control_structures">Control de estructuras</h3>
 
-			<p>The structure keywords such as <kbd>if</kbd>, <kbd>for</kbd>, <kbd>foreach</kbd>, <kbd>while</kbd>, <kbd>switch</kbd> should be followed by a space as should
-				parameter/argument lists and values. Braces should be placed on a new line, and <kbd>break</kbd> should have the same
-				tab as its case.</p>
+			<p>Las palabras clave de la estructura tales como <kbd>if</kbd>, <kbd>for</kbd>, <kbd>foreach</kbd>, <kbd>while</kbd>, <kbd>switch</kbd> deberían de ser continuados con un espacio también como lo deberían de estar las variables/parámetros. Las llaves deberían de ser colocadas en una línea nueva, y el <kbd>break</kbd> debería de tener la misma indentación que su <kbd>case</kbd>.</p>
 
 			<pre class="php"><code>if ($arg === true)
 {
-	//do something here
+	//hacer algo aquí
 }
 elseif ($arg === null)
 {
-	//do something else here
+	//hacer algo más aquí
 }
 else
 {
-	//catch all do something here
+	//todos los casos, hacer algo aquí
 }
 
 foreach ($array as $key => $value)
 {
-	//loop here
+	//bucle aquí
 }
 
 for ($i = 0; $i &lt; $max; $i++)
 {
-	//loop here
+	//bucle aquí
 }
 
 while ($i &lt; $max)
 {
-	//loop here
+	//bucle aquí
 }
 
 do
 {
-	//loop here
+	//bucle aquí
 }
 while ($i &lt; $max)
 
 switch ($var)
 {
-	case 'value1':
-		//do something here
+	case 'valor1':
+		//hacer algo aquí
 	break;
 	default :
-		//do something here
+		//hacer algo aquí
 	break;
 }</code></pre>
 
-			<h5 id="alternative_if">Alternative if statements</h5>
+			<h5 id="alternative_if">Declaraciones <kbd>if</kbd> alternativas</h5>
 
-			<p>In some cases, a full <kbd>if</kbd> statement is a bit too much code for a simple conditional assignment or function
-				call. In those cases, you can use PHP's execution logic to use a shorter boolean-operator based syntax.
-				Using <kbd>and</kbd> means the second part only gets evaluated if the first part were true, using
-				<kbd>or</kbd> means the second part only gets executed if the first part were false.<br />
-				Don't use this when both <kbd>if</kbd> and <kbd>else</kbd> are needed, just in cases like single conditional statements.</p>
+			<p>En algunos casos, una declaración <kbd>if</kbd> completa es demasiado código para una simple condicional sencilla o para realizar una llamada a una función. En estos casos, puedes usar la lógica de ejecución de PHP para usar una sintáxis de operador booleano más corto.
+				Usar <kbd>and</kbd> significa que la segunda parte solo se evaluará si la primera parte fue cierta, usar <kbd>or</kbd> significa que la segunda parte se ejecutará solo si la primera parte fue falsa.<br /> No hagas esto cuando el <kbd>if</kbd> y el <kbd>else</kbd> son necesarios, solo en casos cuando una condicional es necesaria.</p>
 
-			<pre class="php"><code>// instead of if (isset($var)) { Config::set('var', $var); }
+			<pre class="php"><code>// en vez de: if (isset($var)) { Config::set('var', $var); }
 isset($var) and Config::set('var', $var);
 
-// instead of if ( ! isset($var)) { $var = Config::get('var'); }
+// en vez de: if ( ! isset($var)) { $var = Config::get('var'); }
 isset($var) or $var = Config::get('var');
 
-// DON'T DO THIS
+// NO HAGAS ESTO
 Uri::segment(3) and $var = Uri::segment(3);
 Uri::segment(3) or $var = 'default';
 
-// This is better:
+// Esto es mejor:
 if (Uri::segment(3))
 {
 	$var = Uri::segment(3);
@@ -251,47 +236,45 @@ else
 	$var = 'default';
 }
 
-// Or this:
+// O esto:
 $var = Uri::segment(3) ? Uri::segment(3) : 'default';
-// Or actually this:
+
+// O de hecho esto:
 $var = Uri::segment(3) ?: 'default';</code></pre>
 
-			<h3 id="comparison_logical">Comparisons, Logical operators</h3>
+			<h3 id="comparison_logical">Comparaciones, operadores lógicos</h3>
 
-			<p>Comparing function/method returns and variables should be type aware, for example some functions may return
-				<kbd>false</kbd>, and when comparing this return the type sensitive operators such as <kbd>===</kbd> or <kbd>!==</kbd>. Additionally, use of
-				<kbd>and</kbd> or <kbd>or</kbd> is preferred over <kbd>&amp;&amp;</kbd> or <kbd>||</kbd> for readability. In some cases, this cannot be avoided and the use of
-				<kbd>&amp;&amp;</kbd> or <kbd>||</kbd> as it's required may be used. The <kbd>!</kbd> should have spaces on both sides when used.</p>
+			<p>Comparando lo que devuelve un método/función debería de ser consciente del tipo, por ejemplo algunas funciones podrían devolver <kbd>false</kbd>, y cuando comparamos el tipo de devolución con operadores como <kbd>===</kbd> o <kbd>!==</kbd>. Adicionalmente, el uso de <kbd>and</kbd> o <kbd>or</kbd> es preferido por en vez de <kbd>&amp;&amp;</kbd> o <kbd>||</kbd> para facilitar la lectura. En algunos casos, esto no puede ser evitado y el uso de <kbd>&amp;&amp;</kbd> o <kbd>||</kbd> como es requerido se puede usar. El <kbd>!</kbd> debería tener espacios en ambos lados cuando sea usado.</p>
 
-			<pre class="php"><code>if ($var == false and $other_var != 'some_value')
-if ($var === false or my_function() !== false)
+			<pre class="php"><code>if ($var == false and $otra_variable != 'un_valor')
+if ($var === false or mi_funcion() !== false)
 if ( ! $var)</code></pre>
 
-			<h5 id="class_interface">Class/Interface Declarations</h5>
+			<h5 id="class_interface">Declaraciones de clases/interfaces</h5>
 
-			<p>Class/interface declarations have the opening brace on the following line:</p>
+			<p>Las declaraciones de clases/interfaces tienen el bracket de apertura en la siguiente línea:</p>
 
 			<pre class="php"><code>class Session
 {
 
 }</code></pre>
-			<p>In case the class is empty, braces will be on the same line as the definition:</p>
+			<p>En caso de que la clase esté vacía, las llaves estarán en la misma línea como la definición:</p>
 
-			<pre class="php"><code>class Empty_Class { }</code></pre>
+			<pre class="php"><code>class Clase_Vacia { }</code></pre>
 
-			<h5 id="function_method">Function/Method/Closure Declarations</h5>
+			<h5 id="function_method">Declaraciones de Funciones/Métodos/Clausuras</h5>
 
-			<p>The function/method/closure opening brace must always begin on a new line and have the same indentation as its
-				structure.</p>
+			<p>La llave de apertura de función/método/cierre siempre debe comenzar en una nueva línea y tienen la misma indentación como su
+estructura.</p>
 
 			<pre class="php"><code>class Session
 {
 
-	public static function get_flash($name, $data)
+	public static function get_flash($nombre, $datoa)
 	{
 		$closure = function($a, $b)
 		{
-			// Your closure code here
+			// Su código de clausura aquí
 		}
 	}
 
@@ -299,54 +282,52 @@ if ( ! $var)</code></pre>
 
 			<h5 id="variables">Variables</h5>
 
-			<p>When initializing variables, one variable should be declared per line. To enhance code readability, these
-				should each be on a separate line. Align values and comments when appropriate.</p>
+			<p>Cuando se inicializan las variables, debería de declararse línea por línea. Para mejorar la legibilidad de código, estas deben de estar separadas por línea. Asigna valores y comentarios cuando sea apropiado.</p>
 
-			<pre class="php"><code>$var        = ''; // do each on its own line
-$other_var  = ''; // do each on its own line</code></pre>
+			<pre class="php"><code>$var        = ''; // cada uno en su línea
+$other_var  = ''; // cada uno en su línea</code></pre>
 
-			<h5 id="brackets_parenthesis">Brackets and Parenthesis</h5>
+			<h5 id="brackets_parenthesis">Llaves y paréntesis</h5>
 
-			<p>No space should come before or after the initial bracket/parenthesis. There should not be a space before closing bracket/parenthesis.</p>
+			<p>Ningún espacio debería de venir después o antes de la llave/paréntesis inicial. No debería de haber ningún espacio antes del cierre de la llave/paréntesis.</p>
 
 			<pre class="php"><code>$array = array(1, 2, 3, 4);
-$array['my_index'] = 'something';
+$array['mi_indice'] = 'algo';
 for ($i = 0; $i < $max; $i++)</code></pre>
 
-			<h5 id="quotation">String quotation</h5>
+			<h5 id="quotation">Comillas de cadenas</h5>
 
-			<p>Single quotes are preferred over double quotes.</p>
+			<p>Comillas simples son preferibles a las comillas dobles.</p>
 
-			<h5 id="concatenation">Concatenation</h5>
+			<h5 id="concatenation">Concatenación</h5>
 
-			<p>String concatenation should not contain spaces around the joined parts.</p>
+			<p>La concatenación de cadenas no deberían contener espacios alrededor de las partes unidas.</p>
 
-			<pre class="php"><code>//yes
-$string = 'my string '.$var.' the rest of my string';
+			<pre class="php"><code>//sí
+$string = 'mi cadena '.$var.' la otra parte de mi cadena';
 
 //no
-$string = 'my string ' . $var . ' the rest of my string';</code></pre>
+$string = 'mi cadena ' . $var . ' la otra parte de mi cadena';</code></pre>
 
-			<h5 id="operators">Operators</h5>
+			<h5 id="operators">Operadores</h5>
 
-			<pre class="php"><code>$var = 'something';
-if ($var == 'something') //space before and after logical operator
-$var = $some_var + $other_var; //space before and after math operator
-$var++; // no space before increment
-++$var; //no space after increment</code></pre>
+			<pre class="php"><code>$var = 'algo';
+if ($var == 'algo') //espacio antes y después del operador lógico
+$var = $some_var + $other_var; //espacio antes y después del operador matemático
+$var++; //sin espacio antes del operador de incremento
+++$var; //sin espacio después del operador de incremento</code></pre>
 
-			<h5 id="dot-notation">Array dot-notation</h5>
+			<h5 id="dot-notation">Notación-punto Array</h5>
 
 			<p>
-				Although strictly speaking it's not a coding standard, it's used a lot within the frameworks classes and this documentation,
-				and since it's not a common PHP notation, it might confuse people new to the framework.
+                                Aunque estrictamente hablando no es un estándar de codificación, se utiliza utiliza mucho dentro de las clases del framework al igual que en esta documentación, ya que es no es una notación de PHP común, podría confundir a las personas que son nuevas al framework.
 			</p>
-			<pre class="php"><code>// when you see "always_load.packages = array()", it is shorthand for:
+			<pre class="php"><code>// cuando ves "always_load.packages = array()", es la manera corta de:
 array("always_load" => array("packages" => array(...) ) );
 </code></pre>
 
-			<p>This notation is used by the Arr class, but also the Lang, Config and Session classes, to quickly access individual elements from a multi-dimensional array.</p>
-			<pre class="php"><code>// when you have an array structure like this
+			<p>Esta notación es usada por la clase Arr, pero también la clase Lang, Config y Session, para acceder individualmente a elementos de un array multi-dimensional.</p>
+			<pre class="php"><code>// cuando tienes una estructura de array así
 $array = array(
     "always_load" => array(
         "packages" => array(
@@ -356,7 +337,7 @@ $array = array(
      )
 );
 
-// then this will return "/my/special/package.php":
+// ... lo siguiente devolverá "/my/special/package.php":
 $path = Arr::get($array, 'always_load.packages.package');
 </code></pre>
 
