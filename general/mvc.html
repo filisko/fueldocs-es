@@ -12,7 +12,7 @@
 		var path = './../';
 	</script>
 	<script src="./../assets/js/combined.js"></script>
-	<title>Model-View-Controller - General - FuelPHP Documentación</title>
+	<title>Modelo-Vista-Controlador - General - FuelPHP Documentación</title>
 </head>
 <body>
 	<div id="container">
@@ -46,62 +46,44 @@
 
 		<div id="main">
 
-			<h2>Model-View-Controller (MVC)</h2>
+			<h2>Modelo-Vista-Controlador (MVC)</h2>
 
-			<h3 id="what_is_mvc">What is MVC?</h3>
+			<h3 id="what_is_mvc">¿Qué es MVC?</h3>
 
-			<p>MVC is an approach to separating your code depending on what role it plays in your application. In the
-			application flow it starts with a controller that is loaded. That Controller executes a method which retrieves
-			data using Models. Once it is done the controller decides what View to load, which contains the output your
-			visitors get to see.</p>
+			<p>MVC es un enfoque para separar tu código dependiendo del rol que desempeñe en tu aplicación. En el flujo de la aplicación, comienza cuando se carga el controlador. Ese controlador ejecuta un método el cual devuelve datos usandos Modelos. Una vez que esté hecho el controlador decide qué Vista cargar, el cual contiene la salida que tus visitantes verán.</p>
 
-			<h3 id="controllers">Controllers</h3>
+			<h3 id="controllers">Controladores</h3>
 
-			<p>Controller classes are located in <kbd>APPPATH/classes/controller</kbd></p>
+			<p>Las clases de los controladores se encuentran en <kbd>APPPATH/classes/controller</kbd></p>
 
-			<p>Fuel's routing decides based on the requested URL what controller to load and what method to call upon it.
-			This is where your application starts working. The Controller decides what actions to take, what to do with any
-			user input, what data gets manipulated and which View is shown to the user. The Controller does none of these
-			things itself however; it calls upon Models and Classes to do the work.</p>
+			<p>El enrutador de Fuel basado en la URL de la petición decide qué Controlador cargar y qué método en él. Aquí es donde tu aplicación comienza a funcionar. El Controlador decide qué acciones coger, qué hacer con cualquier entrada del usuario, qué datos se manipulan y qué Vista es mostrada al usuario. El Controlador no realiza ninguna de estas cosas por sí mismo; llama a Modelos y a clases para que hagan el trabajo.</p>
 
-			<p>Read more about <a href="controllers/base.html">Controllers</a>.</p>
+			<p>Lee más sobre <a href="controllers/base.html">Controladores</a>.</p>
 
-			<h3 id="models">Models</h3>
+			<h3 id="models">Modelos</h3>
 
-			<p>Model classes are located in <kbd>APPPATH/classes/model</kbd></p>
+			<p>Las clases de los Modelos se encuentran en <kbd>APPPATH/classes/model</kbd></p>
 
-			<p>Whenever data needs to be retrieved, manipulated or deleted this should always be done by a model. A Model
-			is a representation of some kind of data and has the methods to change them. For example: you never put SQL
-			queries in a Controller, those are put in the Model and the Controller will call upon the Model to execute
-			the queries. This way if your database changes you won't need to change all your Controllers but just the
-			Model that acts upon it.</p>
+			<p>Cualquier dato que necesite ser devuelto, manipulado o eliminado esto se siempre debería de realizarse con el modelo. Un Modelo es la representación de algún tipo de dato y tiene los métodos para cambiarlo. Por ejemplo: tu nunca pones consultas SQL en un Controlador, estos están en el Modelo y el Controlador los llamará desde el Modelo para ejecutar las consultas. De esta manera si algo cambia en tu base de datos, no tienes que cambiar nada en el Controlador, sino en el Modelo en sí.</p>
 
-			<p>Read more about <a href="models.html">Models</a>.</p>
+			<p>Lee más sobre <a href="models.html">Modelos</a>.</p>
 
-			<h3 id="views">Views</h3>
+			<h3 id="views">Vistas</h3>
 
-			<p>Views are located in <kbd>APPPATH/views</kbd></p>
+			<p>Las Vistas se encuentran en <kbd>APPPATH/views</kbd></p>
 
-			<p>Views contain your HTML, which should never be found in your Controllers or any other class that is not
-			specifically meant to create output. By separating your layout from your logic you ensure that when you decide
-			to change your layout you only have to change the views and won't have to care about the Controllers.<br />
-			Views should thus contain little more than <kbd>echo</kbd> and <kbd>foreach</kbd> usage of PHP.</p>
+			<p>Las Vistas contienen tu HTML, lo cual nunca sería encontrado en tus Controladores o cualquier otra clase que no esté específicamente hecha para crear una salida. Separando tu diseño de tu lógica te aseguras de que cuando decidas cambiar tu diseño solo tendrás que cambiar las Vistas y no tendrás que preocuparte sobre los Controladores.<br />
+                            Las Vistas deberían contener algo más que <kbd>echo</kbd> y <kbd>foreach</kbd> de PHP</p>
 
+			<p>Lee más sobre <a href="views.html">Vistas</a>.</p>
 
+			<h3 id="presenters">Presentadores</h3>
 
-			<p>Read more about <a href="views.html">Views</a>.</p>
+			<p>Las clases del Presentador se encuentran en <kbd>APPPATH/classes/presenter</kbd></p>
 
-			<h3 id="presenters">Presenters</h3>
+			<p>Una vez que tu aplicación es más compleja, descubirarás que se está poniendo difícil si un trozo de lógica realmente pertenece a un Controlador, ¿qué si tiene que ver más específicamente con la Vista y tiene que ver solo un poco con la lógica tu aplicación? Aquí es donde los Presentadores entran en juego; ellos son el pegamento entre tus Controladores y tus Vistas.</p>
 
-			<p>Presenter classes are located in <kbd>APPPATH/classes/presenter</kbd></p>
-
-			<p>Once your application gets more complex you'll discover that it gets hard to decide if a piece of logic
-			really belongs in the Controller, what if it is very specifically about the View and has little to do with your
-			application logic? This is where Presenters come in; they are the glue between your controllers and your
-			views.</p>
-
-			<p>Read more about <a href="presenters.html">Presenters</a>.</p>
-
+			<p>Leer más sobre <a href="presenters.html">Presentadores</a>.</p>
 		</div>
 
 		<footer>

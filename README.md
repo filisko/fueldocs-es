@@ -9,9 +9,9 @@ Los propósitos y objetivos principales de este pequeño proyecto son:
 
 #### ¿Cómo contribuir?
 Si estás interesado en contribuir, las formas son diversas:
-* Si tienes un buen nivel de inglés, puedes traducir parte de la documentación restante que sigue en inglés (lo mejor sería traducir lo que de mayor interés sería para los desarrolladores)
+* Si tienes un buen nivel de inglés, puedes traducir parte de la documentación restante que sigue en inglés (lo mejor sería traducir lo que de mayor interés sería para los desarrolladores).
 * Si no sirves para el inglés, puedes revisar las faltas ortografía cometidas en español de páginas ya traducidas del inglés.
-* Puedes contribuir también, dando a conocer este pequeño proyecto entre la comunidad de desarrolladores hispano parlantes y sepan de la existencia de este proyecto.
+* Puedes contribuir también, dando a conocer este pequeño proyecto entre la comunidad de desarrolladores hispano parlantes y así sepan de la existencia de este proyecto.
 
 ### Documentación en español en línea [filisko.github.io/fueldocs-es](http://filisko.github.io/fueldocs-es/)
 

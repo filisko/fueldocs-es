@@ -380,7 +380,7 @@ panes.main = {
 	"Instalación": {
 		"Instrucciones":			"installation/instructions.html",
 		"Descargar":				"installation/download.html",
-		"Actualización":				"installation/upgrade.html",
+		"Actualizar":				"installation/upgrade.html",
 		"Tutoriales":			"installation/tutorials.html",
 		"Resolución de problemas":		"installation/troubleshooting.html"
 	},

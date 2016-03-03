@@ -12,7 +12,7 @@
 		var path = './../';
 	</script>
 	<script src="./../assets/js/combined.js"></script>
-	<title>Constants - General - FuelPHP Documentación</title>
+	<title>Constantes - General - FuelPHP Documentación</title>
 </head>
 <body>
 	<div id="container">
@@ -46,69 +46,69 @@
 
 		<div id="main">
 
-			<h2>Constants</h2>
+			<h2>Constantes</h2>
 
 			<p>
-				Fuel has four constants in the global namespace to direct you to important directories. Fuel uses them internally to locate classes and other files.
-				These constants are set in <em>public/index.php</em>.
+				Fuel tiene cuatro constantes en el espacio de nombres global para dirigrte a directorios importantes. Fuel los usa internamente para localizar clases y otros archivos.
+				Estas constantes están establecidas en <em>public/index.php</em>.
 			</p>
 
 			<p class="note">
-				<strong>Note:</strong> When you move any of fuel's prime folders (app, core, public, packages) be sure to update your index.php to direct fuel to the right paths.
+				<strong>Nota:</strong> Cuando mueves cualquier carpeta principal de Fuel (app, core, public, packages) estate seguro de actualizar tu index.php para dirigir a Fuel a las rutas correctas.
 			</p>
 
 			<table class="config valign">
 				<tbody>
 					<tr class="header">
-						<th>Key</th>
-						<th>Description</th>
+						<th>Llave</th>
+						<th>Descripción</th>
 					</tr>
 					<tr>
 						<th>APPPATH</th>
 						<td>
-							Path to the application directory (<em>/path/to/fuel/app</em>).
-							This is where your application directories and code reside.
+							Ruta al directorio de la aplicación (<em>/ruta/a/fuel/app</em>).
+							Aquí es donde residen los directorios y el código de tu aplicación.
 						</td>
 					</tr>
 					<tr>
 						<th>COREPATH</th>
 						<td>
-							Path to the core directory (<em>/path/to/fuel/core</em>).
-							This is where all the Fuel classes live.
+							Ruta al directorio del núcleo (<em>/path/to/fuel/core</em>).
+							Aquí es donde residen todas las clases de Fuel.
 						</td>
 					</tr>
 					<tr>
 						<th>DOCROOT</th>
 						<td>
-							Path to the location where the 'startup script' is.
-							For your web application, path to the public directory (<em>/path/to/public</em>).
-							This is where index.php resides. Everything accessible to user lives and is accessible via the browser.
-							For oil command, path to where oil command resides.
+							Ruta a la localización donde se encuentra el 'script de arranque'.
+							Para tus aplicaciones web, ruta de tu directorio público (<em>/ruta/a/public</em>).
+							Aquí es donde reside index.php. Todo lo accesible al usuario a través del navegador.
+                                                        Para Oil, ruta donde se encuentra Oil.
 						</td>
 					</tr>
 					<tr>
 						<th>PKGPATH</th>
 						<td>
-							Path to the packages directory (<em>/path/to/fuel/packages</em>).
-							This is where your packages are installed (when installed through oil).
+							Ruta al directorio de los paquetes (<em>/ruta/a/fuel/packages</em>).
+							Aquí es donde tus paquetes se encuentran instalados (cuando son instalados vía Oil).
 						</td>
 					</tr>
 					<tr>
 						<th>VENDORPATH</th>
 						<td>
-							Path to the composer root directory (<em>/path/to/fuel/vendor</em>).
-							This is where your composer installs the libraries downloaded from packagist.org.
+							Ruta al directorio raíz de composer (<em>/ruta/a/fuel/vendor</em>).
+                                                        Aquí es donde se encuentran tus instalaciones vía composer, las librerías descargadas se descargan desde <a href="https://packagist.org/" target="_blank">packagist.org</a>
 						</td>
 					</tr>
 				</tbody>
 			</table>
 
 			<p class="note">
-				<strong>Note:</strong> When you use the Oil package, you have to make the same changes in the 'oil' file in the docroot of your website.
+				<strong>Nota:</strong> Cuando usas el paquete Oil, tienes que hacer los mismos cambios en el archivo 'oil' en el directorio raíz de tu sitio web.
 			</p>
 
 			<p class="note">
-				<strong>Note:</strong> When you want to run unit tests, you have to make the same changes in the 'phpunit.xml' file in the fuelphp core folder.
+				<strong>Nota:</strong> Cuando quieras ejecutar tests unitarios, tienes que hacer los mismos cambios el el archivo 'phpunit.xml' en el directorio del núcleo de FuelPHP.
 			</p>
 		</div>
 
