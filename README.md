@@ -2,7 +2,7 @@
 Este repositorio está dedicado a la traducción al español de la documentación oficial del framework FuelPHP.
 
 #### Propósitos
-Los propósitos principales de este pequeño proyecto son:
+Los propósitos y objetivos principales de este pequeño proyecto son:
 * Dar a conocer el framework FuelPHP de otra forma en la comunidad hispana de desarrolladores-
 * Tratar de que más desarrolladores de habla hispana comiencen a usar este maravilloso framework que aún pocos conocen, pero que en un gran porcentaje de casos, solucionaría sus necesidades de sobra.
 * Ayudar a desarrolladores que no dominan bien el inglés, a que puedan ser capaces de usar FuelPHP sin ningún problema y no les eche hacia atrás el hecho de que la documentación oficial esté en inglés.
