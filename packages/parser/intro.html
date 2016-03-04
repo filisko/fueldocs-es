@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Documentación del framework FuelPHP traducida al español">
+	<meta name="description" content="Documentación del framework FuelPHP en español">
 	<meta name="keywords" content="framework FuelPHP, documentación, traducida, español, castellano, FuelPHP en español, es-ES">
 	<link rel="stylesheet" href="./../../assets/css/combined.css">
 	<link rel="shortcut icon" href="./../../favicon.ico" />
@@ -12,7 +12,7 @@
 		var path = './../../';
 	</script>
 	<script src="./../../assets/js/combined.js"></script>
-	<title>Introduction - Parser Package - FuelPHP Documentación</title>
+	<title>Introducción - Paquete Parser - FuelPHP Documentación</title>
 </head>
 <body>
 	<div id="container">
@@ -45,36 +45,28 @@
 		</div>
 
 		<div id="main">
-			<h2>Parser package</h2>
+			<h2>Paquete Paraser</h2>
 
-			<p>The Parser package extends the Core View class to be able to use any type of template parser you want.</p>
+			<p>El paquete parseador extiende la clase View del núcleo para que puedas usar cualquier tpo de plantilla parser.</p>
 
 			<section>
-				<h2 id="intro">Introduction</h2>
+				<h2 id="intro">Introducción</h2>
 
-				<p>The Parser package changes nothing about the way you work with Views, but it will allow you to
-					use any template parser you want instead of PHP. The package comes with many drivers for parsers like
-					Dwoo, Haml, Jade, Lex, Markdown, Mustache, PHPTal, Smarty and Twig.</p>
+				<p>El paquete Parser no cambia en nada de la forma en que trabajas con las Vistas, pero te permitirá usar cualquier plantilla parser que quieras en vez de PHP. El paquete viene con muchos drivers para parsers como Dwoo, Haml, Jade, Lex, Markdown, Mustache, PHPTal, Smarty y Twig.</p>
 
-				<p>Which parser is used is determined by the file extension of your view file. Normal views, parsed by PHP
-					use the file extension <kbd>.php</kbd>. This is also the default, if no extension is specified, it is
-					assumed to have the <kbd>.php</kbd> extension.</p>
-				<p>All others have their own specific extension, for example <kbd>foo.mustache</kbd> will use the Mustache
-				    driver, <kbd>foo.tpl</kbd> will use the Dwoo driver, <kbd>foo.lex</kbd> will use the Lex driver, and
-				    so on. The default extension can be changed in config).</p>
+				<p>El parser que se usa es determinado por la extensión del archivo que usas para tu vista. Las vistas normales, parseadas por PHP, usan la extensión <kbd>.php</kbd>. Esta también es la extensión por defecto, si no especificas la extensión se asume que es el archivo de la vista tiene la extensión <kbd>.php</kbd>.</p>
+				<p>Todas las demás tienen su propia extensión, por ejemplo <kbd>foo.mustache</kbd> usará el driver the Mustache, <kbd>foo.tpl</kbd> usará del driver de Dwoo, <kbd>foo.lex</kbd> usará el driver de Lex, y etc. La extensión por defecto puede ser cambiada en la configuración.</p>
 
 				<section>
-					<h3 id="install">Installation</h3>
+					<h3 id="install">Instalación</h3>
 
-					<p>The Parser package is included in the Fuel download. To use it you must first enable it by adding
-						it to your config:</p>
+					<p>El paquete parseador es incluído en la descarga de Fuel. Para usarlo debes primero habilitarla añadiendo a tu archivo de configuración:</p>
 					<pre class="php"><code>'always_load' => array(
 	'packages' => array(
 		'parser',
 	),
 ),</code></pre>
-					<p>To be able to use one of the supported parsers, you need to install them via composer.
-					    Simply add the libraries to your project's <kbd>composer.json</kbd> then run <kbd>php composer.phar install</kbd>:</p>
+					<p>Para que pueda ser posible usar uno de los parsers soportados, tienes que instarlos vía composer. Simplemente añade las librerías a tu proyecto <kbd>composer.json</kbd> y entonces ejecuta <kbd>php composer.phar install</kbd>:</p>
 
 					<pre class="javascript"><code>{
     "require": {
@@ -88,59 +80,52 @@
 }
 </code></pre>
 
-					<p class="note">Note that the  Markdown parser is installed by default, as it is also used by the FuelPHP core class </kbd>Markdown</kbd>.</p>
+					<p class="note">Date cuenta de que el parseador de Markdown es instalado por defecto, ya que también es usado en la clase del núcleo de FuelPHP <kbd>Markdown</kbd>.</p>
 
-					<p>Libraries that can not be installed through composer are expected to be installed in in <kbd>APPPATH/vendor/lib_name</kbd>
-					    (capitalize lib_name), and you'll have to download them yourself. Don't change the casing or anything, keep it as
-					    much original as possible within the </kbd>vendor/lib_name</kbd> dir to keep updating easy (also because some come with
-					    their own autoloader).</p>
+					<p>Librerías que no pueden ser instaladas mediante composer se espera que sean instaladas en <kbd>APPPATH/vendor/lib_name</kbd>
+					    (capitaliza lib_name), y vas a tener que descargarlos por tu cuenta. No cambies nada, mantenlo tan original como puedas sin el directorio <kbd>vendor/lib_name</kbd> para seguir actualizándolo fácilmente (también porque algunos vienen con su propio autoloader).</p>
 				</section>
 
 				<section>
-					<h3 id="configuration">Configuration</h3>
+					<h3 id="configuration">Configuración</h3>
 
-					<p>Parser can be configured in a config/parser.php file and takes the following keys:</p>
+					<p>El parseador puede ser configurado en el archivo config/parser.php y admite las siguientes llaves:</p>
 
 					<table class="config">
 						<tbody>
 							<tr class="header">
-								<th>Param</th>
-								<th>Type</th>
-								<th>Default</th>
-								<th>Description</th>
+								<th>Parámetro</th>
+								<th>Tipo</th>
+								<th>Por defecto</th>
+								<th>Descripción</th>
 							</tr>
 							<tr>
 								<th>extensions</th>
 								<td>array</td>
-								<td>(array with extensions and View class which parses them)</td>
+								<td>(matríz con las extensiones y las clases View que las parsean)</td>
 								<td>
-									Defines which extensions are valid and what their View driver is.<br />
-									ex: 'md' => 'View_Markdown'
+									Define qué extensiones son válidas y cuál es su driver de Vista.<br />
+									ej: 'md' => 'View_Markdown'
 								</td>
 							</tr>
 						</tbody>
 					</table>
-					<p>For every View driver supported, the configuration file contains a array entry with
-					    the same name as the driver, which lists the driver specific configuration (limited
-					    to the configuration items supported by the driver. This may be a subset of all
-					    configuration the parser supports).</p>
+					<p>Para cada driver de Vista soportado, el archivo de configuración contendrá una matríz con el mismo nombre que el driver, el cual lista la configuración del driver específico (limitado a los elementos de configuración soportados por el drivers). Esto podría ser un subconjunto de todas las configuraciones que el parser soporta).</p>
 				</section>
 
 				<section>
 					<h3 id="runtime_configuration">Runtime Configuration</h3>
 
-					<p>All drivers have a <kbd>parser()</kbd> method that will allow you to access the current
-						Parser object. This is a convention and not a requirement and might be different on 3rd party
-						drivers.</p>
+					<p>Todos los drivers tienen un método <kbd>parser()</kbd> que te permitirá acceder al objeto parser actual. Esta es una convención y no un requisito y podría ser diferente en drivers de terceros.</p>
 
-					<pre class="php"><code>// Clear the cache for a specific Smarty template
+					<pre class="php"><code>// Limpia el caché para una plantailla Smarty específica.
 $view = View::forge('example.smarty');
 $view->parser()->clearCache('example.smarty');
 
-// Example static usage
+// Ejemplo de uso estático
 View_Smarty::parser()->clearCache('example.smarty');</code></pre>
 
-					<p>This can also be used when you need to pass custom configuration to the driver.</p>
+					<p>Esto también puede ser usado cuando necesites pasar configuración personalizada al driver.</p>
 				</section>
 
 			</section>
