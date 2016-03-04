@@ -3,9 +3,9 @@ var DocVersion = "1.8-dev";
 
 // set the google CSE key based on the docversion
 if (DocVersion.indexOf('-dev') == -1) {
-	var GoogleCSE = "006268519150918941486:vg1sweimb7m";
+	var GoogleCSE = "016300793180235805656:-2ticz40ane";
 } else {
-	var GoogleCSE = "006268519150918941486:avkdxx7rmmc";
+	var GoogleCSE = "016300793180235805656:-2ticz40ane";
 }
 
 /*! jQuery v1.9.1 | (c) 2005, 2012 jQuery Foundation, Inc. | jquery.org/license
@@ -98,7 +98,6 @@ Array.max = function( array ){
 })(jQuery);
 
 
-//016300793180235805656:-2ticz40ane
 
 var customSearchControl;
 
