@@ -13,7 +13,7 @@
 		var class_prefix = "Agent::";
 	</script>
 	<script src="./../../assets/js/combined.js"></script>
-	<title>Agent Usage - Classes - FuelPHP Documentación</title>
+	<title>Uso de Agent - Clases - FuelPHP Documentación</title>
 </head>
 <body>
 	<div id="container">
@@ -47,50 +47,50 @@
 
 		<div id="main">
 
-			<h2>Agent Class</h2>
+			<h2>Clase Agent</h2>
 
-			<p>The agent class allows you to retrieve information about browser type, version, platform or operating system, etc, based on the clients User Agent string.</p>
+			<p>La clase Agent te permite conseguir información acerca del tipo de navegador, versión, plataforma o sistema operativo, etc. basado en la cadena de Agente de Usuario del cliente.</p>
 
 			<section>
-				<h2>Usage</h2>
+				<h2>Uso</h2>
 
 				<article>
 					<h4 id="method_accepts_charset" class="method">accepts_charset($charset = 'utf-8')</h4>
-					<p>Check if the current browser accepts a specific character set.</p>
+					<p>Comprueba si el navegador actual acepta una codificación de carácteres específica.</p>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$charset</kbd></th>
 										<td><i>string</i></td>
-										<td>Name of the characterset</td>
+										<td>Nombre del conjunto de carácteres</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>boolean</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
-								<pre class="php"><code>// Check if the users browser accepts iso-8859-1
+								<pre class="php"><code>// Comprueba si el navegador del usuario acepta iso-8859-1
 if (Agent::accepts_charset('iso-8859-1'))
 {
-	echo "Yes, the browser accepts this characterset!";
+	echo "¡Sí, el navegador acepta este conjunto de carácteres!";
 }
 	</code></pre>
 							</td>
@@ -101,41 +101,41 @@ if (Agent::accepts_charset('iso-8859-1'))
 
 				<article>
 					<h4 id="method_accepts_language" class="method">accepts_language($language = 'en')</h4>
-					<p>Check if the current browser accepts a specific ISO language code.</p>
+					<p>Comprueba si el navegador actual acepta un código de lenguaje ISO específico.</p>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th></th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$language</kbd></th>
 										<td><i>string</i></td>
-										<td>ISO language code</td>
+										<td>Código de lenguaje ISO</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>boolean</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
-								<pre class="php"><code>// Check if the users browser accepts Flemish (Belgian Dutch)
+								<pre class="php"><code>// Comprueba si el usuario del navegador acepta dialécto flamenco (variedad regional del idioma neerlandés)
 if (Agent::accepts_language('nl_BE'))
 {
-	echo "Yes, the browser is configured for the Flemish language!";
+	echo "Sí, el navegador acepta el dialécto flamenco!";
 }
 	</code></pre>
 							</td>
@@ -146,41 +146,41 @@ if (Agent::accepts_language('nl_BE'))
 
 				<article>
 					<h4 id="method_browser" class="method">browser()</h4>
-					<p>Returns the normalized browser name from the user agent string.</p>
+					<p>Devuelve el nombre normalizado del navegador desde la cadena del usuario de agente.</p>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
-							<td>None</td>
+							<th>Parámetros</th>
+							<td>Ninguno</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
-								<pre class="php"><code>// Process based on the browser name
+								<pre class="php"><code>// Proceso basado en el nombre del navegador
 switch (Agent::browser())
 {
 	case 'Firefox':
-		// do something specific here
+		// haz algo específico aquí
 		break;
 	case 'IE':
-		// do something specific here
+		// haz algo específico aquí
 		break;
 	case 'Chrome':
-		// do something specific here
+		// haz algo específico aquí
 		break;
 	case 'Unknown':
-		// do something specific here
+		// haz algo específico aquí
 		break;
 	default:
-		// these are not all supported browser...
+		// estos no son todos los navegadores soportados...
 		break;
 }</code></pre>
 							</td>
@@ -191,25 +191,25 @@ switch (Agent::browser())
 
 				<article>
 					<h4 id="method_platform" class="method">platform()</h4>
-					<p>Returns the normalized platform name from the user agent string.</p>
+					<p>Devuelve el nombre normalizado de la plataforma basado en la cadena del usuario de agente.</p>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
-							<td>None</td>
+							<th>Parámetros</th>
+							<td>Ninguno</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
-								<pre class="php"><code>// Process based on the browser platform
+								<pre class="php"><code>// Proceso basado en la plataforma del navegador
 switch (Agent::platform())
 {
 	case 'Win95':
@@ -217,32 +217,32 @@ switch (Agent::platform())
 	case 'WinNT':
 	case 'WinME':
 	case 'Win2000':
-		// do something specific here
+		// haz algo específico aquí
 		break;
 	case 'WinXP':
 	case 'WinVista':
 	case 'Win7':
-		// do something specific here
+		// haz algo específico aquí
 		break;
 	case 'Linux':
-		// do something specific here
+		// haz algo específico aquí
 		break;
 	case 'MacOSX':
 	case 'MacPPC':
-		// do something specific here
+		// haz algo específico aquí
 		break;
 	case 'SunOS':
 	case 'FreeBSD':
 	case 'Debian':
 	case 'HP-UX':
 	case 'IRIX64':
-		// do something specific here
+		// haz algo específico aquí
 		break;
 	case 'unknown':
-		// do something specific here
+		// haz algo específico aquí
 		break;
 	default:
-		// these are not all supported platforms...
+		// no están todas las plataformas soportadas...
 		break;
 }</code></pre>
 							</td>
@@ -253,28 +253,28 @@ switch (Agent::platform())
 
 				<article>
 					<h4 id="method_version" class="method">version()</h4>
-					<p>Returns the browser version.</p>
+					<p>Devuelve la versión del navegador</p>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
-							<td>None</td>
+							<th>Parámetros</th>
+							<td>Ninguno</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>float</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
-								<pre class="php"><code>// Check if an old Internet Explorer version is used
+								<pre class="php"><code>// Comprueba si una versión antigua de Internet Explorer se está usando
 if (Agent::browser() == 'IE' and Agent::version() &lt; 7)
 {
-	echo "Sorry, no support for outdated browsers!";
+	echo "¡Lo sentimos, no soportamos navegadores anticuados!";
 }
 	</code></pre>
 							</td>
@@ -285,29 +285,29 @@ if (Agent::browser() == 'IE' and Agent::version() &lt; 7)
 
 				<article>
 					<h4 id="method_charsets" class="method">charsets()</h4>
-					<p>Returns an array with all charactersets accepted by the browser.</p>
+					<p>Devuelve una matríz con todos los conjuntos de carácteres aceptados por el navegador.</p>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
-							<td>None</td>
+							<th>Parámetros</th>
+							<td>Ninguno</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>array</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
-								<pre class="php"><code>// Check if the users browser accepts iso-8859-1
+								<pre class="php"><code>// Comprueba si el navegador del usuario acepta iso-8859-1
 $sets = Agent::charsets();
 if (in_array('iso-8859-1', $sets))
 {
-	echo "Yes, the browser accepts this characterset!";
+	echo "¡Sí, el navegador acepta este conjunto de cáracteres!";
 }
 	</code></pre>
 							</td>
@@ -318,29 +318,30 @@ if (in_array('iso-8859-1', $sets))
 
 				<article>
 					<h4 id="method_languages" class="method">languages()</h4>
-					<p>Returns an array with all ISO languages accepted by the browser.</p>
+					<p>Devuelve una matríz con todos los lenguajes ISO soportados por el navegador.</p>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
-							<td>None</td>
+							<th>Parámetros</th>
+							<td>Ninguno</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>array</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
-								<pre class="php"><code>// Check if the users browser accepts Flemish (Belgian Dutch)
+								<pre class="php"><code>// Comprueba si el usuario del navegador acepta dialécto flamenco (variedad regional del idioma neerlandés)
+
 $lang = Agent::languages();
 if (in_array('nl_BE', $lang))
 {
-	echo "Yes, the browser is configured for the Flemish language!";
+	echo "¡Sí, el navegador acepta el dialécto flamenco!";
 }
 	</code></pre>
 							</td>
@@ -351,31 +352,31 @@ if (in_array('nl_BE', $lang))
 
 				<article>
 					<h4 id="method_properties" class="method">properties()</h4>
-					<p>Returns an array with all properties of the detected browser.</p>
+					<p>Devuelve una matríz con todas las propiedades del navegador detectado.</p>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
-							<td>None</td>
+							<th>Parámetros</th>
+							<td>Ninguno</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>array</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
-								<pre class="php"><code>// Get the browser properties
-$properties = Agent::properties();
+								<pre class="php"><code>// Obtener las propiedades del navegador
+$propiedades = Agent::properties();
 
 /**
- * These are the supported properties, and their default value
+ * Estas son las propiedades soportadas, y sus valores por defecto
  *
- * $properties = array(
+ * $propiedades = array(
  * 	'browser'             => "unknown",
  * 	'version'             => 0,
  * 	'majorver'            => 0,
@@ -403,8 +404,8 @@ $properties = Agent::properties();
  * 	'aolversion'          => 0,
  * );
  *
- * Note that the booleans indicate a specific supported functionality.
- * It does not indicated if it is enabled or not.
+ * Date cuenta que los booleanos indican si una funcionalidad específica es soportada.
+ * No indica si está habilitado o no.
  */</code></pre>
 							</td>
 						</tr>
@@ -414,41 +415,41 @@ $properties = Agent::properties();
 
 				<article>
 					<h4 id="method_property" class="method">property($property = null)</h4>
-					<p>Return a specific browser property. See properties() for the list of supported properties.</p>
+					<p>Devuelve una propiedad específica del navegador. Vea la lista de propiedades soportadas a través de properties().</p>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$property</kbd></th>
 										<td><i>string</i></td>
-										<td>Name of the property to retrieve. The name is case-sensitive!</td>
+										<td>Nombre de la propiedad a devolver. ¡El nombre es sensible a las mayúsculas!</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>mixed</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
-								<pre class="php"><code>// Check if the browser supports cookies
+								<pre class="php"><code>// Comprueba si el navegador soporta cookies.
 if (Agent::property('cookies') === true)
 {
-	echo "Yes, the browser supports Cookies!";
+	echo "¡Sí, el navegador soporte cookies!";
 }
 	</code></pre>
 							</td>
@@ -459,32 +460,32 @@ if (Agent::property('cookies') === true)
 
 				<article>
 					<h4 id="method_is_mobiledevice" class="method">is_mobiledevice()</h4>
-					<p>Checks if the browser used is running on a mobile device.</p>
+					<p>Comprueba si el navegador usado está siendo ejecutado en un dispositivo móvil.</p>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
-							<td>None</td>
+							<th>Parámetros</th>
+							<td>Ninguno</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>boolean</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
-								<pre class="php"><code>// Load a platform specific view
+								<pre class="php"><code>// Carga una vista por plataforma específica
 if (Agent::is_mobiledevice())
 {
-	$content = View::forge('mobile/viewname');
+	$contenido = View::forge('movil/nombre_de_vista');
 }
 else
 {
-	$content = View::forge('standard/viewname');
+	$contenido = View::forge('estandar/nombre_de_vista');
 }</code></pre>
 							</td>
 						</tr>
@@ -494,32 +495,32 @@ else
 
 				<article>
 					<h4 id="method_is_robot" class="method">is_robot()</h4>
-					<p>Checks if the browser agent indicates the visitor is a robot or crawler.</p>
+					<p>Comprueba si el agente del navegador indica si es un robot o es un crawler.</p>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
-							<td>None</td>
+							<th>Parámetros</th>
+							<td></td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>boolean</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
-								<pre class="php"><code>// Load a crawler specific view (note: this is frowned upon!)
+                                                            <pre class="php"><code>// Carga una vista por <a href="https://es.wikipedia.org/wiki/Ara%C3%B1a_web">crawler</a> específico (nota: ¡esto no se recomienda!).
 if (Agent::is_robot())
 {
-	$content = View::forge('robot/viewname');
+	$contenido = View::forge('robot/nombre_de_vista');
 }
 else
 {
-	$content = View::forge('standard/viewname');
+	$contenido = View::forge('estandar/nombre_de_vista');
 }</code></pre>
 							</td>
 						</tr>

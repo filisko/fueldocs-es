@@ -13,7 +13,7 @@
 		var class_prefix = "Agent::";
 	</script>
 	<script src="./../../assets/js/combined.js"></script>
-	<title>Agent Config - Classes - FuelPHP Documentación</title>
+	<title>Configuración de Agent - Clases - FuelPHP Documentación</title>
 </head>
 <body>
 	<div id="container">
@@ -47,26 +47,25 @@
 
 		<div id="main">
 
-			<h2>Agent Class</h2>
+			<h2>Clase Agent</h2>
 
-			<p>The agent class allows you to retrieve information about browser type, version, platform or operating system, etc, based on the clients User Agent string.</p>
+			<p>La clase Agent te permite conseguir información acerca del tipo de navegador, versión, plataforma o sistema operativo, etc. basado en la cadena de Agente de Usuario del cliente.</p>
 
 			<section>
-				<h3 id="config">Configuration</h3>
+				<h3 id="config">Configuración</h3>
 
 				<p>
-					The agent class uses the PHP function <a href="http://php.net/manual/en/function.get-browser.php">get_browser()</a>,
-					which attempts to determine the capabilities of the user's browser, by looking up the browser's information in the browscap.ini file.
+					La clase Agent usa la función de PHP <a href="http://php.net/manual/en/function.get-browser.php">get_browser()</a>, cuya función intenta determinar las capacidades del navegador del usuario, mirando la información del navegador del archivo browscap.ini.
 				</p>
 
-				<p>The following global configuration values can be defined:</p>
+				<p>Los valores de la configuración global pueden ser definidos de la siguiente manera:</p>
 				<table class="config">
 					<tbody>
 						<tr class="header">
-							<th>Param</th>
-							<th>Type</th>
-							<th>Default</th>
-							<th>Description</th>
+							<th>Parámetro</th>
+							<th>Tipo</th>
+							<th>Por defecto</th>
+							<th>Descripción</th>
 						</tr>
 						<tr>
 							<th>browscap</th>
@@ -74,7 +73,7 @@
 							<td><pre class="php"><code>array(
 	'enabled' => true,
 	'url'     => 'http://browsers.garykeith.com/stream.asp?BrowsCapINI',
-	'method' => 'wrapper',
+	'método' => 'wrapper',
 	'proxy' => array(
 		'host' => null,
 		'port' => null,
@@ -82,11 +81,11 @@
 		'username' => null,
 		'password' => null,
 	),
-	'file'   => '/tmp/php_browscap.ini',
+	'archivo'   => '/tmp/php_browscap.ini',
 )</code></pre>
 							</td>
 							<td>
-								browscap.ini retrieval configuration.
+								configuración que devuelve browscap.ini.
 							</td>
 						</tr>
 						<tr>
@@ -99,45 +98,43 @@
 )</code></pre>
 							</td>
 							<td>
-								browscap.ini caching configuration.
+								configuración de cacheo browscap.ini.
 							</td>
 						</tr>
 					</tbody>
 				</table>
 
 				<section>
-					<h5 id="browsercap_config">Browscap.ini configuration</h5>
+					<h5 id="browsercap_config">Configuración Browscap.ini</h5>
 
 					<p>
-						If PHP has not been configured to use the browscap.ini file, the agent class will retrieve the file from the location defined in
-						the <strong>config/agent.php</strong> config file, and cached locally for re-use. This cache will be updated on a regular basis, based
-						on the timeout value defined in the configuration.
+						Si PHP no fue configurado para usar el archivo browscap.ini, la clase Agent devolverá el archivo de la localización definida en el archivo de configuración <strong>config/agent.php</strong>, y cacheado localmente para el reuso. Este caché será actualizado de forma regular, basado en el valor de tiempo de caducación definido en la configuración.
 					</p>
 
 					<table class="config">
 						<tbody>
 							<tr class="header">
-								<th>Param</th>
-								<th>Type</th>
-								<th>Default</th>
-								<th>Description</th>
+								<th>Parámetro</th>
+								<th>Tipo</th>
+								<th>Por defecto</th>
+								<th>Descripción</th>
 							</tr>
 							<tr>
 								<th>enabled</th>
 								<td>boolean</td>
 								<td><pre class="php"><code>true</code></pre></td>
-								<td>Enable download of the browscap.ini file. If disabled, and PHP has not been configured to the browscap functionality through get_browser(), browser detection is disabled, and the agent class will return 'unknown'.</td>
+								<td>Habilitar la descarga del archivo browscap.ini. Si está deshabiitado, y PHP no fue configurado para la funcionalidad de browscap a través de get_browser(), la detección del navegador será deshabiitada, y la clase Agent devolverá 'unknown' (desconocido).</td>
 							</tr>
 							<tr>
 								<th>method</th>
 								<td>string</td>
 								<td><pre class="php"><code>'wrapper'</code></pre></td>
 								<td>
-									Method used to retrieve the browscap.ini file. Supported methods are:<ul style="margin:0;">
-										<li>'wrapper': This method uses <strong>file_get_contents()</strong>. This is the preferred option, but it might be disabled by your hosting provider.</li>
-										<li>'curl': This method <strong>curl</strong> extensions. You can use this in case the 'wrapper' method doesn't work.</li>
-										<li>'local': Use an external method to download the browscap.ini file (for example a cron job).</li>
-										<li>'sockets': <em><strong>reserved for future use</strong></em></li>
+									Método usado para devolver el archivo browscap.ini. Los métodos soportados son:<ul style="margin:0;">
+										<li>'wrapper': Este método usa <strong>archivo_get_contents()</strong>. Esta es la opción preferida, pero podría estar deshabilitada por tu proveedor de servicios.</li>
+										<li>'curl': Este método usa la extensión <strong>curl</strong>. Puedes usar este método en caso de que el método 'wrapper' no funcione.</li>
+										<li>'local': Usa un método externo para descargar el archivo browscap.ini (por ejemplo un cron job).</li>
+										<li>'sockets': <em><strong>reservado para uso futuro</strong></em></li>
 									</ul>
 								</td>
 							</tr>
@@ -145,45 +142,45 @@
 								<th>url</th>
 								<td>string</td>
 								<td><pre class="php"><code>'http://browsers.garykeith.com/stream.asp?BrowsCapINI'</code></pre></td>
-								<td>For the methods 'wrapper', 'curl' and 'sockets', the url to download an update of the browscap.ini file.</td>
+								<td>Para los métodos 'wrapper', 'curl' y 'sockets', la URL para descargar una actualización del archivo browscap.ini.</td>
 							</tr>
 							<tr>
 								<th>proxy</th>
 								<td>array</td>
 								<td><pre class="php"><code>array( ... )</code></pre></td>
-								<td>See below.</td>
+								<td>Vea más abajo.</td>
 							</tr>
 							<tr>
-								<th>file</th>
+								<th>archivo</th>
 								<td>string</td>
 								<td><pre class="php"><code>'/tmp/php_browscap.ini'</code></pre></td>
-								<td>For the method 'local', the name and location of the browscap.ini file on a local storage system.</td>
+								<td>Para el método 'local', el nombre y la localización del archivo browscap.ini en un sistema de almacenamiento local.</td>
 							</tr>
 						</tbody>
 					</table>
 				</section>
 
 				<section>
-					<h6 id="browsercap_proxy">Proxy configuration</h6>
+					<h6 id="browsercap_proxy">Configuración de Proxy</h6>
 
 					<p>
-						If your server requires the use of a forward proxy to access the internet, you can configure that as part of the browscap settings.
+						Si tu servidor requiere el uso de un proxy para tener acceso a internet, puedes configurar eso como parte de la configuración de browscap.
 					</p>
 
 					<table class="config">
 						<tbody>
 							<tr class="header">
-								<th>Param</th>
-								<th>Type</th>
-								<th>Default</th>
-								<th>Description</th>
+								<th>Parámetro</th>
+								<th>Tipo</th>
+								<th>Por defecto</th>
+								<th>Descripción</th>
 							</tr>
 							<tr>
 								<th>host</th>
 								<td>string</td>
 								<td><pre class="php"><code>null</code></pre></td>
 								<td>
-									Hostname or IP address of your forward proxy. Do NOT include a scheme, so 'proxy.example.org', not 'http://proxy.example.org'.
+									Nombre del host o dirección IP del proxy. No incluya un esquema, así 'proxy.example.org', NO así 'http://proxy.example.org'.
 								</td>
 							</tr>
 							<tr>
@@ -191,7 +188,7 @@
 								<td>integer</td>
 								<td><pre class="php"><code>null</code></pre></td>
 								<td>
-									TCP port your proxy listens on. Common ports are 3128 (Squid) and 8080 (commercial proxies, ISA-2006+) or 80 (ISA-2004).
+									Puerto TCP en el que tu proxy escucha. Los puertos comunes son 3128 (Squid) y 8080 (proxies comerciales, ISA-2006+) o 80 (ISA-2004).
 								</td>
 							</tr>
 							<tr>
@@ -199,10 +196,10 @@
 								<td>string</td>
 								<td><pre class="php"><code>'none'</code></pre></td>
 								<td>
-									Authentication method for your proxy. Supported methods are:<ul style="margin:0;">
-										<li>'none': Your proxy does not require authentication.</li>
-										<li>'basic': Basic authentication. Supported by both 'curl' and 'wrapper' methods.</li>
-										<li>'ntlm': NTLM/Windows authentication. Only supported by the 'curl' method.</li>
+									Método de autenticación para tu proxy. Los métodos soportados son:<ul style="margin:0;">
+										<li>'none': Tu proxy no requiere autenticación.</li>
+										<li>'basic': Autenticación básica. Soportado tanto por el método 'curl' como el 'wrapper'.</li>
+										<li>'ntlm': Autenticación NTLM/Windows. Solo soportado por el método 'curl'.</li>
 									</ul>
 								</td>
 							</tr>
@@ -211,15 +208,14 @@
 								<td>string</td>
 								<td><pre class="php"><code>null</code></pre></td>
 								<td>
-									Username required for proxy authentication.
-								</td>
+									Usuario requerido para la autenticación del proxy.								</td>
 							</tr>
 							<tr>
 								<th>password</th>
 								<td>string</td>
 								<td><pre class="php"><code>null</code></pre></td>
 								<td>
-									Password required for proxy authentication.
+									Contraseña requerida para la autenticación del proxy.
 								</td>
 							</tr>
 						</tbody>
@@ -227,39 +223,38 @@
 				</section>
 
 				<section>
-					<h5 id="cache_config">Cache configuration</h5>
+					<h5 id="cache_config">Configuración del Caché</h5>
 
 					<p>
-						It the agent class is configured to process a browscap.ini file, it will cache the result of both the ini file parser and individual user agent requests
-						in order to increase the response time of the class. These configuration settings determine how the data is cached. For more information, see the <a href="../cache/config.html">Cache</a> class documentation.
+                                            Si la clase Agent está configurada para procesar un archivo browscap.ini, cacheará el resultado tanto del archivo parseador ini como la petición individual del agente de usuario a fin de incrementar el tiempo de respuesta de la clase. Estos ajustes de configuración determinan cómo los datos son cacheados. Para más información, vea la documentación de la <a href="../cache/config.html">clase Cache</a>.
 					</p>
 
 					<table class="config">
 						<tbody>
 							<tr class="header">
-								<th>Param</th>
-								<th>Type</th>
-								<th>Default</th>
-								<th>Description</th>
+								<th>Parámetro</th>
+								<th>Tipo</th>
+								<th>Por defecto</th>
+								<th>Descripción</th>
 							</tr>
 							<tr>
 								<th>driver</th>
 								<td>string</td>
 								<td><pre class="php"><code>''</code></pre></td>
-								<td>Cache driver to use to cache the agent data. If you leave this empty, the default cache driver, configured in the cache configuration, will be used.</td>
+								<td>Driver caché a usar para cachear el agente de datos. Si lo dejas en blanco, el driver de caché por defecto configurado en el archivo de configuración de caché será usado.</td>
 							</tr>
 							<tr>
 								<th>expiry</th>
 								<td>integer</td>
 								<td><pre class="php"><code>604800</code></pre></td>
-								<td>Number of seconds until the cached data expires. By default, this is 7 days, since the browscap.ini file doesn't change that often. It is recommended not to refresh more frequent than once a day.
-									<br />The minumum setting is 7200 seconds (two hours), your server will be banned from the browscap website if you download more often!</td>
+								<td>Número de segundos hasta que expiran los datos cacheados. Por defecto, son 7 días, desde que el archivo browscap.ini no cambia tan a menudo. Es recomendado no refrescar más frecuente que una vez por día.
+									<br />El ajuste mínimo es de 7200 segundos (dos horas), ¡tu servidor será baneado del sitio web browscap si descargar más frecuentemente!</td>
 							</tr>
 							<tr>
 								<th>identifier</th>
 								<td>string</td>
 								<td><pre class="php"><code>'fuel.agent'</code></pre></td>
-								<td>Prefix to name of the cache.</td>
+								<td>Prefijo del nombre del caché.</td>
 							</tr>
 						</tbody>
 					</table>

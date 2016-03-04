@@ -5,3 +5,6 @@ nbproject
 
 #intellij
 .idea
+
+custom.log
+error.log
