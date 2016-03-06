@@ -598,7 +598,7 @@ panes.orm = {
 		"Introducción":		"packages/orm/intro.html",
 		"Creando modelos":	"packages/orm/creating_models.html",
 		"CRUD":				"packages/orm/crud.html",
-		"Enlazando Modelos": {
+		"Enlazando modelos": {
 			"Introducción":	"packages/orm/relations/intro.html",
 			"Belongs To (Pertenece a)":	"packages/orm/relations/belongs_to.html",
 			"Has One (Tiene un)":		"packages/orm/relations/has_one.html",

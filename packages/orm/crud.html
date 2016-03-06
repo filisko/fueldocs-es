@@ -12,7 +12,7 @@
 		var path = './../../';
 	</script>
 	<script src="./../../assets/js/combined.js"></script>
-	<title>CRUD - Orm Package - FuelPHP Documentación</title>
+	<title>CRUD - Paquete ORM - FuelPHP Documentación</title>
 </head>
 <body>
 	<div id="container">
@@ -45,83 +45,75 @@
 		</div>
 
 		<div id="main">
-			<h2>Orm</h2>
+			<h2>ORM</h2>
 
-			<p>Orm is short for <a href="http://en.wikipedia.org/wiki/Object_relational_mapper" target="_blank">Object
-				Relational Mapper</a> which does 2 things: it maps your database table rows to objects and it allows you
-				to establish relations between those objects.<br />
-				It follows closely the <a href="http://en.wikipedia.org/wiki/Active_record_pattern" target="_blank">
-				Active Record Pattern</a>, but was also influenced by other systems.</p>
+			<p>ORM es la abreviatura de <a href="https://es.wikipedia.org/wiki/Mapeo_objeto-relacional" target="_blank">Object Relational Mapper</a> lo cual hace 2 cosas: mapea las tablas de tu base de datos a objetos y te permite establecer relaciones entre estos objetos.<br />Sigue el <a href="https://es.wikipedia.org/wiki/Active_record" target="_blank">patrón Active Record</a> de cerca, pero también fue influenciado por otros sistemas.</p>
 
 			<section>
-				<h2 id="crud">CRUD: Create, Read, Update and Delete</h2>
+				<h2 id="crud">CRUD: Create (crear), Read (leer), Update (actualizar) y Delete (Eliminar)</h2>
 
-				<p>Once you've configured your Model it's time to start creating, reading, updating and deleting entries
-					in your database.</p>
+				<p>Una vez que hayas configurado tu modelo es hora de empezar a crear, leer, actualizar y eliminar entradas en tu base de datos.</p>
 
 				<article id="create">
-					<h2>Create</h2>
+					<h2>Crear</h2>
 
-					<pre class="php"><code>// option 1
+					<pre class="php"><code>// opción 1
 $new = new Model_Example();
 $new->property = 'something';
 $new->save();
 
-// option 2, use forge instead of new
+// opción 2, usa forge en vez de new
 $new = Model_Example::forge();
 $new->property = 'something';
 $new->save();</code></pre>
 
-					<p class="note">After <kbd>save()</kbd> the model has been saved to the database and if you're using an
-						<kbd>auto_increment</kbd> primary key it will automatically be set on the instance after successful
-						saving it.</p>
+					<p class="note">Después de que el modelo fuera guardado (<kbd>save()</kbd>) en la base de datos y si estás usando una llave primaria autoincrementable (<kbd>auto_increment</kbd>) automáticamente será establecida en la instancia después de guardarse correctamente.</p>
 
-					<p>You can also set properties on the model from an array:</p>
+					<p>Puedes establecer también propiedades en el modelo desde una matríz:</p>
 
 					<pre class="php"><code>$props = array('property' =&gt; 'something');
 
-// using "new"
+// usando "new"
 $new = new Model_Example($props);
 $new->save();
 
-// option 2, use forge instead of new
+// opción 2, usa forge en vez de new
 $new = Model_Example::forge($props);
 $new->save();</code></pre>
 				</article>
 
 				<article id="read">
-					<h2>Read</h2>
+					<h2>Leer</h2>
 
-					<p>Or actually <kbd>find()</kbd>. The find method can be used in 3 ways: find a specific id (primary
-						key), find first/last or all entries with conditions. All possible selection methods (where,
-						or_where, order_by, etc) can be found at the bottom of the page.</p>
+					<p>O de hecho <kbd>find()</kbd>. El metodo find puede ser usado de 3 maneras: encontrar un id (llave primaria) específico, encontrar el primero (first)/último (last) o todas las entradas con condiciones. Todas los métodos de selección posibles (where,
+						or_where, order_by, etc) pueden ser encontrado al final de la página.</p>
 
-					<h3 id="find_by_id">Find by ID</h3>
+					<h3 id="find_by_id">Encontrar por ID</h3>
 
-					<pre class="php"><code>// you know there's an article with ID=2
+					<pre class="php"><code>// tu sabes que hay un artículo con el ID=2
 $entry = Model_Article::find(2);
 
-// ...or when using compound primary keys
+// ... o cuando se usan llaves primarias compuestas
 $entry = Model_Article::find(array(2, 'foo'));</code></pre>
 
-					<p>In this example it will return either an instance of Model_Article or null when the ID wasn't found.</p>
+					<p>En este ejemplo devolverá o bien una instancia de Model_Article o null (nulo) cuando el ID no fue encontrado.</p>
 
-					<h3 id="find_first_last">Find first/last</h3>
+					<h3 id="find_first_last">Encontrar primero (first)/último (last)</h3>
 
-					<pre class="php"><code>// find the first entry
+					<pre class="php"><code>// encontrar la primera entrada
 $entry = Model_Article::find('first');
 
-// find the last entry added when ordered by date
+// encontrar la última entrada añadida ordenada por fecha
 $entry = Model_Article::find('last', array('order_by' =&gt; 'date'));</code></pre>
 
-					<p>In this example it will return either an instance of Model_Article or null when the ID wasn't found.</p>
+					<p>En este ejemplo devolverá o bien una instancia de Model_Article o null (nulo) cuando el ID no fue encontrado.</p>
 
-					<h3 id="find_all">Find all</h3>
+					<h3 id="find_all">Encontrar todos (all)</h3>
 
-					<pre class="php"><code>// find all articles
+					<pre class="php"><code>// encontrar todos los artículos
 $entry = Model_Article::find('all');
 
-// find all articles from category 1 order descending by date
+// encontra todos los artículos de la categoría 1 ordenado descendientemente por fecha
 $entry = Model_Article::find('all', array(
 	'where' =&gt; array(
 		array('category_id', 1),
@@ -129,7 +121,7 @@ $entry = Model_Article::find('all', array(
 	'order_by' =&gt; array('date' =&gt; 'desc'),
 ));
 
-// find all articles from category 1 or category 2
+// encontrar todos los artículos de la categoría 1 o 2.
 $entry = Model_Article::find('all', array(
 	'where' =&gt; array(
 		array('category_id', 1),
@@ -139,65 +131,61 @@ $entry = Model_Article::find('all', array(
 	),
 ));</code></pre>
 
-					<p>In this example it will always return an array of instances of Model_Article.</p>
+					<p>En este ejemplo siempre devolverá una matríz de las instancias de Model_Article.</p>
 
-					<h3 id="find_chaining">Find using method chaining</h3>
+					<h3 id="find_chaining">Encuentra usando encadenamiento de metodos</h3>
 
 					<p class="note">
-						You can not call the <kbd>find()</kbd> method without properties, or call it with <kbd>null</kbd> or a variable
-						that contains <kbd>null</kbd> as argument. If you do, <kbd>null</kbd> is returned. If you want to chain methods,
-						use the <kbd>query()</kbd> method instead.</p>
+						No puedes llamar el método <kbd>find()</kbd> sin usar propiedades, o llamarlo con <kbd>null</kbd> o una variable que contiene <kbd>null</kbd> como argumento. Si lo haces, <kbd>null</kbd> será devuelto. Si quieres encadenar métodos, usa el método <kbd>query()</kbd> mejor.</p>
 
 					<pre class="php"><code>$query = Model_Article::query()->where('category_id', 1)->order_by('date', 'desc');
 
-// We want to know the total number of articles for pagination
+// Queremos saber el número total de artículos para la paginación
 $number_of_articles = $query->count();
 
-// We want to know the last id issued
+// Queremos saber el último ID añadido
 $number_of_articles = $query->max('id');
 
-// We want to know the date of the first article posted
+// Queremos saber la fecha del primer artículo publicado
 $number_of_articles = $query->min('date');
 
-// fetch one Article
+// Encontrar un artículo
 $newest_article = $query->get_one();
 
-// we re-use but add a return limitation to the previous query to fetch multiple articles
+// Nosotros reusamos pero añadimos un límite de devolución a la consulta previa para encontrar artículos múltiples
 $all_articles = $query->limit(15)->get();</code></pre>
 
-					<p>All these methods are equally valid, the four other methods of find actually use the Query object as
-						well but don't return it.</p>
+					<p>Todos estos métodos son igualmente válidos, los otros cuatro métodos de find de hecho usan el objeto Query también pero no lo devuelven.</p>
 
-					<h3 id="partial_selects">Partial column selects</h3>
-					<p>By default all ORM find methods will select all table columns. You can use the <kbd>select</kbd> array
-						entry or the <kbd>select()</kbd> method to alter this behavior.
+					<h3 id="partial_selects">Selección de columnas parcial</h3>
+					<p>Por defecto todos los métodos find del ORM seleccionan todas las columnas de la tabla. Puedes usar la llave matríz <kbd>select</kbd> o el metodo <kbd>select()</kbd> para alterar este comportamiento.
 					</p>
 
-					<pre class="php"><code>// using the array method. select only the 'name' and 'date' columns
+					<pre class="php"><code>// usando el método de la matríz. selecciona solo las columnas 'name' y 'date'
 $entry = Model_Article::find('last', array('select' =&gt; array('name', 'date')));
 
-// same, but then using the chaining method
+// lo mismo, pero usando encandenamiento de métodos
 $entry = Model_Article::query()->select('name', 'date')->get();
 
-// using the array method. select all columns except the 'date' column
+// usando el metodo de la matríz. selecciona todas las columnas excepto la columna 'date'
 $entry = Model_Article::find('all', array('select' =&gt; array(array('date' =&gt; false))));
 
-// same, but then using the chaining method
+// lo mismo, pero usando encadenamiento de métodos
 $entry = Model_Article::query()->select(array('date' =&gt; false))->get();
 </code></pre>
 				</article>
 
 				<article id="update">
-					<h2>Update</h2>
+					<h2>Actualizar</h2>
 
 					<pre class="php"><code>$entry = Model_Article::find(4);
 $entry->title = 'My first edit';
 $entry->author = 'Total n00b';
 $entry->save();</code></pre>
 
-					<p>That's it, nothing more to it: Find, change properties and save.</p>
+					<p>Y esto es, nada más que: Encontrar, cambiar propiedades y guardar.</p>
 
-					<p>You can also set properties on the model from an array:</p>
+					<p>Tamibén puedes tablecer propiedades al modelo desde una matríz:</p>
 
 					<pre class="php"><code>$entry = Model_Article::find(4);
 $entry->set(array(
@@ -209,38 +197,35 @@ $entry->save();</code></pre>
 				</article>
 
 				<article id="delete">
-					<h2>Delete</h2>
+					<h2>Eliminar</h2>
 
 					<pre class="php"><code>$entry = Model_Article::find(4);
 $entry->delete();</code></pre>
 
-					<p>Again nothing more to it: Find and delete.</p>
+					<p>Otra vez nada más que: Encontrar y eliminar.</p>
 
-					<p class="note">In the previous example the <kbd>$entry</kbd> variable and its object still exist. The
-						primary keys are however set to <kbd>null</kbd> and the object itself is considered a new instance. If
-						you save it after deletion it will be re-entered into the database and be given a new primary key when
-						<kbd>auto_increment</kbd> is switched on.</p>
+					<p class="note">En el ejemplo previo la variable<kbd>$entry</kbd> y su objeto siguen existiendo. Las llaves primarias como sean establecidas a <kbd>null</kbd> y el objeto en sí mismo es considerado una instancia nueva. Si lo guardas después de la eliminación será re-introducido a tu base de datos y se le dará una nueva llave primaria a ese registro si <kbd>auto_increment</kbd> está habilitado.</p>
 				</article>
 
 				<article id="functions">
-					<h2>All selection methods when using find</h2>
+					<h2>Todos los metodos de selección cuando se usa el método find()</h2>
 
 					<table class="config">
 						<tbody>
 							<tr class="header">
-								<th>Method</th>
-								<th>Params</th>
-								<th>Examples</th>
+								<th>Método</th>
+								<th>Parámetros</th>
+								<th>Ejemplos</th>
 							</tr>
 							<tr>
 								<th>select</th>
 								<td>string <kbd>$column</kbd>, [string <kbd>$more_columns</kbd>,] | array <kbd>$filter</kbd></td>
 								<td>
-									<pre class="php"><code>// Find only some columns
+									<pre class="php"><code>// Encontrar solo algunas columnas
 Model_Article::query()-&gt;select('id', 'name');
 Model_Article::find('all', array('select' =&gt; array('id', 'name')));
 
-// Find all columns except 'name'
+// Encontrar todas las columnas excepto 'name'
 Model_Article::query()-&gt;select(array('name' =&gt; false));
 Model_Article::find('all', array('select' =&gt; array(array('name' =&gt; false))));
 </code></pre>
@@ -250,32 +235,32 @@ Model_Article::find('all', array('select' =&gt; array(array('name' =&gt; false))
 								<th>related</th>
 								<td>string|array <kbd>$relation</kbd>, [array <kbd>$conditions</kbd>]</td>
 								<td>
-									<pre class="php"><code>// include related models in the find
+									<pre class="php"><code>// incluir los modelos relaciones en el find
 Model_Article::query()-&gt;related(array('author', 'comments'));
 Model_Article::find('all', array('related' =&gt; array('author', 'comments')));
 
 //=============================
-// Include one or more conditions on a relation (only supported when chaining)
+// Incluye una o más condiciones en una relación (solo soportado con encadenación)
 //=============================
 
-// First method - using an array
+// Primer método - usando una matríz
 //----------------------------
-// one condition
+// una condición
 Model_Article::query()
     -&gt;related('author', array('where' =&gt; array(array('active', '=', 1))));
 
-// multiple conditions
+// múltiples condiciones
 Model_Article::query()
     -&gt;related('author', array('where' =&gt; array(array('active', '=', 1), array('status', '=', 'X'))));
 
-// Second method - use dot notation
+// Segundo método - usa notación-punto
 //----------------------------
-// one condition
+// una condición
 Model_Article::query()
 	-&gt;related('author')
 	-&gt;where('author.active', 1);
 
-// multiple conditions
+// múltiples condiciones
 Model_Article::query()
 	-&gt;related('author')
 	-&gt;where('author.active', 1);
@@ -287,7 +272,7 @@ Model_Article::query()
 								<th>use_view</th>
 								<td>string <kbd>$viewname</kbd></td>
 								<td>
-									<pre class="php"><code>// use a view to retrieve data
+									<pre class="php"><code>// usa una vista para devolver datos
 Model_Article::query()-&gt;use_view('with_comments');
 Model_Article::find('all', array('use_view' =&gt; 'with_comments'));
 </code></pre>
@@ -297,7 +282,7 @@ Model_Article::find('all', array('use_view' =&gt; 'with_comments'));
 								<th>where</th>
 								<td>string <kbd>$column</kbd>, [string <kbd>$operator</kbd>,] mixed <kbd>$value</kbd></td>
 								<td>
-									<pre class="php"><code>// Single where
+									<pre class="php"><code>// where individual
 Model_Article::query()-&gt;where('id', 4);
 Model_Article::find('all', array('where' =&gt; array('category_id' =&gt; 5)));
 
@@ -314,11 +299,11 @@ Model_Article::query()-&gt;where('id', 4)-&gt;or_where('id', 5);
 								<th>order_by</th>
 								<td>string <kbd>$column</kbd>, [string <kbd>$direction</kbd>]</td>
 								<td>
-									<pre class="php"><code>// Single order_by
+									<pre class="php"><code>// order_by individual
 Model_Article::query()-&gt;order_by('name', 'desc');
 Model_Article::find('all', array('order_by' =&gt; array('name' =&gt; 'desc')));
 
-// Multiple order_by usage examples
+// ejemplos de uso múltiples para order_by
 Model_Article::query()-&gt;order_by('name', 'desc')->order_by('category_id', 'asc');
 Model_Article::query()-&gt;order_by(array('name' => 'desc', 'category_id' =&gt; 'asc'));
 Model_Article::find('all', array('order_by' => array(array('name' =&gt; 'desc', 'category_id' =&gt; 'asc'))));
@@ -329,7 +314,7 @@ Model_Article::find('all', array('order_by' => array(array('name' =&gt; 'desc', 
 								<th>from_cache</th>
 								<td>bool<kbd>$cache</kbd></td>
 								<td>
-									<pre class="php"><code>// disable the ORM object cache on this query
+									<pre class="php"><code>// deshabilitar el objeto cahé ORM en esta consulta
 Model_Article::query()-&gt;from_cache(false);
 Model_Article::find('all', array('from_cache' =&gt; false));
 </code></pre>
@@ -339,7 +324,7 @@ Model_Article::find('all', array('from_cache' =&gt; false));
 								<th>limit</th>
 								<td>int <kbd>$limit</kbd></td>
 								<td>
-									<pre class="php"><code>// limit with relation consistence
+									<pre class="php"><code>// límitar con consistencia relativa
 Model_Article::query()-&gt;limit(10);
 Model_Article::find('all', array('limit' =&gt; 10));
 </code></pre>
@@ -349,7 +334,7 @@ Model_Article::find('all', array('limit' =&gt; 10));
 								<th>rows_limit</th>
 								<td>int <kbd>$limit</kbd></td>
 								<td>
-									<pre class="php"><code>// limit without relation consistence
+									<pre class="php"><code>// límitar sin consitencia relativa
 Model_Article::query()-&gt;rows_limit(10);
 Model_Article::find('all', array('rows_limit' =&gt; 10));
 </code></pre>
@@ -359,7 +344,7 @@ Model_Article::find('all', array('rows_limit' =&gt; 10));
 								<th>offset</th>
 								<td>int <kbd>$offset</kbd></td>
 								<td>
-									<pre class="php"><code>// offset with relation consistence
+									<pre class="php"><code>// desplazamiento con consistencia relativa
 Model_Article::query()-&gt;offset(10);
 Model_Article::find('all', array('offset' =&gt; 10));
 </code></pre>
@@ -369,7 +354,7 @@ Model_Article::find('all', array('offset' =&gt; 10));
 								<th>rows_offset</th>
 								<td>int <kbd>$offset</kbd></td>
 								<td>
-									<pre class="php"><code>// offset without relation consistence
+									<pre class="php"><code>// desplazamiento sin consistencia relativa
 Model_Article::query()-&gt;rows_offset(10);
 Model_Article::find('all', array('rows_offset' =&gt; 10));
 </code></pre>
@@ -378,23 +363,17 @@ Model_Article::find('all', array('rows_offset' =&gt; 10));
 						</tbody>
 					</table>
 					<p class="note">
-						Do not mix the two limit/offset types! A combination of <kbd>limit</kbd> and <kbd>rows_offset</kbd> (or the other way around) will
-						lead to unexpected results!
+						¡No mezcles los dos tipos limit/offset! Una combinación de <kbd>limit</kbd> y <kbd>rows_offset</kbd> (u otra manera de por ahí) ¡conducira a resultados inesperados!
 					</p>
 					<p class="note">
-						In this context, <kbd>relation consistence</kbd> means that by default when you query including related models,
-						the ORM will make sure the related results are consistent. This means that your results aren't always exactly
-						limited. For example, if the first parent in the result has 12 children, your resultset will contain 12 records
-						even if you have used <kbd>limit(10)</kbd>. When you use <kbd>rows_limit(10)</kbd>, the resultset will only contain
-						10 records, but 2 related records will be missing, and can not be retrieved later because the results will be cached
-						and the cache handler doesn't know the results were incomplete!
+						En este contexto, <kbd>la consistencia relativa</kbd> significa que por defecto cuando hagas una consulta incluyendo los métodos relacionados, el ORM se asegurará de que los resultados son consistentes. Esto significa que tus resultados no están siempre exactamente limitados. Por ejemplo, si el primer padre en el resultado tiene 12 hijos, tu conjunto de resultados contendrá 12 registros incluso si has usado <kbd>limit(10)</kbd>. Cuando usas <kbd>rows_limit(10)</kbd>, el conjunto de resultados solo contendrá 10 registros, pero 2 registros relacionados serán perdidos, y no podrán ser recuperados mas tarde porque los resultados serán cacheados ¡y el manejador de caché no sabe que resultados fueron incompletos!
 					</p>
 
-					<h3 id="complex_wheres">Complex where clauses</h3>
+					<h3 id="complex_wheres">Cláusulas where complejas</h3>
 
-					<p>Using chaining you can create more complex where clauses, using and, or and nesting</p>
+					<p>Usando encadenación puedes crear cláusulas where mas complejas, usando and, or y anidamiento.</p>
 
-					<pre class="php"><code>// complex where clause
+					<pre class="php"><code>// cláusula where compleja
 Model_Article::query()
   -&gt;where('author', '=', 16)
   -&gt;and_where_open()
@@ -402,17 +381,16 @@ Model_Article::query()
       -&gt;or_where('draft', '=', 1)
   -&gt;and_where_close();
 
-// creates WHERE `author` = 16 AND (`date` &lt; 1348404127 OR `draft` = 1)
+// create WHERE `author` = 16 AND (`date` &lt; 1348404127 OR `draft` = 1)
 </code></pre>
 					<p class="note">
-						To create a nested OR, use <kbd>or_where_open()</kbd> and <kbd>or_where_close()</kbd>. Allways make sure
-						your open and close methods match!
+						Para crear un OR anidado, usa <kbd>or_where_open()</kbd> y <kbd>or_where_close()</kbd>. ¡Siempre asegúrate de que tus metodos de apertura y cierre coinciden!
 					</p>
 				</article>
 
                                 <article>
-                                    <h3 id="subqueries"><a class="internal_link" href="#/subqueries">Subqueries</a></h3>
-                                    <p>Subqueries can be created by constructing a seperate query object and using get_query() to parse it.</p>
+                                    <h3 id="subqueries"><a class="internal_link" href="#/subqueries">Subconsultas</a></h3>
+                                    <p>Las subconsultas pueden ser creadas construyendo un objeto Query por separado y usando using get_query() para parsearlo.</p>
                                     <pre id="php"><code>$subQuery = Model_Article::query()
         -&gt;select('author')
         -&gt;where('date', '&lt;', time())
@@ -425,10 +403,10 @@ Model_Article::query()
                                 </article>
 
                                 <article>
-                                    <h3 id="custom_sql"><a class="internal_link" href="#/custom_sql">Custom SQL</a></h3>
-                                    <p>It is also possible to perform custom SQL statements and have the result returned as an Orm model (or list of models). Although this is not part of the Orm itself it is useful to know. Take a look at the <a href="../../classes/database/db.html#/method_query">DB::query()</a> function for more information.</a></p>
+                                    <h3 id="custom_sql"><a class="internal_link" href="#/custom_sql">Consultas SQL personalizadas</a></h3>
+                                    <p>También es posible realizar declaraciones SQL personalizadas y tener el resultado devuelto como modelo ORM (o una lista de modelos). Aunque esto no es parte del ORM en sí es bueno saberlo. Echa un vistazo a la función <a href="../../classes/database/db.html#/method_query">DB::query()</a> para más información.</p>
                                     <pre class="php"><code>DB::query('SELECT * FROM `articles` WHERE `id` = 1')-&gt;as_object('Model_Article')-&gt;execute();</code></pre>
-                                    <p class="note">It is recommended that you use the <kbd>query()</kbd> function where ever possible though</p>
+                                    <p class="note">Es recomendado que uses la función <kbd>query()</kbd> cuando sea posible.</p>
                                </article>
 			</section>
 

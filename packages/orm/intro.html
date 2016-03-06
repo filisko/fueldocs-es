@@ -12,7 +12,7 @@
 		var path = './../../';
 	</script>
 	<script src="./../../assets/js/combined.js"></script>
-	<title>Introduction - Orm Package - FuelPHP Documentación</title>
+	<title>Introducción - Paquete ORM - FuelPHP Documentación</title>
 </head>
 <body>
 	<div id="container">
@@ -45,26 +45,20 @@
 		</div>
 
 		<div id="main">
-			<h2>Orm</h2>
+			<h2>ORM</h2>
 
-			<p>Orm is short for <a href="http://en.wikipedia.org/wiki/Object_relational_mapper" target="_blank">Object
-				Relational Mapper</a> which does 2 things: it maps your database table rows to objects and it allows you
-				to establish relations between those objects.<br />
-				It follows the <a href="http://en.wikipedia.org/wiki/Active_record_pattern" target="_blank">
-				Active Record Pattern</a> closely, but was also influenced by other systems.</p>
+			<p>ORM es la abreviatura de <a href="https://es.wikipedia.org/wiki/Mapeo_objeto-relacional" target="_blank">Object Relational Mapper</a> lo cual hace 2 cosas: mapea las tablas de tu base de datos a objetos y te permite establecer relaciones entre estos objetos.<br />Sigue el <a href="https://es.wikipedia.org/wiki/Active_record" target="_blank">patrón Active Record</a> de cerca, pero también fue influenciado por otros sistemas.</p>
 
 			<section>
-				<h2 id="intro">Introduction</h2>
+				<h2 id="intro">Introducción</h2>
 
-				<p>Unlike many other ActiveRecord implementations, ours is small, fast and dead simple to use. It attempts
-					to make creating, updating and deleting items from your database as easy as possible. It does this by
-					doing all the hard work for you.</p>
+				<p>Al contrario que otras implementaciones ActiveRecord, la nuestra es pequeña, rápida y más simple imposible de usar. Intenta hacer la creación, actualización y eliminación de elementos de tu base de datos tan facil como sea posible. Hace esto haciendo todo el trabajo difícil por ti.</p>
 			</section>
 
 			<section>
-				<h2 id="install">Installation</h2>
+				<h2 id="install">Instalación</h2>
 
-				<p>The Orm package is included in the Fuel download. All you need to do is enable it in your config.</p>
+				<p>El Paquete ORM está incluído en la descargar de Fuel. Lo único que necesitas es habilitarlo en tu configuración.</p>
 					<pre class="php"><code>'always_load' => array(
 	'packages' => array(
 		'orm',
@@ -73,39 +67,27 @@
 			</section>
 
 			<section>
-				<h2 id="troubleshooting">Troubleshooting</h2>
+				<h2 id="troubleshooting">Resolución de problemas</h2>
 
-				<p>Some common problems and frequent questions.</p>
+				<p>Algunos problemas comunes y preguntas frecuentes.</p>
 
-				<h3>My relations/foreign keys aren't being saved (1)</h3>
-				<p>This happens most often when you're using the wrong type of relationship. Especially Has-one and
-					Belongs-to tend to get mixed up. Reread the examples in the docs to make sure you're using the
-					correct relation types and check if everything is configured correctly.</p>
+				<h3>Mis relations/llaves foráneas no están siendo guardadas (1).</h3>
+				<p>Esto pasa a menudo cuando está usando el tipo de relación incorrecta. Especialmente Has-one (tiene un) y Belongs-to (pertenece a) tienden a ser confundidos. Relee los ejemplos en la documentación para asegurarte que estas usando el tipo de relación correcta y comprobar que todo está configurado correctamente.</p>
 
-				<h3>I can't relate objects (2)</h3>
-				<p>Make sure your model is extending <code>Orm\Model</code> and not <code>Model_Crud</code>.</p>
+				<h3>No puedo relacionar objetos (2)</h3>
+				<p>Asegúrate que tu modelo esta extendiendo <code>Orm\Model</code> y no <code>Model_Crud</code>.</p>
 
-				<h3>I get an exception that my related model in a package/module can't be found</h3>
-				<p>Make sure the package or module is loaded by Fuel, otherwise the Autoloader won't be able to find
-					the class.<br />
-					And when configuring the related model <code>"model_to"</code> make sure you configure the full
-					classname, this includes the namespace <em>even if you're in that namespace</em>. Classnames in
-					strings are always taken from global context, no matter the current namespace context.</p>
+				<h3>Me sale una excepción de que mi modelo relacionado en un paquete/módulo no puede ser encontrado</h3>
+				<p>Asegúrate de que el paquete o el módulo está cargado por Fuel, de otra manera el autoloader no podra encontrar la clase.<br />
+					Y cuando sea configurado el modelo relacionado <code>"model_to"</code> (modelo a) asegúrate de configurar la clase completa, esto incluye el espacio de nombre <em>incluso cuando estés dentro del mismo espacio de nombre</em>. La cadena de texto de los nombres de las clases siempre son cogidos desde un contexto global, no importa el contexto del nombre de espacio.</p>
 
-				<h3>I get an Orm\FrozenObject exception</h3>
-				<p>Objects can't be edited while being saved to the database, that prevents circular saving and resaving
-					already saved objects. This shouldn't happen during normal usage and is most often caused by faulty
-					configuration of relations.<br />
-					Sometimes this can be caused by a bug, especially when you're not using a stable release.</p>
+				<h3>Me sale una excepción Orm\FrozenObject</h3>
+				<p>El objeto no puede ser editado mientras se esté guardado a la base de datos, eso ahorra guardado y reguardado en objetos ya guardados.<br />
+					A veces esto puede ser causado por un bug, especialmente cuando no está usando una versión estable.</p>
 
-				<h3>I have defined a limit and offset, but the results are not correct</h3>
-				<p>The ORM always makes sure that query results are consistent. If you run a query that contains related
-					models, a subquery will be generated to make sure the entire related resultset is fetched. Even if this
-					means more records then the limit you have set will be fetched. This is because once you start manipulating
-					incomplete resultsets, very bad things might happen to your related models.</p>
-				<p>If you are absolutely sure you are not going to manipulate the results, for example because you need them
-					for pagination only, you can use <kbd>rows_limit()</kbd> and <kbd>rows_offset()</kbd> instead, which will
-					forces them on the entire query.</p>
+				<h3>He definido un límite y un desplazamiento, pero los resultados no son correctos</h3>
+				<p>El ORM siempre se asegura de que los resultados de la consulta sean consistentes. Si ejecutas una consulta que contiene modelos relacionados, una subconsulta será generada para para asegurarse de que todo el conjunto de resultados relacionado esté cargado. Incluso si esto significa que más registros serán cargados del que has limitado. Esto es porque una vez que empieces a manipular conjuntos de resultados incompletos, cosas muy malas podrían pasar a tus modelos relacionados.</p>
+				<p>Si estás absolutamente seguro de que no vas a manipular los resultados, por ejemplo porque los necesitas solo para paginación, puedes usar <kbd>rows_limit()</kbd> y <kbd>rows_offset()</kbd>, lo cual lo forzará en la consulta completa.</p>
 			</section>
 
 		</div>

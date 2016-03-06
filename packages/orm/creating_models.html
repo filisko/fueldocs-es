@@ -12,7 +12,7 @@
 		var path = './../../';
 	</script>
 	<script src="./../../assets/js/combined.js"></script>
-	<title>Creating models - Orm Package - FuelPHP Documentación</title>
+	<title>Creando modelos - Paquete ORM - FuelPHP Documentación</title>
 </head>
 <body>
 	<div id="container">
@@ -45,78 +45,58 @@
 		</div>
 
 		<div id="main">
-			<h2>Orm</h2>
+			<h2>ORM</h2>
 
-			<p>Orm is short for <a href="http://en.wikipedia.org/wiki/Object_relational_mapper" target="_blank">Object
-				Relational Mapper</a> which does 2 things: it maps your database table rows to objects and it allows you
-				to establish relations between those objects.<br />
-				It follows closely the <a href="http://en.wikipedia.org/wiki/Active_record_pattern" target="_blank">
-				Active Record Pattern</a>, but was also influenced by other systems.</p>
+			<p>ORM es la abreviatura de <a href="https://es.wikipedia.org/wiki/Mapeo_objeto-relacional" target="_blank">Object Relational Mapper</a> lo cual hace 2 cosas: mapea las tablas de tu base de datos a objetos y te permite establecer relaciones entre estos objetos.<br />Sigue el <a href="https://es.wikipedia.org/wiki/Active_record" target="_blank">patrón Active Record</a> de cerca, pero también fue influenciado por otros sistemas.</p>
 
 			<section>
-				<h2 id="creation">Creating Models</h2>
+				<h2 id="creation">Creando Modelos</h2>
 
-				<p>Creating a model takes little time, the convention is to use the <kbd>Model_</kbd>
-					prefix for the class (eg Model_Article using the filename article.php) and thus
-					place them in <kbd>app/classes/model/</kbd> but you are free to use
-					whatever name you choose.</p>
+				<p>Crear un modelo toma un poco de tiempo, la convensión es usar el prefijo <kbd>Model_</kbd> para la clase (ej Model_Article usando el nombre de archivo articulo.php) y ponerlos en <kbd>app/classes/model/</kbd> pero eres libre de usar el nombre que quieras.</p>
 
 				<pre class="php"><code>class Model_Article extends Orm\Model {}</code></pre>
 
-				<p class="note">The above only works with the MySQL and MySQLi drivers because it needs to fetch the model
-					properties from the database. It is however not very efficient and thus <strong>discouraged</strong> to use it this way
-					because you'll always need that one extra query per model just to fetch the column names.</p>
+                                <p class="note">Lo de arriba solo funciona con los drivers MySQL y MySQLi porque necesita encontrar las propiedades del modelo desde la base de datos. Sea como sea no es muy eficiente y por lo tanto está <strong>desaconsejado</strong> usarlo de esta manera porque siempre necesitarás esa consulta extra por modelo solo para encontrar el nombre de las columnas.</p>
 
 				<pre class="php"><code>class Model_Article extends Orm\Model
 {
-	protected static $_properties = array('id', 'title', 'contents', 'publish');
+	protected static $_properties = array('id', 'titulo', 'contentido', 'publicado');
 }</code></pre>
 
-				<h2 id="config">Configuration</h2>
+				<h2 id="config">Configuración</h2>
 
-				<p>You can add static properties to the Model to configure it. As we've seen there are none required but
-					setting <kbd>$_properties</kbd> is encouraged. All these can be both <kbd>public</kbd> and
-					<kbd>protected</kbd> but may NOT be <kbd>private</kbd>.<br />
-					Note that all configuration properties are prefixed with a single underscore to prevent collisions with
-					your column names.</p>
+				<p>Puedes añadir propiedades estáticas al modelo para configurarlo. Como hemos visto no hay ninguno requerido pero establecer <kbd>$_properties</kbd> es recomendado. Todas estas pueden ser tanto <kbd>public</kbd> como <kbd>protected</kbd> pero no pueden ser <kbd>private</kbd>.<br />
+					Date cuenta de que todas las propiedades de configuración están prefijadas con una sola barra baja para prevenir colisiones con los nombres de tus columnas.</p>
 
 				<h3 id="table_name">protected static $_table_name</h3>
 
-				<p>When this isn't set the <kbd>Model_</kbd> prefix is removed from the class name and the class name is
-					pluralized. Thus "Model_Article" expects table "articles". If you don't follow this convention you can
-					change it by setting the <kbd>$_table_name</kbd> property.</p>
+				<p>Cuando esta propiedad no está establecida el prefijo <kbd>Model_</kbd> es borrado del nombre de la clase y el nombre de la clase es plurilarizado. Así que para el nombre de clase "Model_Article" la tabla sería "articulos". Si no sigues esta convención puedes cambiar el nombre de la tabla estableciendo la propiedad <kbd>$_table_name</kbd>.</p>
 
 				<pre class="php"><code>class Model_Article extends Orm\Model
 {
-	protected static $_table_name = 'myarticles';
+	protected static $_table_name = 'misarticulos';
 }</code></pre>
 
 				<h3 id="primary_key">protected static $_primary_key</h3>
 
-				<p>By default this is set to <kbd>array('id')</kbd>, if you use another column name or multiple primary
-					keys you need to set this property.</p>
+				<p>Por defecto esto está establecido a <kbd>array('id')</kbd>, si usas otro nombre de columna o llaves primarias múltiples necesitas establecer esta propiedad.</p>
 
 				<pre class="php"><code>class Model_Article extends Orm\Model
 {
 	protected static $_primary_key = array('aid');
 }</code></pre>
 
-				<p class="note">The primary key must be a real primary key: unique and unchanging. Don't use it for other
-					purposes (like a foreign key in a one-one relation) as well, that won't work as the PK can't be
-					changed. The Orm won't check this, and while it might seem to work at first glance: you'll get
-					into trouble.<br />
-					It is not required for the PK to be auto_increment (though preferred) and you can specify the PK
-					yourself, but only the first time. Once it's set, it's set.</p>
+				<p class="note">La llave primaria debe ser una llave primaria real: única e incambiable. No la uses para otro propósito (como una llave primaria en una relación de uno-a-uno) también, eso no funcionará ya que la llave primaria no se puede cambiar. El ORM no comprobará esto, y mientras pueda parecer funcionar de primeras impresiones: tendrás problemas.<br />
+					No es requerido para la llave primaria que sea autoincrementable (aunque es preferido) y puede especificar la llave primaria por tu cuenta, pero solo la primera vez. Una vez que esté establecida, está establecida.</p>
 
 				<h3 id="propperties">protected static $_properties</h3>
 
-				<p>There's already a simple example above of adding all model properties, they can also be configured by
-				using the column name as the key and setting options like type, label and validation.</p>
+				<p>Ya hay un ejemplo simple más arriba sobre añadir todas las propiedades del modelo, tambien pueden ser configuradas usando el nombre de la columna como llave y estableciendo las opciones como un tipo (type), etiqueta (label) y validación (validación).</p>
 
 				<pre class="php"><code>class Model_Article extends Orm\Model
 {
 	protected static $_properties = array(
-		'id', // both validation &amp; typing observers will ignore the PK
+		'id', // los observadores de validación y escritura ignorarán la llave primaria
 		'name' => array(
 			'data_type' => 'varchar',
 			'label' => 'Article Name',
@@ -134,27 +114,21 @@
 			'data_type' => 'int',
 			'label' => 'Created At',
 			'form' => array(
-				'type' => false, // this prevents this field from being rendered on a form
+				'type' => false, // esto previene que este campo sea mostrado en el formulario
 			),
 		),
 		'updated_at' => array('data_type' => 'int', 'label' => 'Updated At')
 	);
 }</code></pre>
 
-				<p>Form attributes can be passed in the form of an array as shown in the example.</p>
+				<p>Los atributos del formulario puedes establecerlos desde una matríz como en ejemplo de abajo.</p>
 
-				<p>Validation rules can be passed as either just the rule: <kbd>array('required')</kbd> or as the rule
-					with an array of params: <kbd>array('min_length' => array(3))</kbd> both are shown in the example
-					above. A full explanation of the Validation class and its rules can be found under
-					<a href="../../classes/validation/validation.html">Core</a>. You need to set 
-					<a href="observers/included.html#os_validation">Observer_Validation</a> to run validations.
+				<p>Las reglas de validación pueden ser establecidas ya sea poniendo solo la regla: <kbd>array('required')</kbd> o como la regla con una matríz de los parámetros: <kbd>array('min_length' => array(3))</kbd> ambos son mostrados en el ejemplo de arriba. Una explicación completa de la clase Validation y sus reglas puede ser contrada en <a href="../../classes/validation/validation.html">Core</a>. Tienes que establecer el observador <a href="observers/included.html#os_validation">Observer_Validation</a> para ejecutar la validación.
 				</p>
 
 				<h3 id="conditions">protected static $_conditions</h3>
 
-				<p>By default this property does not exist and Model::condition() returns <kbd>array()</kbd>, but you can set
-				on the model if you want any conditions defined on every query run. Currently 'order_by' and 'where' conditions
-				are supported.
+				<p>Por defecto esta propiedad no existe y Model::condition() devuelve <kbd>array()</kbd>, pero puedes establecer en el modelo si quieres que cualquier condición sea definida en cada consulta a ejecutar. Actualmente las condiciones soportadas solo son 'order_by' y 'where'.
 				</p>
 
 				<pre class="php"><code>class Model_Article extends Orm\Model
@@ -168,71 +142,62 @@
 	);
 }</code></pre>
 				<p class="note">
-					The <kbd>order_by</kbd> condition is only applied if no other order by clause is defined.
-					The <kbd>where</kbd> conditions are added using <kbd>and</kbd> to any other defined where clauses.
+					La condición <kbd>order_by</kbd> solo es aplicada si no hay ninguna otra cláusula order by definida.
+					La condición <kbd>where</kbd> es añadida usando <kbd>and</kbd> a cualquier otra cláusula where.
 				</p>
 
 				<h3 id="relations">protected static $_has_one, $_belongs_to, $_has_many, $_many_many</h3>
 
-				<p>Relating models to each other is explained in <a href="relations/intro.html">Relating Models</a></p>
+				<p>Relacionando modelos a cada uno está explicado en <a href="relations/intro.html">Enlazando modelos</a>.</p>
 
 				<h3 id="connection">protected static $_connection</h3>
 
-				<p>By default this property does not exist and Model::connection() returns <kbd>null</kbd>, but you can set
-				it to any other database name configured in <kbd>app/config/db.php</kbd>.</p>
+				<p>Por defecto esta propiedad no existe y Model::connection() devuelve <kbd>null</kbd>, pero puedes establecerlo a cualquier otro nombre de base de datos configurado en tu archivo <kbd>app/config/db.php</kbd>.</p>
 
 				<h3 id="write_connection">protected static $_write_connection</h3>
 
-				<p>If you have a master/slave setup for your database environment, you can use this property to define the
-				connection to use for the write master. If configured, the <kbd>$_connection</kbd> property will be used
-				to connect to the read slaves.</p>
-				<p>By default this property does not exist and Model::connection(true) returns either the configured <kbd>$_connection</kbd>,
-				or <kbd>null</kbd>, but you can set it to any other database name configured in <kbd>app/config/db.php</kbd>.</p>
+				<p>Si tienes una configuración maestro/esclavo para tu entorno de base de datos, puedes usar esta propiedad para definir la conexión a usar para el maestro de escritura. Si has configurado la propiedad <kbd>$_connection</kbd>, será usada para conectarse a los esclavos de lectura.</p>
+				<p>Por defecto esta propiedad no existe y Model::connection(true) devuelve o bien la propiedad <kbd>$_connection</kbd>,
+				o <kbd>null</kbd>, pero puedes establecerlo a cualquier otro nombre de bases de datos configurado en <kbd>app/config/db.php</kbd>.</p>
 
-				<pre class="php"><code>// configuration for single database usage
+				<pre class="php"><code>// configuración para el uso de una base de datos
 class Model_Article extends Orm\Model
 {
-	// 'articles_db' has to be configured in your db.php configuration file
+	// 'articles_db' tiene que ser configurado en tu archivo de configuración db.php
 	protected static $_connection = 'articles_db';
 }
 
-// configuration for master/slave database usage
+// configuración para el uso de maestro/esclavo
 class Model_Article extends Orm\Model
 {
-	// 'articles_master_db' and 'articles_slave_db' have to be configured in your db.php configuration file
+	// 'articles_master_db' y 'articles_slave_db' tiene que ser configurado en tu archivo de configuración db.php
 	protected static $_write_connection = 'articles_master_db';
 	protected static $_connection = 'articles_slave_db';
 }</code></pre>
 
-				<p class="note">Note that relations do not work across connections, so when you define your connections in the model,
-				make sure your related models have exactly the same configuration, both for reads and writes!</p>
+				<p class="note">Date cuenta de que las relaciones no funcionan a través de conexiones, así que cuando definas tus conexiones en el modelo, asegúrate de que los modelos relacionados tienen exactamente la misma configuración, ¡pero para lecturas y escrituras!</p>
 
 				<h3 id="to_array_exclude">protected static $_to_array_exclude</h3>
 
 				<p>
-					If you are writing an API driven application, often you want to limit the columns that are exposed to the
-					API interface. For example, when exposing a user record, you would not want to expose the user's password,
-					login hash or salt.
+					Si escribes una aplicación dirigida por API, a menudo querrás limitar las colummas que están expuestas a la interfaz API. Por ejemplo, cuando exponemos el registro de un usuario, no querrás exponer la contraseña del usuario, hash del login o el salteado.
 				</p>
 				<p>
-					In your model definition, you can add a list of columns to the <strong>to_array_exclude</strong> array to exclude
-					them from being exported using to_array().
+					En la definición de tu modelo, puedes añadir una lista de columnas a la matríz <strong>to_array_exclude</strong> para excluirlas de ser exportadas usando to_array().
 				</p>
 				<pre class="php"><code>class Model_User extends Orm\Model
 {
 	protected static $_to_array_exclude = array(
-		'password', 'login_hash', 'salt'	// exclude these columns from being exported
+		'password', 'login_hash', 'salt'	 // excluye estas columnas de ser exportadas
 	);
 }</code></pre>
 				<p class="note">
-					By default the to_array() method exports both column and relation data loaded in the current model object.
-					Optionally, it allows you to export the custom properties too. Array exclusion works on column names,
-					custom properties and relations, allowing you to exclude properties from all of them.
+					Por defecto el método to_array() exporta tanto la columna como sus datos cargados relacionados en el modelo objeto actual. Opcionalmente, te permite exportar propiedades personalizadas también. La matríz de exclusión funciona en nombres de columnas, propiedades personalizadas y relaciones, permitiéndote excluir propiedades desde todas ellas.
 				</p>
 
 				<h3 id="observers">protected static $_observers</h3>
 
-				<p>Adding observers is explained in <a href="observers/intro.html">Observers</a></p>
+				<p>La adición de observers (observadores) está explicada en <a href="observers/intro.html">Observers</a>.</p>
 			</section>
 
 		</div>
