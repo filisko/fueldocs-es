@@ -12,7 +12,7 @@
 		var path = './../../../';
 	</script>
 	<script src="./../../../assets/js/combined.js"></script>
-	<title>Has One - Relations - Paquete ORM - FuelPHP Documentación</title>
+	<title>Has One (Tiene un) - Relaciones - Paquete ORM - FuelPHP Documentación</title>
 </head>
 <body>
 	<div id="container">
@@ -45,52 +45,42 @@
 		</div>
 
 		<div id="main">
-			<h2>Orm</h2>
+			<h2>ORM</h2>
 
-			<p>Orm is short for <a href="http://en.wikipedia.org/wiki/Object_relational_mapper" target="_blank">Object
-				Relational Mapper</a> which does 2 things: it maps your database table rows to objects and it allows you
-				to establish relations between those objects.<br />
-				It follows closely the <a href="http://en.wikipedia.org/wiki/Active_record_pattern" target="_blank">
-				Active Record Pattern</a>, but was also influenced by other systems.</p>
+			<p>ORM es la abreviatura de <a href="https://es.wikipedia.org/wiki/Mapeo_objeto-relacional" target="_blank">Object Relational Mapper</a> lo cual hace 2 cosas: mapea las tablas de tu base de datos a objetos y te permite establecer relaciones entre estos objetos.<br />Sigue el <a href="https://es.wikipedia.org/wiki/Active_record" target="_blank">patrón Active Record</a> de cerca, pero también fue influenciado por otros sistemas.</p>
 
 			<section>
-				<h2 id="has_one">Relations: Has One</h2>
+				<h2 id="has_one">Relaciones: Has One (Tiene un)</h2>
 
-				<p>Specifies a one-to-one relationship to another model. The target model must include a
-					"<a href="belongs_to.html">Belongs To</a>" reference to the current model to allow the inverse
-					relationship.</p>
+				<p>Especifica una relación de uno a uno a otro modelo. El modelo elegido debe incluir una referencia "<a href="belongs_to.html">Belongs To (Pertenece a)</a>" al modelo actual para permitir la relación inversa.</p>
 
-				<h3>Example</h3>
+				<h3>Ejemplo</h3>
 
-				<p>Let's say we have a model <kbd>Model_User</kbd> and it <em>has one</em> a <kbd>Model_Profile</kbd>
-					(which in turn <em>belongs to</em> the user). The ID of the Model_User is saved with the Model_Profile
-					instance in its own table. This means the <kbd>profiles</kbd> table will have a column
-					<kbd>user_id</kbd> (or something else you configure), while the user table won't mention the profile.
-					If you keep to the defaults all you need to do is add <kbd>'profile'</kbd> to the
-					<kbd>$_has_one</kbd> static property of the Model_User:</p>
+				<p>Digamos que tenemos un modelo <kbd>Model_User</kbd> y que este modelo <em>has one (tiene un)</em> <kbd>Model_Profile</kbd>
+                                    (que en cambio <em>pertenece a</em> Model_User). El ID de Model_User es guardado con la instancia Model_Profile en su propia tabla. Esto significa que la tabla <kbd>profiles</kbd> tendrá una columna llamada <kbd>user_id</kbd> (o algo más que tu configures), mientras la tabla usuario no mencionará el perfil. Si te mantienes a las convenciones todo lo que necesitas añadir es añadir la propiedad estática <kbd>$_has_one</kbd> a Model_User:</p>
 
 				<pre class="php"><code>protected static $_has_one = array('profile');</code></pre>
 
-				<p>Below are examples for establishing and breaking has-one relations:</p>
+				<p>Más abajo hay ejemplos para establecer y acabar con relaciones has-one (tiene un):</p>
 
-				<pre class="php"><code>// both main and related object are new:
+				<pre class="php"><code>// tanto el objeto principal como el relacionado son nuevos:
 $user = new Model_User();
 $user->profile = new Model_Profile();
 $user->save();
 
-// both main and related object already exist
+// tanto el objeto principal como el relacionado ya existen
 $user = Model_User::find(6);
 $user->profile = Model_Profile::find(1);
 $user->save();
 
-// break the relationship established above
+// acabar con la relación establecida mas arriba
 $user = Model_User::find(6);
 $user->profile = null;
 $user->save();</code></pre>
 
-				<h3>Full config example with defaults as values</h3>
+				<h3>Ejemplo de configuración completa con valores por defecto</h3>
 
-				<pre class="php"><code>// in a Model_User which has one profile
+				<pre class="php"><code>// en un Model_User que tiene un perfil
 protected static $_has_one = array(
 	'profile' => array(
 		'key_from' => 'id',
