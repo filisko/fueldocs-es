@@ -606,9 +606,9 @@ panes.orm = {
 			"Many to Many (Muchos a muchos)":	"packages/orm/relations/many_many.html"
 		},
 		"Modelos extendidos": {
-			"Soft Delete (Eliminación suave)":        "packages/orm/model/soft.html",
-			"Temporales/Revisiones": "packages/orm/model/temporal.html",
-			"NestedSets (Conjuntos anidados)":         "packages/orm/model/nestedset.html"
+			"Eliminación lógica":        "packages/orm/model/soft.html",
+			"Modelo temporal": "packages/orm/model/temporal.html",
+			"Conjuntos anidados":         "packages/orm/model/nestedset.html"
 		},
 		"Contenedores EAV":		"packages/orm/eav.html",
 		"Observers (Observadores)": {
