@@ -12,7 +12,7 @@
 		var path = './../';
 	</script>
 	<script src="./../assets/js/combined.js"></script>
-	<title>Tasks - General - FuelPHP Documentación</title>
+	<title>Tareas - General - FuelPHP Documentación</title>
 </head>
 <body>
 	<div id="container">
@@ -45,45 +45,45 @@
 		</div>
 
 		<div id="main">
-			<h2>Tasks</h2>
+			<h2>Tareas</h2>
 
-			<h3 id="what_are_tasks">What is a task?</h3>
+			<h3 id="what_are_tasks">¿Qué es una tarea?</h3>
 
-			<p>Tasks are classes that can be run through the command line or set up as a cron job. They are generally used for background processes, timed tasks and maintenance tasks. Tasks can calls models and other classes just like controllers.</p>
+			<p>Las tares son clases que buen ser ejecutas a través de la línea de comandos o configuradas como cron job. Generalmente se usan para procesos en segundo plano, tareas programadas y tareas de mantenimiento. Las tareas pueden llamar a modelos y a otras clases tal cual como los controladores.</p>
 
-			<h3 id="creating_tasks">Creating a task</h3>
+			<h3 id="creating_tasks">Creando una tarea</h3>
 
-			<p>In Fuel Controllers are put in the <kbd>fuel/app/tasks</kbd> directory. Below is an example of the task "example": </p>
+			<p>En Fuel las tareas se ponen en el directorio <kbd>fuel/app/tasks</kbd>. Más abajo hay un ejemplo de la tarea "ejemplo":</p>
 
 	<pre class="php"><code>namespace Fuel\Tasks;
 
-class Example
+class Ejemplo
 {
 
-	public function run($message = 'Hello!')
+	public function run($mensaje = '¡Hola!')
 	{
-		echo $message;
+		echo $mensaje;
 	}
 }</code></pre>
 
-			<p>That will be called via the refine utility within oil:</p>
+			<p>Esta tarea será llamada a través de la utilidad refine de oil:</p>
 
-			<pre class="cli"><code>$ php oil refine example "Good morning"</code></pre>.
+			<pre class="cli"><code>$ php oil refine ejemplo "¡Buenos días!"</code></pre>.
 
-			<p>When just the name of the task is used in the command, the method <kbd>"run()"</kbd> is referenced.</p>
+			<p>Cuando se usa el mismo nombre que la tarea en la línea de comandos, el método <kbd>"run()"</kbd> es el que es referenciado.</p>
 
-			<h3 id="more_methods">Splitting tasks into more methods</h3>
+			<h3 id="more_methods">Diviendo tareas en más métodos</h3>
 
-			<p>You can add more methods to your task class to break a group of tasks down into more specific tasks which can be called separately.</p>
+			<p>Puedes añadir métodos a las clases de tus tareas para dividir un grupo de tareas en tareas más específicas que pueden ser llamadas por separado.</p>
 
-	<pre class="php"><code>public function current_date()
+	<pre class="php"><code>public function fecha_actual()
 {
 	echo date('Y-m-d');
 }</code></pre>
 
-			<p>We can then call this method using:</p>
+			<p>Podemos llamar a este método usando:</p>
 
-			<pre class="cli"><code>$ php oil refine example:current_date</code></pre>
+			<pre class="cli"><code>$ php oil refine ejemplo:fecha_actual</code></pre>
 
 		</div>
 

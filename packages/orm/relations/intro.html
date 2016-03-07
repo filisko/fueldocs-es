@@ -254,7 +254,7 @@ $post = Model_Post::query()
 				</code></pre>
 
 				<p>
-					Desde que la cláusula 'where' es ejecutada antes de que JOIN sea ejecutado, no puedes obtener los resultados de un OUTER JOIN completo cuando incluyes una cláusula 'where', actuará como un filtro pre-join. La solución es deifnir el filtro en el JOIN en sí mismo:
+					Desde que la cláusula 'where' es ejecutada antes de que JOIN sea ejecutado, no puedes obtener los resultados de un OUTER JOIN completo cuando incluyes una cláusula 'where', actuará como un filtro pre-join. La solución es definir el filtro en el JOIN en sí mismo:
 				</p>
 
 				<pre class="php"><code>$post = Model_Post::find('all', array(
