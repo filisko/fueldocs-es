@@ -16,4 +16,4 @@ Si estás interesado en contribuir, las formas son diversas:
 ### Documentación en español en línea [filisko.github.io/fueldocs-es](http://filisko.github.io/fueldocs-es/)
 
 * [Ir a la página oficial de FuelPHP](http://fuelphp.com/)
-* [Ir a la documentación original](http://fuelphp.com/docs/)
+* [Ir a la documentación de FuelPHP](http://fuelphp.com/docs/)
