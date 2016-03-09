@@ -13,7 +13,7 @@ Si estás interesado en contribuir, las formas son diversas:
 * Si no sirves para el inglés, puedes revisar las faltas ortografía cometidas en español de páginas ya traducidas del inglés.
 * Puedes contribuir también, dando a conocer este pequeño proyecto entre la comunidad de desarrolladores hispano parlantes y así sepan de la existencia de este proyecto.
 
-### Documentación en español en línea [filisko.github.io/fueldocs-es](http://filisko.github.io/fueldocs-es/)
+### Documentación en español en línea [fuelphp.es](http://fuelphp.es)
 
 * [Ir a la página oficial de FuelPHP](http://fuelphp.com/)
 * [Ir a la documentación de FuelPHP](http://fuelphp.com/docs/)

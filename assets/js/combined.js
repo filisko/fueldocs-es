@@ -415,7 +415,7 @@ panes.main = {
 		"Manejo de errores":	"general/error.html",
 		"Perfilado":		"general/profiling.html",
 	},
-	"Paquetes de terceros": {
+	"De terceros": {
 		"Introducción":		"vendor/intro.html",
 		"htmLawed":			"vendor/htmlawed.html",
 		"Markdown":			"vendor/markdown.html",
