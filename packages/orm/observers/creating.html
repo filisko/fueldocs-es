@@ -12,7 +12,7 @@
 		var path = './../../../';
 	</script>
 	<script src="./../../../assets/js/combined.js"></script>
-	<title>Creating - Observers - Paquete ORM - FuelPHP Documentación</title>
+	<title>Creando - Observadores - Paquete ORM - FuelPHP Documentación</title>
 </head>
 <body>
 	<div id="container">
@@ -46,74 +46,62 @@
 
 		<div id="main">
 
-			<h2>Orm</h2>
+			<h2>ORM</h2>
 
-			<p>Orm is short for <a href="http://en.wikipedia.org/wiki/Object_relational_mapper" target="_blank">Object
-				Relational Mapper</a> which does 2 things: it maps your database table rows to objects and it allows you
-				to establish relations between those objects.<br />
-				It follows closely the <a href="http://en.wikipedia.org/wiki/Active_record_pattern" target="_blank">
-				Active Record Pattern</a>, but was also influenced by other systems.</p>
+			<p>ORM es la abreviatura de <a href="https://es.wikipedia.org/wiki/Mapeo_objeto-relacional" target="_blank">Object Relational Mapper</a> lo cual hace 2 cosas: mapea las tablas de tu base de datos a objetos y te permite establecer relaciones entre estos objetos.<br />Sigue el <a href="https://es.wikipedia.org/wiki/Active_record" target="_blank">patrón Active Record</a> de cerca, pero también fue influenciado por otros sistemas.</p>
 
 			<article>
-				<h3 id="creating_observers">Observers: Creating your own</h3>
+				<h3 id="creating_observers">Observadores: Crea el tuyo propio</h3>
 
-				<p>You can add any class as an observer by adding the full classname (namespace included) to the Observers
-					property of your model. There's 2 ways of creating classes that can be used as observers:</p>
+				<p>Puedes añadir cualquier clase como observador añadiendo el nombre de clase completa (espacio de nombres incluído) a los observadores:</p>
 
-				<h3>Extend the Orm\Observer class</h3>
+				<h3>Extender la clase Orm\Observer</h3>
 
-				<p>Create a new class that extends <kbd>Orm\Observer</kbd> and create methods for the events upon which you
-					want your Observer to act. In the example below you want it to act upon <kbd>after_insert</kbd>. The
-					method will be passed the Model instance it is acting upon.</p>
+				<p>Crea una nueva clase que extiende <kbd>Orm\Observer</kbd> y crea métodos para los eventos en los que quieras que actúe tu observador. En el ejemplo de abajo queremos observar el evento <kbd>after_insert</kbd> (tras insertar), también se pasa el modelo instanciado al método en el que se está actuando.</p>
 
 				<pre class="php"><code>class Observer_Something extends Orm\Observer
 {
 
 	public function after_insert(Orm\Model $model)
 	{
-		\Log::info('Succesfully created new object of class '.get_class($model));
+		\Log::info('Nuevo objeto creado exitosamente de la clase  '.get_class($model));
 	}
 }</code></pre>
 
-				<p class="note">Extensions of the type Orm\Observer are singletons by default, as such you can't use a
-					method <kbd>instance()</kbd> or property <kbd>$_instance</kbd> or it won't work anymore. Because of this
-					methods may be both static or non-static.</p>
+				<p class="note">Las extensiones de tipo Orm\Observer siguen el patrón singleton por defecto, por lo tanto no puedes usar el método <kbd>instance()</kbd> o la propiedad <kbd>$_instance</kbd> o dejará de funcionar. Debido a esto los métodos pueden ser tanto estáticos como no estáticos.</p>
 
-				<h3>Have an orm_notify() method</h3>
+				<h3>Ten un método orm_notify()</h3>
 
-				<p>When you extend the <kbd>Orm\Observer</kbd> class it inherits an <kbd>orm_notify()</kbd> method that
-					will check if there's a method that matches the event and call it when possible. But you can use any
-					class as an observer as long as it has an <kbd>orm_notify()</kbd> method. That will be called on events
-					and be passed the event name and a Model instance.</p>
+				<p>Cuando extendemos la clase <kbd>Orm\Observer</kbd> heredará el método <kbd>orm_notify()</kbd> que comprobará si hay un método que concuerda con el evento y lo llamará cuando sea posible. Pero puedes usar cualquier clase como observador siempre y cuando tenga el método <kbd>orm_notify()</kbd>. Este método será llamado en los eventos y pasará el nombre del evento y una instancia del modelo.</p>
 
 				<pre class="php"><code>class Some_Other_Class
 {
 
-	// it may have many methods and properties before or after the orm_notify method
+	// podría tener muchos métodos y propiedades antes o después del método orm_notify()
 
 	public static function orm_notify(Orm\Model $model, $event)
 	{
-		\Log::info('I was notified of the event '.$event.' on a Model of class '.get_class($model));
+		\Log::info('Fui notificado en el evento '.$event.' del modelo de la clase '.get_class($model));
 	}
 }</code></pre>
-				<h3 id="event_names">Event names</h3>
+				<h3 id="event_names">Nombres de eventos</h3>
 
 				<ul>
-					<li><kbd>after_create</kbd>, called by the __construct() method once the object was created</li>
-					<li><kbd>after_load</kbd>, called by the __construct() method once an object was loaded from the database</li>
-					<li><kbd>before_save</kbd>, called by the save() method before anything is done</li>
-					<li><kbd>after_save</kbd>, called by the save() method after it has completed</li>
-					<li><kbd>before_insert</kbd>, called when an object is first saved to the database</li>
-					<li><kbd>after_insert</kbd>, called after an object is first saved to the database</li>
-					<li><kbd>before_update</kbd>, called when an object is saved to the database (except for the first time)</li>
-					<li><kbd>after_update</kbd>, called after an object is saved to the database (except for the first time)</li>
-					<li><kbd>before_delete</kbd>, called when you delete an object from the database</li>
-					<li><kbd>after_delete</kbd>, called after you delete an object from the database</li>
-					<li><kbd>after_clone</kbd>, called after an object was successfully cloned</li>
+					<li><kbd>after_create</kbd>, llamado por el método __construct() una vez que el objeto fue creado.</li>
+					<li><kbd>after_load</kbd>, llamado por el método __construct() una vez que el objeto fuera cargado desde la base de datos.</li>
+					<li><kbd>before_save</kbd>, llamado por el método save() antes de que nada haya pasado.</li>
+					<li><kbd>after_save</kbd>, llamado por el método save() tras ser completado.</li>
+					<li><kbd>before_insert</kbd>, llamado antes de que un objeto sea insertado por primera vez en la base de datos.</li>
+					<li><kbd>after_insert</kbd>, llamado después de que un objeto fuera insertado por primera vez en la base de datos.</li>
+					<li><kbd>before_update</kbd>, llamado antes de que un objeto sea guardado en la base de datos (excepto la primera vez).</li>
+					<li><kbd>after_update</kbd>, llamado después de que un objeto fuera guardado en la base de datos (excepto la primera vez).</li>
+					<li><kbd>before_delete</kbd>, llamado antes de que un objeto sea eliminado de la base de datos.</li>
+					<li><kbd>after_delete</kbd>, llamado después de eliminar un objeto de la base de datos.</li>
+					<li><kbd>after_clone</kbd>, llamado después de que un objeto fuera clonado exitosamente.</li>
 				</ul>
 
 				<p class="note">
-					<kbd>before_insert</kbd> and <kbd>before_update</kbd> are triggered <em>only</em> if the object has been changed. If you need to trigger an event even if the object has not been changed (ex.: to handle $_FILES datas), you should use <kbd>before_save</kbd>.
+					Los eventos <kbd>before_insert</kbd> y <kbd>before_update</kbd> serán ejecutados <em>solo</em> si el objeto fue cambiado. Si necesitas que un evento sea ejecutado incluso si el objeto no fue cambiado (ej.: para manejar $_FILES), deberías usar <kbd>before_save</kbd>.
 				</p>
 
 			</article>
