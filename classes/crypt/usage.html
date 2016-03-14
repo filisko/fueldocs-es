@@ -13,7 +13,7 @@
 		var class_prefix = "Crypt::";
 	</script>
 	<script src="./../../assets/js/combined.js"></script>
-	<title>Crypt Usage - Classes - FuelPHP Documentación</title>
+	<title>Uso Crypt - Clases - FuelPHP Documentación</title>
 </head>
 <body>
 	<div id="container">
@@ -47,65 +47,61 @@
 
 		<div id="main">
 
-			<h2>Crypt Class</h2>
+			<h2>Clase Crypt</h2>
 
-			<p>
-				The Crypt class allows encrypt or decrypt a string. The Crypt class is also used internally by for example the Fuel Sessions class.
-			</p>
-			<p>It uses the encryption and hashing methods provided by PHPSecLib, so it's not dependent on external modules being available, such as mcrypt.</p>
+			<p>La clase Crypt permite cifrar o descifrar una cadena de texto. La clase Crypt también es usada internamente por ejemplo por la clase Session de Fuel.</p>
+			<p>Usa los métodos de cifrado y hasheo proporcionados por PHPSecLib, así que no es dependiente de que haya o no módulos externos disponibles, como mcrypt.</p>
 
 			<section>
 				<h3 id="usage">Usage</h3>
 
 				<p>
-					Using crypt can be done in 2 ways: through static usage of the Crypt class and through crypt objects
-					returned by the Crypt::forge() or Crypt::instance() methods. This section covers static usage which will always work
-					with the default instance using the configuration specified in the <a href="config.html">configuration</a>.
+					Crypt puede ser usado de dos maneras: a través del uso estático de la clase Crypt y a través del objeto Crypt devuelto por los métodos Crypt::forge() o Crypt::instance(). Esta sección cubre el uso estático que siempre funcionará con la instancia por defecto usando la configuración especificada en la <a href="config.html">configuración</a>.
 				</p>
 
 				<p>
-					Using crypt objects, Crypt::instance() and Crypt::forge() is explained in the <a href="advanced.html">advanced</a> section.
+					Usando el objeto Crypt, los métodos Crypt::instance() y Crypt::forge() están explicados en la sección <a href="advanced.html">avanzado</a>.
 				</p>
 
 				<article>
 					<h4 class="method" id="method_encode">encode($value, $key = false)</h4>
-					<p>The <strong>encode</strong> method encrypts a string value, optionally with a custom encryption key.</p>
+					<p>El método <strong>encode</strong> cifra un valor de tipo string, opcionalmente con una llave de cifrado personalizada.</p>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$value</kbd></th>
-										<td><i>Required</i></td>
-										<td>String value to encode.</td>
+										<td><i>requerido</i></td>
+										<td>Cadena a ser codificada.</td>
 									</tr>
 									<tr>
 										<th><kbd>$key</kbd></th>
 										<td><pre class="php"><code>false</code></pre></td>
-										<td>Optional custom key value to be used to encode the value passed. If false, the config value '<strong>crypto_key</strong>' is used.</td>
+										<td>Valor de la llave personalizada opcional a ser usada para codificar el valor especificado. Si es falso, el valor de configuración '<strong>crypto_key</strong>' es usado.</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
-								<pre class="php"><code>// encode a variable with a custom key
+								<pre class="php"><code>// codifica una variable con una llave personalizada
 $value = Crypt::encode($value, 'R@nd0mK~Y');</code></pre>
 							</td>
 						</tr>
@@ -115,43 +111,43 @@ $value = Crypt::encode($value, 'R@nd0mK~Y');</code></pre>
 
 				<article>
 					<h4 class="method" id="method_decode">decode($value, $key = false)</h4>
-					<p>The <strong>decode</strong> method decrypts a string value, optionally with a custom key.</p>
+                                        <p>El método <strong>decode</strong> descifra un valor de tipo string, opcionalmente con una llave de cifrado personalizada.</p>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$value</kbd></th>
-										<td><i>Required</i></td>
-										<td>String value to decode.</td>
+										<td><i>requerido</i></td>
+										<td>Cadena a ser decodificada.</td>
 									</tr>
 									<tr>
 										<th><kbd>$key</kbd></th>
 										<td><pre class="php"><code>false</code></pre></td>
-										<td>Optional custom key value to be used to decode the value passed. If false, the config value '<strong>crypto_key</strong>' is used.</td>
+										<td>Valor de la llave personalizada opcional a ser usada para decodificar el valor especificado. Si es falso, el valor de configuración '<strong>crypto_key</strong>' es usado.</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
-							<td>mixed - String value with the decoded value, or <kbd>false</kbd> if the value could not be decoded.</td>
+							<th>Devuelve</th>
+							<td>mezclado - Cadena de texto con el valor decodificado, o <kbd>false</kbd> si el valor no pudo ser decodificado.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
-								<pre class="php"><code>// decode a variable with a custom key
+								<pre class="php"><code>// decodifica una variable con una llave personalizada
 $value = Crypt::decode($value, 'R@nd0mK~Y');</code></pre>
 							</td>
 						</tr>

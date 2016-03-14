@@ -64,8 +64,8 @@
 				<tbody>
 					<tr class="header">
 						<th>Key</th>
-						<th>Type</th>
-						<th>Description</th>
+						<th>Tipo</th>
+						<th>Descripción</th>
 					</tr>
 					<tr>
 						<th>field</th>
@@ -84,7 +84,7 @@
 						</td>
 					</tr>
 					<tr>
-						<th>type</th>
+						<th>Tipo</th>
 						<td>string</td>
 						<td>
 							Mime-type of the file uploaded, as defined by the browser.
@@ -159,8 +159,8 @@
 				<tbody>
 					<tr class="header">
 						<th>Key</th>
-						<th>Type</th>
-						<th>Description</th>
+						<th>Tipo</th>
+						<th>Descripción</th>
 					</tr>
 					<tr>
 						<th>saved_to</th>
@@ -194,7 +194,7 @@
 				<tbody>
 					<tr class="header">
 						<th>Name</th>
-						<th>Description</th>
+						<th>Descripción</th>
 					</tr>
 					<tr>
 						<th>UPLOAD_ERR_OK</th>
@@ -348,19 +348,19 @@ foreach (Upload::get_errors() as $file)
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>None</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>boolean - true if validated files exist, false if not.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// do we have any uploaded files to save?
 if (Upload::is_valid())
@@ -380,17 +380,17 @@ if (Upload::is_valid())
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$index</kbd></th>
@@ -402,11 +402,11 @@ if (Upload::is_valid())
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// get the list of successfully uploaded files
 foreach(Upload::get_files() as $file)
@@ -432,17 +432,17 @@ if ( ! Upload::get_files(0))
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$index</kbd></th>
@@ -454,11 +454,11 @@ if ( ! Upload::get_files(0))
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// get the list of uploaded files with errors
 foreach(Upload::get_errors() as $file)
@@ -492,37 +492,37 @@ if (Upload::get_errors('new_image'))
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$event</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>name of the callback event you want to register. Valid names are 'validate', 'before' and 'after'.</td>
 								</tr>
 								<tr>
 									<th><kbd>$callback</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>Valid PHP callback function. This can be a function, a dynamic or static method, or a closure.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>boolean - true if the callback was registered, false if the registration failed.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// register a before callback using a closure
 Upload::register('before', function (&amp;$file) {
@@ -589,17 +589,17 @@ Upload::register('before', function (&amp;$file) {
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$config</kbd></th>
@@ -610,15 +610,15 @@ Upload::register('before', function (&amp;$file) {
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
-						<td>void</td>
+						<th>Devuelve</th>
+						<td>nada</td>
 					</tr>
 					<tr>
 						<th>Throws</th>
 						<td>FuelException, when no file upload attempt could be detected (i.e. form without "Enctype" or input field of type="file")</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// process the uploaded files
 // set the max size to 10Kb, and allow overwrites of duplicate files
@@ -641,17 +641,17 @@ Upload::process(array(
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$integer</kbd></th>
@@ -674,11 +674,11 @@ Upload::process(array(
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
-						<td>void</td>
+						<th>Devuelve</th>
+						<td>nada</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// save all validated files
 Upload::save();

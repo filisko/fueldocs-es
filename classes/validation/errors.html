@@ -85,7 +85,7 @@ echo $val->error('username')->get_message('The field :label must be filled out b
 					<tbody>
 						<tr class="header">
 							<th>Variable</th>
-							<th>Description</th>
+							<th>Descripción</th>
 						</tr>
 						<tr>
 							<th>:field</th>
@@ -172,18 +172,18 @@ $field->add_rule(array('odd' => function($val) { return (bool) ($val % 2); }));
 					<table class="method">
 						<tbody>
 							<tr>
-								<th class="legend">Static</th>
+								<th class="legend">Estático</th>
 								<td>No</td>
 							</tr>
 							<tr>
-								<th>Parameters</th>
+								<th>Parámetros</th>
 								<td>
 									<table class="parameters">
 										<tr>
-											<th>Param</th>
-											<th>Type</th>
-											<th>Default</th>
-											<th class="description">Description</th>
+											<th>Parámetro</th>
+											<th>Tipo</th>
+											<th>Por defecto</th>
+											<th class="description">Descripción</th>
 										</tr>
 										<tr>
 											<th><kbd>$msg</kbd></th>
@@ -211,11 +211,11 @@ $field->add_rule(array('odd' => function($val) { return (bool) ($val % 2); }));
 								</td>
 							</tr>
 							<tr>
-								<th>Returns</th>
+								<th>Devuelve</th>
 								<td>string</td>
 							</tr>
 							<tr>
-								<th>Example</th>
+								<th>Ejemplo</th>
 								<td>
 									<pre class="php"><code>// Fetch the message inside &lt;p&gt; tags
 	$message = $error->get_message(false, '&lt;p&gt;', '&lt;/p&gt;');

@@ -98,21 +98,21 @@ $is_member = Auth::member(16);
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								None
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>The drivers id string.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// returns 'simpleauth'
 $id = Auth::group()->get_id();
@@ -129,17 +129,17 @@ $id = Auth::group()->get_id();
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$key</kbd></th>
@@ -155,11 +155,11 @@ $id = Auth::group()->get_id();
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
-							<td>void</td>
+							<th>Devuelve</th>
+							<td>nada</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// set a config value on the simplegroup driver
 Auth::group()->set_config('key', 'value');
@@ -176,17 +176,17 @@ Auth::group()->set_config('key', 'value');
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$key</kbd></th>
@@ -202,11 +202,11 @@ Auth::group()->set_config('key', 'value');
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>mixed</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// get a config value of the simplegroup driver, return false if it doesn't exist
 $key = Auth::instance(simplegroup)->get_config('key', false);
@@ -230,21 +230,21 @@ $key = Auth::instance(simplegroup)->get_config('key', false);
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$group</kbd></th>
-										<td><i>required</i></td>
+										<td><i>requerido</i></td>
 										<td>group id</td>
 									</tr>
 									<tr>
@@ -256,11 +256,11 @@ $key = Auth::instance(simplegroup)->get_config('key', false);
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>bool, whether one of the (given) drivers had the current user registered as a member</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>if ( ! Auth::member(100) )
 {
@@ -284,17 +284,17 @@ Auth::member(0, array('simplegroup', 'genericgroup'));</code></pre>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$group</kbd></th>
@@ -305,11 +305,11 @@ Auth::member(0, array('simplegroup', 'genericgroup'));</code></pre>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>mixed, the retrieved group display name, or <strong>false</strong> if the given group does not exist.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// get the display name of the admin group
 Auth::group()->get_name('admin');</code></pre>

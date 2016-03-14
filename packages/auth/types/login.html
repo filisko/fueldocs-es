@@ -110,21 +110,21 @@ $id = Auth::instance()->get_id();
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								None
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>The drivers id string.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// returns 'simpleauth'
 $id = Auth::instance('simpleauth')->get_id();
@@ -141,17 +141,17 @@ $id = Auth::instance('simpleauth')->get_id();
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$key</kbd></th>
@@ -167,11 +167,11 @@ $id = Auth::instance('simpleauth')->get_id();
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
-							<td>void</td>
+							<th>Devuelve</th>
+							<td>nada</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// set a config value
 Auth::instance()->set_config('key', 'value');
@@ -188,17 +188,17 @@ Auth::instance()->set_config('key', 'value');
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$key</kbd></th>
@@ -214,11 +214,11 @@ Auth::instance()->set_config('key', 'value');
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>mixed</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// get a config value, return false if it doesn't exist
 $key = Auth::instance()->get_config('key', false);
@@ -235,21 +235,21 @@ $key = Auth::instance()->get_config('key', false);
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								None.
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>boolean</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// check if the default instance supports guests
 if (Auth::instance()->guest_login())
@@ -275,17 +275,17 @@ if (Auth::instance()->guest_login())
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$additional_fields</kbd></th>
@@ -296,11 +296,11 @@ if (Auth::instance()->guest_login())
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>array</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// call the method on the default instance
 $user = Auth::instance()->get_user_array();
@@ -325,17 +325,17 @@ $user = Auth::get_user_array();
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$password</kbd></th>
@@ -346,11 +346,11 @@ $user = Auth::get_user_array();
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// hash a users password
 $password = Auth::instance()->hash_password($password);
@@ -373,17 +373,17 @@ $password = Auth::instance()->hash_password($password);
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								None
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>boolean, <strong>true</strong> if there is a valid user session, <strong>false</strong> if there isn't.</td>
 						</tr>
 						</tbody>
@@ -397,17 +397,17 @@ $password = Auth::instance()->hash_password($password);
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								None
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>mixed. it should return <strong>false</strong> if the user didn't pass validation. Any value that evaluates to true is considered to be valid.</td>
 						</tr>
 						</tbody>
@@ -421,17 +421,17 @@ $password = Auth::instance()->hash_password($password);
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								None
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>boolean. returns <strong>true</strong> if the login was succesful, <strong>false</strong> otherwise.</td>
 						</tr>
 						</tbody>
@@ -445,17 +445,17 @@ $password = Auth::instance()->hash_password($password);
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								None
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>boolean. returns <strong>true</strong> if the logout was succesful, <strong>false</strong> otherwise.</td>
 						</tr>
 						</tbody>
@@ -469,17 +469,17 @@ $password = Auth::instance()->hash_password($password);
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								None
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>mixed. returns an array in the form <strong>array(driver_id, user_id)</strong> if a user is logged in, or <strong>false</strong> otherwise.</td>
 						</tr>
 						</tbody>
@@ -493,17 +493,17 @@ $password = Auth::instance()->hash_password($password);
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								None
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>mixed. returns an array in the form <strong>array(array(driver_id, group_id), array(driver_id, group_id), etc)</strong> if a user is logged in, or <strong>false</strong> otherwise.</td>
 						</tr>
 						</tbody>
@@ -517,17 +517,17 @@ $password = Auth::instance()->hash_password($password);
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								None
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>mixed. returns an email address if a user is logged in, or <strong>false</strong> if no email address is defined for the current user, or there is no user logged-in.</td>
 						</tr>
 						</tbody>
@@ -541,17 +541,17 @@ $password = Auth::instance()->hash_password($password);
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								None
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>mixed. returns a string containing the name, or <strong>false</strong> if there is no user logged-in.</td>
 						</tr>
 						</tbody>

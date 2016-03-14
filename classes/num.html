@@ -67,9 +67,9 @@
 				<tbody>
 					<tr class="header">
 						<th>Key</th>
-						<th>Type</th>
-						<th>Default</th>
-						<th>Description</th>
+						<th>Tipo</th>
+						<th>Por defecto</th>
+						<th>Descripción</th>
 					</tr>
 					<tr>
 						<th>phone</th>
@@ -120,18 +120,18 @@
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$size</kbd></th>
@@ -143,11 +143,11 @@
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>float</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>echo Num::bytes('200K');  // 204800
 echo Num::bytes('5MiB');  // 5242880
@@ -167,18 +167,18 @@ echo Num::bytes('2.5GB'); // 2684354560</code></pre>
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$bytes</kbd></th>
@@ -196,11 +196,11 @@ echo Num::bytes('2.5GB'); // 2684354560</code></pre>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string|false</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>echo Num::format_bytes('204800');     // 200 kB
 echo Num::format_bytes('214901', 1);  // 209.9 kB
@@ -221,23 +221,23 @@ echo Num::format_bytes('badbytes');   // false
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$num</kbd></th>
 										<th><em>int</em></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>The number to format.</td>
 									</tr>
 									<tr>
@@ -250,11 +250,11 @@ echo Num::format_bytes('badbytes');   // false
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string|false</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>echo Num::quantity(7000);        // 7K
 echo Num::quantity(7500);        // 8K
@@ -275,18 +275,18 @@ echo Num::quantity('badnumber'); // false
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$string</kbd></th>
@@ -304,11 +304,11 @@ echo Num::quantity('badnumber'); // false
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>echo Num::format('1234567890', '(000) 000-0000'); // (123) 456-7890
 echo Num::format('1234567890', '000.000.0000');   // 123.456.7890
@@ -329,18 +329,18 @@ echo Num::format('1', '000.000.000');             // 1..
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$string</kbd></th>
@@ -364,11 +364,11 @@ echo Num::format('1', '000.000.000');             // 1..
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>echo Num::mask_string('1234567812345678', '************0000');
 // ************5678
@@ -393,18 +393,18 @@ echo Num::mask_string('1234567812345678', '**** - **** - **** - 0000', ' -');
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$string</kbd></th>
@@ -422,11 +422,11 @@ echo Num::mask_string('1234567812345678', '**** - **** - **** - 0000', ' -');
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>echo Num::format_phone('0612345678');
 // (061) 234 5678
@@ -453,34 +453,34 @@ echo Num::format_phone('0612345678', '(00) 000 000 00');
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$string</kbd></th>
 										<th><em>string</em></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>The number to format.</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>echo Num::smart_format_phone('1234567');
 // 123-4567
@@ -505,23 +505,23 @@ echo Num::smart_format_phone('01234567890');
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$string</kbd></th>
 										<th><em>string</em></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>The number to format.</td>
 									</tr>
 									<tr>
@@ -534,11 +534,11 @@ echo Num::smart_format_phone('01234567890');
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>echo Num::format_exp('1234');
 // 12-34
@@ -560,18 +560,18 @@ echo Num::format_exp('1234', '00/00');
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$string</kbd></th>
@@ -589,11 +589,11 @@ echo Num::format_exp('1234', '00/00');
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>echo Num::mask_credit_card('1234263583742938');
 // **** **** **** 2938

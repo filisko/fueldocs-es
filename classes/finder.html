@@ -75,17 +75,17 @@
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$paths</kbd></th>
@@ -96,11 +96,11 @@
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Finder Object</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$array = array(APPPATH, COREPATH);
 $finder = Finder::forge($array));
@@ -121,21 +121,21 @@ $finder = Finder::forge($array));
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							None
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Finder Object</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$finder = Finder::instance();
 </code></pre>
@@ -151,17 +151,17 @@ $finder = Finder::forge($array));
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$dir</kbd></th>
@@ -198,7 +198,7 @@ $finder = Finder::forge($array));
 							In case of a multiple search, an array of paths found is returned, or an empty array if no files were found.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// will return APPPATH/views/welcome/index.php
 $viewfile = Finder::search('views', 'welcome/index');
@@ -217,17 +217,17 @@ $viewfile = Finder::search('views', 'welcome/index');
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$paths</kbd></th>
@@ -249,7 +249,7 @@ $viewfile = Finder::search('views', 'welcome/index');
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>The current object for chaining</td>
 					</tr>
 					<tr>
@@ -257,7 +257,7 @@ $viewfile = Finder::search('views', 'welcome/index');
 						<td>OutOfBoundsException, when the given index position is out of range.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// make sure the finder searches 'mypackage' first
 Finder::instance()->add_path(PKGPATH.'mypackage', -1);
@@ -276,17 +276,17 @@ Finder::instance()->add_path(PKGPATH.'mypackage', -1);
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$path</kbd></th>
@@ -297,11 +297,11 @@ Finder::instance()->add_path(PKGPATH.'mypackage', -1);
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>The current object for chaining</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// remove 'mypackage' from the search path list
 Finder::instance()->remove_path(PKGPATH.'mypackage');
@@ -320,21 +320,21 @@ Finder::instance()->remove_path(PKGPATH.'mypackage');
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							None
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array of paths</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// fetch the defined paths for the default instance.
 $paths = Finder::instance()->paths();
@@ -356,17 +356,17 @@ print_r($paths);
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$directory</kbd></th>
@@ -382,11 +382,11 @@ print_r($paths);
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array, list of fully qualified filenames of all files found</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// find all database config files
 $dbcfg = Finder::instance()->list_files('config', 'db.php');
@@ -407,17 +407,17 @@ $dbcfg = Finder::instance()->list_files('config', 'db.php');
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$dir</kbd></th>
@@ -454,7 +454,7 @@ $dbcfg = Finder::instance()->list_files('config', 'db.php');
 							In case of a multiple search, an array of paths found is returned, or an empty array if no files were found.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// will return APPPATH/views/welcome/index.php
 $viewfile = Finder::instance()->locate('views', 'welcome/index');

@@ -79,21 +79,21 @@
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$path</kbd></th>
-										<td><i>required</i></td>
+										<td><i>requerido</i></td>
 										<td>The path to add to the front of the assets path array (RELATIVE to the asset url and WITH trailing slash).</td>
 									</tr>
 									<tr>
@@ -109,11 +109,11 @@
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>current instance</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>/*
  * These paths would need to have subfolders as defined in the config
@@ -155,21 +155,21 @@ Asset::add_path('resources/templates/dark/')
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$stylesheets</kbd></th>
-										<td><i>required</i></td>
+										<td><i>requerido</i></td>
 										<td>An array/string of stylesheet filename(s) to be added to the group or be returned as tags, or a string containing inline CSS.</td>
 									</tr>
 									<tr>
@@ -191,11 +191,11 @@ Asset::add_path('resources/templates/dark/')
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Rendered asset string or current instance when adding to group.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// adds file to group and returns '' if group is not null
 Asset::css(array('header.css', 'footer.css'), array(), 'layout', false);
@@ -239,26 +239,26 @@ echo Asset::css(".bold_class { font-weight: bold }\n#header {height: 50px}", arr
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$file</kbd></th>
-										<td><i>required</i></td>
+										<td><i>requerido</i></td>
 										<td>The name of the file you are searching for.</td>
 									</tr>
 									<tr>
 										<th><kbd>$type</kbd></th>
-										<td><i>required</i></td>
+										<td><i>requerido</i></td>
 										<td>The type of asset being searched (css, js, img).</td>
 									</tr>
 									<tr>
@@ -270,11 +270,11 @@ echo Asset::css(".bold_class { font-weight: bold }\n#header {height: 50px}", arr
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Either the path to the file or false if not found</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// find a css file
 $path = Asset::find_file('layout.css', 'css');
@@ -293,21 +293,21 @@ $path = Asset::find_file('icon.png', 'img','icons/');</code></pre>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$images</kbd></th>
-										<td><i>required</i></td>
+										<td><i>requerido</i></td>
 										<td>An array/string of image filename(s) to be applied to the group or returned as tags.</td>
 									</tr>
 									<tr>
@@ -324,11 +324,11 @@ $path = Asset::find_file('icon.png', 'img','icons/');</code></pre>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Rendered asset string or current instance when adding to group.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>/* returns
  * &lt;img src="../assets/img/logo.png" id="logo"&gt;
@@ -350,21 +350,21 @@ Asset::img(array('bob.jpg', 'joe.jpg', 'sally.jpg'), array('class' => 'thumbnail
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$scripts</kbd></th>
-										<td><i>required</i></td>
+										<td><i>requerido</i></td>
 										<td>An array/string of javascript filename(s) to be added to the group or be returned as tags, or a string containing inline javascript.</td>
 									</tr>
 									<tr>
@@ -386,11 +386,11 @@ Asset::img(array('bob.jpg', 'joe.jpg', 'sally.jpg'), array('class' => 'thumbnail
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Rendered asset string or current instance when adding to group.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// returns '' if $raw is set to false
 Asset::js(array('jquery.js', 'jqueryui.js'), array(), 'jquery', false);
@@ -434,26 +434,26 @@ echo Asset::js("var menu = getElementById('menu');\nmenu.initialize_menu();", ar
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$file</kbd></th>
-										<td><i>required</i></td>
+										<td><i>requerido</i></td>
 										<td>Name of the asset to look for.</td>
 									</tr>
 									<tr>
 										<th><kbd>$type</kbd></th>
-										<td><i>required</i></td>
+										<td><i>requerido</i></td>
 										<td>Type of asset to search for. 'img', 'css', and 'js' are supported types.</td>
 									</tr>
 									<tr>
@@ -465,11 +465,11 @@ echo Asset::js("var menu = getElementById('menu');\nmenu.initialize_menu();", ar
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Fully qualified asset URL (depending on the base_url defined) or false if not found.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// returns something like 'http://example.org/assets/js/jquery.js'
 echo Asset::get_file('jquery.js', 'js');</code></pre>
@@ -488,21 +488,21 @@ echo Asset::get_file('jquery.js', 'js');</code></pre>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$path</kbd></th>
-										<td><i>required</i></td>
+										<td><i>requerido</i></td>
 										<td>The path to from the assets path array.</td>
 									</tr>
 									<tr>
@@ -517,11 +517,11 @@ echo Asset::get_file('jquery.js', 'js');</code></pre>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>The current instance</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>/*
  * Remove global search paths
@@ -559,17 +559,17 @@ Asset::remove_path('resources/templates/dark/')
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$group</kbd></th>
@@ -585,11 +585,11 @@ Asset::remove_path('resources/templates/dark/')
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>/* returns
  * &lt;link href="../assets/css/header.css" rel="stylesheet" /&gt;

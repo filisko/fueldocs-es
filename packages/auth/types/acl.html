@@ -86,21 +86,21 @@ $may_access_comments = Auth::has_access('comments[read,write]');
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								None
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>The drivers id string.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// returns 'simpleacl'
 $id = Auth::acl()->get_id();
@@ -117,17 +117,17 @@ $id = Auth::acl()->get_id();
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$key</kbd></th>
@@ -143,11 +143,11 @@ $id = Auth::acl()->get_id();
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
-							<td>void</td>
+							<th>Devuelve</th>
+							<td>nada</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// set a config value on the simpleacl driver
 Auth::acl()->set_config('key', 'value');
@@ -164,17 +164,17 @@ Auth::acl()->set_config('key', 'value');
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$key</kbd></th>
@@ -190,11 +190,11 @@ Auth::acl()->set_config('key', 'value');
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>mixed</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// get a config value of the simpleacl driver, return false if it doesn't exist
 $key = Auth::instance(simpleacl)->get_config('key', false);
@@ -217,17 +217,17 @@ $key = Auth::instance(simpleacl)->get_config('key', false);
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$condition</kbd></th>
@@ -244,11 +244,11 @@ $key = Auth::instance(simpleacl)->get_config('key', false);
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>boolean, <strong>true</strong> if access was granted, <strong>false</strong> if not.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// check if user is allowed to comment
 if ( ! Auth::acl()->has_access('comments.create'), array('simplegroup', 1))

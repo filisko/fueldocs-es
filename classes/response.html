@@ -72,17 +72,17 @@ $response = new Response($body, 404, $headers);</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$body</kbd></th>
@@ -103,7 +103,7 @@ $response = new Response($body, 404, $headers);</code></pre>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Response object</td>
 					</tr>
 					<tr>
@@ -111,7 +111,7 @@ $response = new Response($body, 404, $headers);</code></pre>
 						<td>Event 'response_created' after object instantiation</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// create a response object, use a View as body, and a 404 NOT FOUND status code
 return Response::forge(View::forge('errors/404page'), 404);</code></pre>
@@ -127,17 +127,17 @@ return Response::forge(View::forge('errors/404page'), 404);</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$url</kbd></th>
@@ -158,11 +158,11 @@ return Response::forge(View::forge('errors/404page'), 404);</code></pre>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>This method terminates the current script, it does not return.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// use a URL
 Response::redirect('http://example.com/home', 'refresh');
@@ -187,17 +187,17 @@ Response::redirect('site/about');</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$url</kbd></th>
@@ -218,11 +218,11 @@ Response::redirect('site/about');</code></pre>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>This method terminates the current script, it does not return.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// redirect back. If there is no 'back', go to the dashboard page
 Response::redirect_back('/dashboard', 'refresh');</code></pre>
@@ -242,17 +242,17 @@ Response::redirect_back('/dashboard', 'refresh');</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$status</kbd></th>
@@ -263,11 +263,11 @@ Response::redirect_back('/dashboard', 'refresh');</code></pre>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Current object, for chaining</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$response = new Response();
 
@@ -285,26 +285,26 @@ $response->set_status(404);</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$name</kbd></th>
-									<td><i>Required</i></td>
+									<td><i>requerido</i></td>
 									<td>Name of the header to add.</td>
 								</tr>
 								<tr>
 									<th><kbd>$value</kbd></th>
-									<td><i>Required</i></td>
+									<td><i>requerido</i></td>
 									<td>The string that needs to be added to the HTTP header.</td>
 								</tr>
 								<tr>
@@ -317,11 +317,11 @@ $response->set_status(404);</code></pre>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Response</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$response = new Response();
 
@@ -354,21 +354,21 @@ return $response;</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$headers</kbd></th>
-									<td><i>Required</i></td>
+									<td><i>requerido</i></td>
 									<td>Assoc array of header name/value combinations.</td>
 								</tr>
 								<tr>
@@ -381,11 +381,11 @@ return $response;</code></pre>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Response</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$response = new Response();
 
@@ -412,17 +412,17 @@ return $response;</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$name</kbd></th>
@@ -433,11 +433,11 @@ return $response;</code></pre>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Mixed. String in case of a single header, Array in case all headers are returned.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$response = new Response();
 $response->set_header('Pragma', 'no-cache');
@@ -459,17 +459,17 @@ $header = $response->get_header();</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$value</kbd></th>
@@ -480,11 +480,11 @@ $header = $response->get_header();</code></pre>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Mixed. Current response body, or the current response object for chaining.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$response = new Response();
 $response->body('This is the response body');
@@ -503,19 +503,19 @@ $body = $response->body();</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td><i>None</i></td>
 					</tr>
 					<tr>
-						<th>Returns</th>
-						<td>void</td>
+						<th>Devuelve</th>
+						<td>nada</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$response->send_headers();</code></pre>
 						</td>
@@ -531,17 +531,17 @@ $body = $response->body();</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$send_headers</kbd></th>
@@ -552,11 +552,11 @@ $body = $response->body();</code></pre>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
-						<td>void</td>
+						<th>Devuelve</th>
+						<td>nada</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// echo whatever the response body is
 $response->send();</code></pre>

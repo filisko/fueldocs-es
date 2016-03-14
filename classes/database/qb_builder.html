@@ -63,21 +63,21 @@
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								None.
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Integer. The type of query this object defines.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// check if this is a DELETE
 $query = \DB::query('DELETE * FROM table', \DB::DELETE);
@@ -105,18 +105,18 @@ if ($query->type() == \DB::DELETE)
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$lifetime</kbd></th>
@@ -140,13 +140,13 @@ if ($query->type() == \DB::DELETE)
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>
 								Database_Query
 							</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// Cache the result from this query for 60 seconds
 $table = 'table';
@@ -167,23 +167,23 @@ $result = $query->as_object()->cached(60, 'AllFromTable', false)->execute();
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								None
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>
 								Indexed array of assoc arrays
 							</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// return StdClass objects
 $table = 'table';
@@ -214,18 +214,18 @@ foreach ($result as $row)
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$class</kbd></th>
@@ -237,13 +237,13 @@ foreach ($result as $row)
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>
 								Indexed array of objects
 							</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// return StdClass objects
 $table = 'table';
@@ -274,18 +274,18 @@ $result = $query->as_object('Model_Tablename')->execute();
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$db</kbd></th>
@@ -297,13 +297,13 @@ $result = $query->as_object('Model_Tablename')->execute();
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>
 								Database_Query
 							</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// assign a value to a query parameter
 $table = 'table';
@@ -333,18 +333,18 @@ $result = $query->execute('2nd-db');
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$db</kbd></th>
@@ -356,13 +356,13 @@ $result = $query->execute('2nd-db');
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>
 								string, the compiled SQL statement
 							</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// assign a value to a query parameter
 $table = 'table';
@@ -388,18 +388,18 @@ $sql = $query->compile();
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$db</kbd></th>
@@ -411,7 +411,7 @@ $sql = $query->compile();
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>
 								Database_Query_Result for SELECT type queries<br />
 								Database_Query_Cached for SELECT type query results that are returned from cache<br />
@@ -420,7 +420,7 @@ $sql = $query->compile();
 							</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// assign a value to a query parameter
 $table = 'table';
@@ -473,40 +473,40 @@ $query->parameters(array(
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$param</kbd></th>
 										<td><em>string</em></td>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>the parameter name</td>
 									</tr>
 									<tr>
 										<th><kbd>$value</kbd></th>
 										<td><em>string</em></td>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>the value to assign to the parameter</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Database_Query</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// assign a value to a query parameter
 $table = 'table';
@@ -533,34 +533,34 @@ $sql = $query->compile();
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$params</kbd></th>
 										<td><em>array</em></td>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>assoc array of parameter/value combinations</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Database_Query</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// assign values to query parameters
 $table = 'table';
@@ -584,40 +584,40 @@ $sql = $query->compile();
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$param</kbd></th>
 										<td><em>string</em></td>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>the parameter name</td>
 									</tr>
 									<tr>
 										<th><kbd>$var</kbd></th>
 										<td><em>string</em></td>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>the variable to bind the parameter to</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Database_Query</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// bind a query parameter
 $table = 'tablename';

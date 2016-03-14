@@ -79,17 +79,17 @@
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$identifier</kbd></th>
@@ -117,11 +117,11 @@
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
-							<td>void</td>
+							<th>Devuelve</th>
+							<td>nada</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// Cache 'String to be cached' for 3 hours with identifier "test"
 Cache::set('test', 'String to be cached.', 3600 * 3);
@@ -141,17 +141,17 @@ Cache::set('test.test', 'String to be cached.', 3600 * 3);
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$identifier</kbd></th>
@@ -167,7 +167,7 @@ Cache::set('test.test', 'String to be cached.', 3600 * 3);
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>mixed - cache contents</td>
 						</tr>
 						<tr>
@@ -175,7 +175,7 @@ Cache::set('test.test', 'String to be cached.', 3600 * 3);
 							<td>CacheNotFoundException when Cache doesn't exist or CacheExpiredException when it has expired</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// try to retrieve the cache and save to $content var
 try
@@ -203,17 +203,17 @@ catch (\CacheNotFoundException $e)
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$identifier</kbd></th>
@@ -224,11 +224,11 @@ catch (\CacheNotFoundException $e)
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
-							<td>void</td>
+							<th>Devuelve</th>
+							<td>nada</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>Cache::delete('test');</code></pre>
 							</td>
@@ -243,17 +243,17 @@ catch (\CacheNotFoundException $e)
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$section</kbd></th>
@@ -269,11 +269,11 @@ catch (\CacheNotFoundException $e)
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
-							<td>void</td>
+							<th>Devuelve</th>
+							<td>nada</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// Delete the whole cache for the default driver
 Cache::delete_all();
@@ -292,17 +292,17 @@ Cache::delete_all('test', 'file');</code></pre>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$identifier</kbd></th>
@@ -335,11 +335,11 @@ Cache::delete_all('test', 'file');</code></pre>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
-							<td>void</td>
+							<th>Devuelve</th>
+							<td>nada</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// Cache the result of a model find
 Cache::call('article_something', array('Model_Article', 'find'), array("all", array( 'where' => array('something' => $something) ));

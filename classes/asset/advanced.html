@@ -76,17 +76,17 @@
 					<table class="method">
 						<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th>Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th>Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$name</kbd></th>
@@ -110,11 +110,11 @@
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>object - The instantiated asset object.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// instantiate a asset object with a custom search path
 $asset = Asset::forge('custom', array('paths' => array('custom/assets/'));
@@ -135,17 +135,17 @@ $asset->css(array('header.css', 'footer.css'), array(), 'layout', false);</code>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th>Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th>Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$name</kbd></th>
@@ -159,11 +159,11 @@ $asset->css(array('header.css', 'footer.css'), array(), 'layout', false);</code>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>mixed - The named asset instance or false if the instance does not exist.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// instantiate a named asset object with a custom search path
 Asset::forge('custom', array('paths' => array('custom/assets/')));
@@ -201,17 +201,17 @@ Asset::instance('custom')->css(array('header.css', 'footer.css'), array(), 'layo
 					<table class="method">
 						<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th>Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th>Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$type</kbd></th>
@@ -247,11 +247,11 @@ Asset::instance('custom')->css(array('header.css', 'footer.css'), array(), 'layo
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string - The rendered HTML.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// create a youtube renderer on the default asset instance
 Asset::instance()->add_type(

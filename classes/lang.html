@@ -119,21 +119,21 @@ key=value</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$file</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>The path of the desired file. You can prefix this with a namespace to load a config file from a loaded package or module.</td>
 								</tr>
 								<tr>
@@ -160,11 +160,11 @@ key=value</code></pre>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
-						<td>void</td>
+						<th>Devuelve</th>
+						<td>nada</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Example of a language file:
 return array(
@@ -201,21 +201,21 @@ Lang::load('foo::example', 'bar', 'it');</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$line</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>The desired line's identifier.</td>
 								</tr>
 								<tr>
@@ -237,11 +237,11 @@ Lang::load('foo::example', 'bar', 'it');</code></pre>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>mixed. String if found, or false if not found</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
               <pre class="php"><code>// Given this lang file
 return array('hello' => 'Hello :name');
@@ -263,21 +263,21 @@ $this->output = Lang::get('test.something');
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$line</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>The desired line's identifier.</td>
 								</tr>
 								<tr>
@@ -299,11 +299,11 @@ $this->output = Lang::get('test.something');
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
-						<td>void</td>
+						<th>Devuelve</th>
+						<td>nada</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Returns true
 Lang::set('hello', 'Ahoy!');
@@ -328,26 +328,26 @@ Lang::set('hello', 'Ahoy!');</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$file</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>The path to the config file, relative to the config directory.  Do not include the file extension (".php" is assumed). You can prefix this with a namespace to load a config file from a loaded package or module.</td>
 								</tr>
 								<tr>
 									<th><kbd>$lang</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>If this is a string, it specifies a group name to save. If it is an array, it is assumed to contain the language strings to be saved.</td>
 								</tr>
 								<tr>
@@ -359,11 +359,11 @@ Lang::set('hello', 'Ahoy!');</code></pre>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td><kbd>true</kbd> if the language file was saved, <kbd>false</kbd> if an error occurred</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// This loads the "custom" language file in a group named "foo".
 Lang::load('custom', 'foo');
@@ -388,21 +388,21 @@ Lang::save('foo::custom', 'bar');</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$item</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>The desired line's identifier.</td>
 								</tr>
 								<tr>
@@ -419,11 +419,11 @@ Lang::save('foo::custom', 'bar');</code></pre>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
-						<td>void</td>
+						<th>Devuelve</th>
+						<td>nada</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// delete the 'hello' language key
 Lang::delete('hello');
@@ -443,19 +443,19 @@ Lang::delete('hello');
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td><i>None</i></td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td><kbd>String</kbd> with currently active language.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// will return currently active language, most likely 'en'
 Lang::get_lang();
@@ -477,21 +477,21 @@ Lang::get_lang();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$language</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>Language code to set.</td>
 								</tr>
 								<tr>
@@ -503,11 +503,11 @@ Lang::get_lang();
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td><kbd>Bool</kbd> indicating success or failure.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// switch to French, and reload all loaded language files
 Lang::set_lang('fr', true);
@@ -526,17 +526,17 @@ Lang::set_lang('fr', true);
 				<table class="method">
 					<tbody>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$string</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>The desired line's identifier.</td>
 								</tr>
 								<tr>
@@ -548,11 +548,11 @@ Lang::set_lang('fr', true);
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>string, result from <a href="#method_get">Lang::get</a></td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Outputs Hello world
 $this->output = __('hello', array('name' => 'world');

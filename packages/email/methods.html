@@ -55,18 +55,18 @@
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$setup</kbd></th>
@@ -84,11 +84,11 @@
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>a new Email_Driver instance</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Plain an simple:
 $email = \Email::forge();
@@ -125,34 +125,34 @@ $email = \Email::forge('my_defaults', array(
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$body</kbd></th>
 									<td><em>string</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The message body.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$email->body('This is my message.');
 
@@ -170,34 +170,34 @@ $email->body(\View::forge('my/view', $data);</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$alt_body</kbd></th>
 									<td><em>string</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The message body.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$email->alt_body('This is my alternative message.');
 
@@ -215,34 +215,34 @@ $email->alt_body(\View::forge('my/alt/view', $data);</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$priority</kbd></th>
 									<td><em>string</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>Priority: <a href="./introduction.html#config_priority">See all email priorities</a>.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$email->priority(\Email::P_HIGHEST);</code></pre>
 						</td>
@@ -258,23 +258,23 @@ $email->alt_body(\View::forge('my/alt/view', $data);</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$html</kbd></th>
 									<td><em>string</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The mail html.</td>
 								</tr>
 								<tr>
@@ -293,11 +293,11 @@ $email->alt_body(\View::forge('my/alt/view', $data);</code></pre>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$email->html_body(\View::forge('welcome/email', $data));
 // Don't generate the alt body
@@ -317,23 +317,23 @@ $email->html_body(\View::forge('welcome/email', $data), true, false);</code></pr
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$email</kbd></th>
 									<td><em>string</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The from email.</td>
 								</tr>
 								<tr>
@@ -346,11 +346,11 @@ $email->html_body(\View::forge('welcome/email', $data), true, false);</code></pr
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$email->from('me@example.com', 'My Name');</code></pre>
 						</td>
@@ -365,34 +365,34 @@ $email->html_body(\View::forge('welcome/email', $data), true, false);</code></pr
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$subject</kbd></th>
 									<td><em>string</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The email subject.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$email->subject('This is my subject');</code></pre>
 						</td>
@@ -407,23 +407,23 @@ $email->html_body(\View::forge('welcome/email', $data), true, false);</code></pr
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$email</kbd></th>
 									<td><em>string|array</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The from email.</td>
 								</tr>
 								<tr>
@@ -436,11 +436,11 @@ $email->html_body(\View::forge('welcome/email', $data), true, false);</code></pr
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Add a single address
 $email->to('me@example.com', 'My Name');
@@ -464,23 +464,23 @@ $email->to(array(
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$email</kbd></th>
 									<td><em>string|array</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The from email.</td>
 								</tr>
 								<tr>
@@ -493,11 +493,11 @@ $email->to(array(
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Add a single address
 $email->cc('me@example.com', 'My Name');
@@ -521,23 +521,23 @@ $email->cc(array(
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$email</kbd></th>
 									<td><em>string|array</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The from email.</td>
 								</tr>
 								<tr>
@@ -550,11 +550,11 @@ $email->cc(array(
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Add a single address
 $email->bcc('me@example.com', 'My Name');
@@ -578,23 +578,23 @@ $email->bcc(array(
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$email</kbd></th>
 									<td><em>string|array</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The from email.</td>
 								</tr>
 								<tr>
@@ -607,11 +607,11 @@ $email->bcc(array(
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Add a single address
 $email->reply_to('me@example.com', 'My Name');
@@ -635,23 +635,23 @@ $email->reply_to(array(
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$header</kbd></th>
 									<td><em>string|array</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The header type or array of headers.</td>
 								</tr>
 								<tr>
@@ -664,11 +664,11 @@ $email->reply_to(array(
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Add a single address
 $email->header('X-SMTPAP', 'XXXXXXXX');
@@ -691,21 +691,21 @@ $email->reply_to(array(
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<em>None</em>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Add a single address
 $email->bcc('me@example.com', 'My Name');
@@ -732,21 +732,21 @@ $email->clear_recipients();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<em>None</em>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Add a single address
 $email->reply_to('me@example.com', 'My Name');
@@ -773,21 +773,21 @@ $email->clear_addresses();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<em>None</em>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Add multiple addresses
 $email->to(array(
@@ -811,21 +811,21 @@ $email->clear_to();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<em>None</em>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Add multiple addresses
 $email->cc(array(
@@ -849,21 +849,21 @@ $email->clear_cc();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<em>None</em>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Add multiple addresses
 $email->bcc(array(
@@ -887,21 +887,21 @@ $email->clear_bcc();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<em>None</em>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Add multiple addresses
 $email->reply_to(array(
@@ -926,18 +926,18 @@ $email->clear_reply_to();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$file</kbd></th>
@@ -973,11 +973,11 @@ $email->clear_reply_to();
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Add an attachment
 $email->attach(DOCROOT.'attachments/report.pdf');
@@ -998,29 +998,29 @@ $email->attach(DOCROOT.'assets/img/mail/header.png', true, 'cid:headerimage');
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$contents</kbd></th>
 									<td><em>string</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The attachment contents.</td>
 								</tr>
 								<tr>
 									<th><kbd>$filename</kbd></th>
 									<td><em>string</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The filename to use.</td>
 								</tr>
 								<tr>
@@ -1045,11 +1045,11 @@ $email->attach(DOCROOT.'assets/img/mail/header.png', true, 'cid:headerimage');
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Add an attachment
 $email->string_attach('This is a textfile', 'test.txt');
@@ -1066,21 +1066,21 @@ $email->string_attach('This is a textfile', 'test.txt');
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<em>None</em>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Add some attachments
 $email->string_attach('This is a textfile', 'test.txt');
@@ -1101,18 +1101,18 @@ $email->clear_attachments();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$validate</kbd></th>
@@ -1124,11 +1124,11 @@ $email->clear_attachments();
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>boolean</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>try{
 	$email->send();
@@ -1154,21 +1154,21 @@ catch(\EmailValidationFailedException $e)
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<em>None</em>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>try{
 	$email->send();
@@ -1195,34 +1195,34 @@ catch(\EmailValidationFailedException $e)
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$email</kbd></th>
 									<td><em>string</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The return-path email.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$email->return_path('bounces@example.com');</code></pre>
 						</td>
@@ -1240,18 +1240,18 @@ catch(\EmailValidationFailedException $e)
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$pipelining</kbd></th>
@@ -1263,11 +1263,11 @@ catch(\EmailValidationFailedException $e)
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>$this</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$email->pipelining(true);</code></pre>
 						</td>
@@ -1284,21 +1284,21 @@ catch(\EmailValidationFailedException $e)
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<em>None</em>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>string</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// returns the address set by from()
 $from = $email->get_from();
@@ -1315,21 +1315,21 @@ $from = $email->get_from();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<em>None</em>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// returns the addresses set by to()
 $to = $email->get_to();
@@ -1346,21 +1346,21 @@ $to = $email->get_to();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<em>None</em>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// returns the address set by cc()
 $cc = $email->get_cc();
@@ -1377,21 +1377,21 @@ $cc = $email->get_cc();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<em>None</em>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// returns the address set by bcc()
 $bcc = $email->get_bcc();
@@ -1408,21 +1408,21 @@ $bcc = $email->get_bcc();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<em>None</em>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>string</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// returns the addresses set by reply_to()
 $reply_to = $email->get_reply_to();
@@ -1439,21 +1439,21 @@ $reply_to = $email->get_reply_to();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<em>None</em>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>string</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// returns the email body
 $text = $email->get_body();
@@ -1470,21 +1470,21 @@ $text = $email->get_body();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<em>None</em>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>string</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// returns the subject set by subject()
 $subject = $email->get_subject();

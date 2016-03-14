@@ -57,21 +57,21 @@
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$arr</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to check.</td>
 								</tr>
 								<tr>
@@ -85,11 +85,11 @@
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>bool</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Single array
 $arr = array('one' => 1, 'two' => 2);
@@ -119,32 +119,32 @@ echo Arr::is_multi($arr, true);  // Result: false
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$arr</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to check.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>bool</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$arr = array('foo', 'bar', 'baz', 'yay');
 echo Arr::is_assoc($arr);
@@ -174,28 +174,28 @@ echo Arr::is_assoc($arr);
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$arr</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to convert.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array|null</td>
 					</tr>
 					<tr>
@@ -204,7 +204,7 @@ echo Arr::is_assoc($arr);
 							uneven</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$arr = array('foo', 'bar', 'baz', 'yay');
 print_r(Arr::to_assoc($arr));
@@ -232,38 +232,38 @@ echo Arr::to_assoc($arr);
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$assoc</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to transform.</td>
 								</tr>
 								<tr>
 									<th><kbd>$key_field</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The associative array field to map as the key.</td>
 								</tr>
 								<tr>
 									<th><kbd>$val_field</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The associative array field to map as the value.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
@@ -272,7 +272,7 @@ echo Arr::to_assoc($arr);
 							implement the Iterator interface.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$people = array(
 	array(
@@ -306,38 +306,38 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to transform.</td>
 								</tr>
 								<tr>
 									<th><kbd>$key_field</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The associative array field to map the key to.</td>
 								</tr>
 								<tr>
 									<th><kbd>$val_field</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The associative array field to map the value to.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
@@ -346,7 +346,7 @@ Array
 							implement the Iterator interface.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$people = array(
 	"Jack" => 21,
@@ -382,32 +382,32 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>Array of values to average.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>echo Arr::average(array('1', 2, 4, '8'));
 // Result: 3.75</code></pre>
@@ -423,21 +423,21 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to flatten.</td>
 								</tr>
 								<tr>
@@ -454,11 +454,11 @@ Array
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$indexed = array(
 	array("a"),
@@ -487,21 +487,21 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to flatten.</td>
 								</tr>
 								<tr>
@@ -518,11 +518,11 @@ Array
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$people = array(
 	array(
@@ -570,21 +570,21 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to unflatten.</td>
 								</tr>
 								<tr>
@@ -596,11 +596,11 @@ Array
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$flattened = array(
 	'0_name' => 'James',
@@ -638,26 +638,26 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to filter.</td>
 								</tr>
 								<tr>
 									<th><kbd>$prefix</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The string used to filter on</td>
 								</tr>
 								<tr>
@@ -669,11 +669,11 @@ Array
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$arr = array(
 	"user_name" => "John",
@@ -713,37 +713,37 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to remove from.</td>
 								</tr>
 								<tr>
 									<th><kbd>$prefix</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The string used to filter on</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$arr = array(
 	"user_name" => "John",
@@ -773,26 +773,26 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to filter.</td>
 								</tr>
 								<tr>
 									<th><kbd>$suffix</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The string used to filter on</td>
 								</tr>
 								<tr>
@@ -804,11 +804,11 @@ Array
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$arr = array(
 								"name_1" => "John",
@@ -848,37 +848,37 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to remove from.</td>
 								</tr>
 								<tr>
 									<th><kbd>$suffix</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The string used to filter on</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$arr = array(
 								"name_1" => "John",
@@ -908,26 +908,26 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to filter.</td>
 								</tr>
 								<tr>
 									<th><kbd>$keys</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>Array of keys to filter the above array with.</td>
 								</tr>
 								<tr>
@@ -939,11 +939,11 @@ Array
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$arr = array(
 	"user_name" => "John",
@@ -983,21 +983,21 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to filter.</td>
 								</tr>
 								<tr>
@@ -1009,11 +1009,11 @@ Array
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$arr = array(
 	"user_name" => "John",
@@ -1085,26 +1085,26 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to filter.</td>
 								</tr>
 								<tr>
 									<th><kbd>$keys</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>Array of keys to filter the above array with.</td>
 								</tr>
 								<tr>
@@ -1116,11 +1116,11 @@ Array
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$arr = array(
 	"user" => array(
@@ -1190,26 +1190,26 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to access</td>
 								</tr>
 								<tr>
 									<th><kbd>$key</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The key requested in $array. If <strong>null</strong> is passed as key, the entire array is returned.</td>
 								</tr>
 								<tr>
@@ -1221,11 +1221,11 @@ Array
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>mixed. If you pass an array of keys, the return value will be an array with the result of all requested keys.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$person = array(
 	"name" => "Jack",
@@ -1259,26 +1259,26 @@ echo Arr::get($person, "location.city", "Unknown City");
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to access</td>
 								</tr>
 								<tr>
 									<th><kbd>$key</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The key requested in $array. If no key is passed, or <strong>null</strong> is passed as key value, the array is unset. If you pass an array of key -> value pairs, all the values in the array will be set.</td>
 								</tr>
 								<tr>
@@ -1290,11 +1290,11 @@ echo Arr::get($person, "location.city", "Unknown City");
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
-						<td>void</td>
+						<th>Devuelve</th>
+						<td>nada</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$person = array(
 	"name" => "Jack",
@@ -1327,26 +1327,26 @@ Arr::set($person, array("name" => "John", "location.city" => "Philadelphia"));</
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to pluck from</td>
 								</tr>
 								<tr>
 									<th><kbd>$key</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The key to pluck from the arrays.</td>
 								</tr>
 								<tr>
@@ -1358,11 +1358,11 @@ Arr::set($person, array("name" => "John", "location.city" => "Philadelphia"));</
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
-						<td>void</td>
+						<th>Devuelve</th>
+						<td>nada</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$collection = array(
 	array(
@@ -1403,37 +1403,37 @@ $names = \Arr::pluck($collection, 'name', 'id');
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to access</td>
 								</tr>
 								<tr>
 									<th><kbd>$key</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The key requested in $array. If no key is passed, or <strong>null</strong> is passed as key value, the array is unset.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>mixed, <strong>true</strong> if the key was deleted, <strong>false</strong> if the key didn't exist. If you pass an array of keys, the return value will be an array with the result of all requested deletes.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$person = array(
 	"name" => "Jack",
@@ -1468,42 +1468,42 @@ $result = Arr::delete($person, array("name", "location.doesnotexist"));
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$original</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to use</td>
 								</tr>
 								<tr>
 									<th><kbd>$value</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The value(s) to insert</td>
 								</tr>
 								<tr>
 									<th><kbd>$pos</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The numeric position at which to insert, negative to count from the end backwards</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>boolean</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$people = array("Jack", "Jill");
 
@@ -1565,31 +1565,31 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$original</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to use</td>
 								</tr>
 								<tr>
 									<th><kbd>$values</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>Array with value(s) to insert</td>
 								</tr>
 								<tr>
 									<th><kbd>$pos</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>
 										The location in the original array where the new values should be inserted.
 										If a negative value is given, the position is counted from the back of the array.</td>
@@ -1598,11 +1598,11 @@ Array
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>boolean, true on success, false if $pos is out of bounds.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$character = array("name" =&gt; "Jack", "surname" =&gt; "Reacher");
 
@@ -1630,42 +1630,42 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$original</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to use</td>
 								</tr>
 								<tr>
 									<th><kbd>$value</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The value(s) to insert</td>
 								</tr>
 								<tr>
 									<th><kbd>$key</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The key before which to insert</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>boolean</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$people = array("Jack", "Jill");
 
@@ -1693,31 +1693,31 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$original</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to use</td>
 								</tr>
 								<tr>
 									<th><kbd>$value</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The value(s) to insert</td>
 								</tr>
 								<tr>
 									<th><kbd>$key</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The key after which to insert</td>
 								</tr>
 								<tr>
@@ -1729,11 +1729,11 @@ Array
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>boolean</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$people = array("Jack", "Jill");
 
@@ -1761,31 +1761,31 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$original</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to use</td>
 								</tr>
 								<tr>
 									<th><kbd>$value</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The value(s) to insert</td>
 								</tr>
 								<tr>
 									<th><kbd>$search</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The value after which to insert</td>
 								</tr>
 								<tr>
@@ -1797,11 +1797,11 @@ Array
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>boolean</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$people = array("Jack", "Jill");
 
@@ -1828,26 +1828,26 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to sort</td>
 								</tr>
 								<tr>
 									<th><kbd>$key</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The key requested to sort by in $array.</td>
 								</tr>
 								<tr>
@@ -1864,11 +1864,11 @@ Array
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>mixed</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$data = array(
 	array(
@@ -1931,26 +1931,26 @@ array(
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to sort</td>
 								</tr>
 								<tr>
 									<th><kbd>$conditions</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>Array of sorting conditions.</td>
 								</tr>
 								<tr>
@@ -1962,11 +1962,11 @@ array(
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$collection = array(
 	'i5' => array(
@@ -2053,26 +2053,26 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$needle</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The value to search for</td>
 								</tr>
 								<tr>
 									<th><kbd>$haystack</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to search in.</td>
 								</tr>
 								<tr>
@@ -2084,11 +2084,11 @@ Array
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>bool</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$arr = array('one' => 1, 2, 3, array(56), 87);
 
@@ -2115,30 +2115,30 @@ echo Arr::in_array_recursive(87, $arr, true);
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
 									<td><em>array</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>Multiple variables all of which must be arrays</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
@@ -2146,7 +2146,7 @@ echo Arr::in_array_recursive(87, $arr, true);
 						<td><kbd>InvalidArgumentException</kbd> when one of the passed arguments is no array.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$arr1 = array(
 	'one' => 1,
@@ -2202,30 +2202,30 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
 									<td><em>array</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>Multiple variables all of which must be arrays</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
@@ -2233,7 +2233,7 @@ Array
 						<td><kbd>InvalidArgumentException</kbd> when one of the passed arguments is no array.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$arr1 = array(
 	'one' => 1,
@@ -2284,29 +2284,29 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
 									<td><em>array</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to search</td>
 								</tr>
 								<tr>
 									<th><kbd>$value</kbd></th>
 									<td><em>mixed</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The searched value</td>
 								</tr>
 								<tr>
@@ -2337,7 +2337,7 @@ Array
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>int|string|null</td>
 					</tr>
 					<tr>
@@ -2349,7 +2349,7 @@ Array
 						</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$arr = array(
 	'one' => 1,
@@ -2407,30 +2407,30 @@ echo Arr::search($arr, 'deep', null, true);
 				<table class="method">
 					<tbody>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
 									<td><em>array</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>the array to de-duplicate</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$array = array(
 	'val1' => 'hello', 'val2' => 'hello', 'val3' => 'bye',
@@ -2451,36 +2451,36 @@ $result = Arr::unique($array);
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
 									<td><em>array</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>the array containing the values</td>
 								</tr>
 								<tr>
 									<th><kbd>$key</kbd></th>
 									<td><em>string</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The key to pluck from the arrays</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>int</td>
 					</tr>
 					<tr>
@@ -2488,7 +2488,7 @@ $result = Arr::unique($array);
 						<td><kbd>InvalidArgumentException</kbd> when one of the passed arguments is no array.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$collection = array(
 	array(
@@ -2532,34 +2532,34 @@ $total_score = Arr::sum($collection, 'scores.math'); // 30
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
 									<td><em>array</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>the array to re-index</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$array = array(
 	2 => 2,
@@ -2602,26 +2602,26 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to use</td>
 								</tr>
 								<tr>
 									<th><kbd>$key</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The current key value to use as lookup reference</td>
 								</tr>
 								<tr>
@@ -2638,11 +2638,11 @@ Array
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>mixed, the returned value, null if there is no previous array element, or false if the current key does not exist.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// array to lookup in
 $arr = array(2 => 'A', 4 => '2', 6 => 'C');
@@ -2675,26 +2675,26 @@ $result = Arr::previous_by_key($arr, 4, true);
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to use</td>
 								</tr>
 								<tr>
 									<th><kbd>$key</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The current key value to use as lookup reference</td>
 								</tr>
 								<tr>
@@ -2711,11 +2711,11 @@ $result = Arr::previous_by_key($arr, 4, true);
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>mixed, the returned value, null if there is no next array element, or false if the current key does not exist.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// array to lookup in
 $arr = array(2 => 'A', 4 => '2', 6 => 'C');
@@ -2748,26 +2748,26 @@ $result = Arr::next_by_key($arr, 4, true);
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to use</td>
 								</tr>
 								<tr>
 									<th><kbd>$value</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The current element value to use as lookup reference</td>
 								</tr>
 								<tr>
@@ -2784,11 +2784,11 @@ $result = Arr::next_by_key($arr, 4, true);
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>mixed, the returned value, null if there is no previous array element, or false if the current value could not be found.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// array to lookup in
 $arr = array(2 => 'A', 4 => '2', 6 => 'C');
@@ -2821,26 +2821,26 @@ $result = Arr::previous_by_value($arr, '2', false);
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$array</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The array to use</td>
 								</tr>
 								<tr>
 									<th><kbd>$value</kbd></th>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>The current element value to use as lookup reference</td>
 								</tr>
 								<tr>
@@ -2857,11 +2857,11 @@ $result = Arr::previous_by_value($arr, '2', false);
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>mixed, the returned value, null if there is no next array element, or false if the current value could not be found.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// array to lookup in
 $arr = array(2 => 'A', 4 => '2', 6 => 'C');
@@ -2897,36 +2897,36 @@ $result = Arr::next_by_value($arr, '2', false);
 				<table class="method">
 					<tbody>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Type</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Tipo</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$needle</kbd></th>
 									<td><em>string</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>the value to search for</td>
 								</tr>
 								<tr>
 									<th><kbd>$haystack</kbd></th>
 									<td><em>array</em></td>
-									<td><em>required</em></td>
+									<td><em>requerido</em></td>
 									<td>the array to search in</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>bool</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>echo in_arrayi('This', array('something','tHis'));
 // Result: true

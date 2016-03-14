@@ -116,10 +116,10 @@ return \View::forge('posts/index', $data);</code></pre>
 				<table class="config">
 					<tbody>
 						<tr class="header">
-							<th>Param</th>
-							<th>Type</th>
-							<th>Default</th>
-							<th>Description</th>
+							<th>Parámetro</th>
+							<th>Tipo</th>
+							<th>Por defecto</th>
+							<th>Descripción</th>
 						</tr>
 						<tr>
 							<th>pagination_url</th>
@@ -478,21 +478,21 @@ return \View::forge('posts/index', $data);</code></pre>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$name</kbd></th>
-										<td><i>Required</i></td>
+										<td><i>requerido</i></td>
 										<td>The name of the instance to be created. If no name is given, the 'default' instance is created.</td>
 									</tr>
 									<tr>
@@ -504,11 +504,11 @@ return \View::forge('posts/index', $data);</code></pre>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Pagination</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// create a new pagination instance
 $pagination = Pagination::forge('mypagination', array(
@@ -529,17 +529,17 @@ $pagination = Pagination::forge('mypagination', array(
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$name</kbd></th>
@@ -550,11 +550,11 @@ $pagination = Pagination::forge('mypagination', array(
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>mixed. a Pagination object, or false if the requested instance does not exist.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// fetch the previously forged instance
 $pagination = Pagination::instance('mypagination');</code></pre>
@@ -570,17 +570,17 @@ $pagination = Pagination::instance('mypagination');</code></pre>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$raw</kbd></th>
@@ -591,11 +591,11 @@ $pagination = Pagination::instance('mypagination');</code></pre>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// fetch a previously forged instance, and render it
 echo Pagination::instance('mypagination')->render();</code></pre>
@@ -619,17 +619,17 @@ echo Pagination::instance('mypagination')->render();</code></pre>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$marker</kbd></th>
@@ -640,11 +640,11 @@ echo Pagination::instance('mypagination')->render();</code></pre>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// fetch a previously forged instance, and render the "first page" link
 echo Pagination::instance('mypagination')->first();</code></pre>
@@ -667,17 +667,17 @@ echo Pagination::instance('mypagination')->first();</code></pre>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$marker</kbd></th>
@@ -688,11 +688,11 @@ echo Pagination::instance('mypagination')->first();</code></pre>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// fetch a previously forged instance, and render the "previous page" link
 echo Pagination::instance('mypagination')->previous();</code></pre>
@@ -711,17 +711,17 @@ echo Pagination::instance('mypagination')->previous();</code></pre>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$marker</kbd></th>
@@ -732,11 +732,11 @@ echo Pagination::instance('mypagination')->previous();</code></pre>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// fetch a previously forged instance, and render the "next page" link
 echo Pagination::instance('mypagination')->next();</code></pre>
@@ -755,17 +755,17 @@ echo Pagination::instance('mypagination')->next();</code></pre>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$marker</kbd></th>
@@ -776,11 +776,11 @@ echo Pagination::instance('mypagination')->next();</code></pre>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// fetch a previously forged instance, and render the "last page" link
 echo Pagination::instance('mypagination')->last();</code></pre>
@@ -800,19 +800,19 @@ echo Pagination::instance('mypagination')->last();</code></pre>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
+							<th class="legend">Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>None</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>mixed</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// fetch a previously forged instance, and render the "pages" link
 echo Pagination::instance('mypagination')->pages_render();</code></pre>
@@ -837,17 +837,17 @@ echo Pagination::instance('mypagination')->pages_render();</code></pre>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$name</kbd></th>
@@ -858,11 +858,11 @@ echo Pagination::instance('mypagination')->pages_render();</code></pre>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>mixed, properly value, or <kbd>null</kbd> if the property doesn't exist.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// fetch the current page number
 $page_number = Pagination::get('current_page');
@@ -881,17 +881,17 @@ $page_number = Pagination::instance()->current_page;</code></pre>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$name</kbd></th>
@@ -907,11 +907,11 @@ $page_number = Pagination::instance()->current_page;</code></pre>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
-							<td>void</td>
+							<th>Devuelve</th>
+							<td>nada</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// set the total number of rows
 $page_number = Pagination::set('total_items', 610);

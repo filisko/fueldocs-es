@@ -61,21 +61,21 @@
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$presenter</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td class="description">Name of the presenter, and by default of its associated view, using <a href="./view.html#method_forge">View</a> notation.</td>
 									</tr>
 									<tr>
@@ -97,11 +97,11 @@
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>a new <em>Presenter</em> object</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// Will create a Presenter object
 // for the APPPATH/views/admin/index.php view file
@@ -135,21 +135,21 @@ $presenter = Presenter::Forge('admin/index', 'custom', null, $view);</code></pre
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								None
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>The associated View object</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// create a presenter instance
 $presenter = Presenter::Forge('admin/index');
@@ -168,16 +168,16 @@ $view = $presenter->get_view();</code></pre>
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								None
 							</td>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								See the <a href="../general/presenter.html">Presenter</a> overview page.
 							</td>

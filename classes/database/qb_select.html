@@ -61,18 +61,18 @@
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$value</kbd></th>
@@ -84,11 +84,11 @@
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns the current instance.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// prepare a select statement
 $query = DB::select('name')->from('users');
@@ -110,18 +110,18 @@ $query->distinct();
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$columns</kbd></th>
@@ -133,11 +133,11 @@ $query->distinct();
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns the current instance.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// prepare a select statement
 $query = DB::select('name')->from('users');
@@ -165,23 +165,23 @@ $query->select(
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$columns</kbd></th>
 										<td><em>array</em></td>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>an array containing column names</td>
 									</tr>
 									<tr>
@@ -194,11 +194,11 @@ $query->select(
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns the current instance.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// prepare a select statement
 $query = DB::select('name')->from('users');
@@ -235,34 +235,34 @@ $query->select_array(array(
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$tables</kbd></th>
 										<td><em>mixed</em></td>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>table names or array($table, $alias)</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns the current instance.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// prepare a select statement
 $query = DB::select()->from('users');
@@ -287,23 +287,23 @@ $query->from(
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$table</kbd></th>
 										<td><em>mixed</em></td>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>table name or array($table, $alias)</td>
 									</tr>
 									<tr>
@@ -316,11 +316,11 @@ $query->from(
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns the current instance.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// prepare a select statement
 $query = DB::select()->from('users');
@@ -351,46 +351,46 @@ $query->join('pictures', 'RIGHT OUTER');
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$c1</kbd></th>
 										<td><em>mixed</em></td>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>table name or array($table, $alias)</td>
 									</tr>
 									<tr>
 										<th><kbd>$op</kbd></th>
 										<td><em>string</em></td>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>logical operator</td>
 									</tr>
 									<tr>
 										<th><kbd>$c2</kbd></th>
 										<td><em>mixed</em></td>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>table name or array($table, $alias)</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns the current instance.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// prepare a select statement
 $query = DB::select()->from('users');
@@ -418,46 +418,46 @@ $query->on('users.id', '=', 'profiles.user_id');
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$c1</kbd></th>
 										<td><em>mixed</em></td>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>table name or array($table, $alias)</td>
 									</tr>
 									<tr>
 										<th><kbd>$op</kbd></th>
 										<td><em>string</em></td>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>logical operator</td>
 									</tr>
 									<tr>
 										<th><kbd>$c2</kbd></th>
 										<td><em>mixed</em></td>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>table name or array($table, $alias)</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns the current instance.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// prepare a select statement
 $query = DB::select()->from('users');
@@ -483,34 +483,34 @@ $query->or_on('users.id', '=', 'profiles.other_id');
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$columns</kbd></th>
 										<td><em>mixed</em></td>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>table name</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns the current instance.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// prepare a select statement
 $query = DB::select()->from('articles');
@@ -537,23 +537,23 @@ $query->group_by('genre', 'category');
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$column</kbd></th>
 										<td><em>string</em></td>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>Column name or array($column, $alias), object or callback</td>
 									</tr>
 									<tr>
@@ -572,11 +572,11 @@ $query->group_by('genre', 'category');
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns the current instance.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// prepare a select statement
 $query = DB::select('*')->from('users');
@@ -609,23 +609,23 @@ $query->and_having(function($query){
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$column</kbd></th>
 										<td><em>string</em></td>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>Column name or array($column, $alias), object or callback</td>
 									</tr>
 									<tr>
@@ -644,11 +644,11 @@ $query->and_having(function($query){
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns the current instance.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// prepare a select statement
 $query = DB::select('*')->from('users');
@@ -686,21 +686,21 @@ $query->or_having(function($query){
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<em>None</em>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns the current instance.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// prepare a select statement
 $query = DB::select('*')->from('users');
@@ -725,21 +725,21 @@ $query->and_having_open();
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<em>None</em>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns the current instance.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// prepare a select statement
 $query = DB::select('*')->from('users');
@@ -769,21 +769,21 @@ $query->or_having_open();
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<em>None</em>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns the current instance.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// prepare a select statement
 $query = DB::select('*')->from('users');
@@ -809,21 +809,21 @@ $query->and_having_close();
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<em>None</em>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns the current instance.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// prepare a select statement
 $query = DB::select('*')->from('users');
@@ -853,34 +853,34 @@ $query->or_having_close();
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$number</kbd></th>
 										<td><em>int</em></td>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>The row number to start from</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns the current instance</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// prepare a select statement
 $query = DB::select('*')->from('users');
@@ -904,34 +904,34 @@ $query->offset(5);
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$db</kbd></th>
 										<td><em>object</em></td>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>A database connection</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns the SQL query as a string.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// prepare a select statement
 $query = DB::select('*')->from('users');
@@ -958,21 +958,21 @@ $sql = $query->compile($connection);
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<em>None</em>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns the current instance.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// prepare a select statement
 $query = DB::select('*')->from('users');

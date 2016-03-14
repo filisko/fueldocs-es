@@ -63,17 +63,17 @@
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$file</kbd></th>
@@ -94,11 +94,11 @@
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>a new <em>View</em> object</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>$view = new View('path/to/view', array(
 	'menu' => $menu,
@@ -117,17 +117,17 @@
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$file</kbd></th>
@@ -148,11 +148,11 @@
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>a new <em>View</em> object</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// Will create a View object for APPPATH/
 $view = View::forge('path/to/view', array(
@@ -172,17 +172,17 @@ $view = View::forge('path/to/view', array(
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$filter</kbd></th>
@@ -193,11 +193,11 @@ $view = View::forge('path/to/view', array(
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Current View object</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>$view = View::forge('path/to/view', array(
 	'menu' => $menu,
@@ -230,32 +230,32 @@ $view = View::forge('path/to/view', array(
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$file</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td class="description">the view filename, view files should be relative to the <em>app/views</em> directory and be supplied without the <strong>.php</strong> extension.</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Current View object</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>$view = new View();
 
@@ -272,17 +272,17 @@ $view->set_filename('path/to/view');</code></pre>
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$key</kbd></th>
@@ -298,11 +298,11 @@ $view->set_filename('path/to/view');</code></pre>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>mixed</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// create a view and set some data
 $view = new View;
@@ -328,21 +328,21 @@ $fields = $view->get();</code></pre>
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$key</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td class="description">variable name or array of variables</td>
 									</tr>
 									<tr>
@@ -359,11 +359,11 @@ $fields = $view->get();</code></pre>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Current View object</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>$view = new View;
 $view->set('users', $users, false);
@@ -390,21 +390,21 @@ $view->set('example', '&lt;h1&gt;Heading&lt;/h1&gt;', false);</code></pre>
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$key</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td class="description">variable name or array of variables</td>
 									</tr>
 									<tr>
@@ -416,11 +416,11 @@ $view->set('example', '&lt;h1&gt;Heading&lt;/h1&gt;', false);</code></pre>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Current View object</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>$view = new View;
 $view->set_safe('users', $users);
@@ -443,21 +443,21 @@ $view->set_safe(array(
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$key</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td class="description">variable name or array of variables</td>
 									</tr>
 									<tr>
@@ -474,11 +474,11 @@ $view->set_safe(array(
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
-							<td><em>Void</em></td>
+							<th>Devuelve</th>
+							<td><em>Nada</em></td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>View::set_global('users', $users, false);
 
@@ -505,21 +505,21 @@ View::set_global(array(
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$key</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td class="description">variable name or array of variables</td>
 									</tr>
 									<tr>
@@ -531,11 +531,11 @@ View::set_global(array(
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Current View object</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>$view = new View;
 $view->bind('users', $users, false);
@@ -559,37 +559,37 @@ $view->bind(array(
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$key</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td class="description">variable name</td>
 									</tr>
 									<tr>
 										<th><kbd>$value</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td class="description">the value</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
-							<td><em>Void</em></td>
+							<th>Devuelve</th>
+							<td><em>Nada</em></td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>View::bind_global('users', $users);</code></pre>
 							</td>
@@ -607,18 +607,18 @@ $view->bind(array(
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
+							<th>Estático</th>
 							<td>No</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$file</kbd></th>
@@ -630,11 +630,11 @@ $view->bind(array(
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td><strong>the rendered view file</strong></td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>$html = View::forge()->render('path/to/view');
 
@@ -659,19 +659,19 @@ $html = View::forge()->set_filename('path/to/view')->render();</code></pre>
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$view</kbd></th>
 										<td><em>string</em></td>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td class="description">the view filename without the extension</td>
 									</tr>
 									<tr>
@@ -690,11 +690,11 @@ $html = View::forge()->set_filename('path/to/view')->render();</code></pre>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td><strong>string, the result from <a href="#method_render">View::render</a></strong></td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>$html = render('path/to/view', $data_array);</code></pre>
 							</td>

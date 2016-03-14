@@ -60,10 +60,10 @@
 				<table class="config">
 					<tbody>
 						<tr class="header">
-							<th>Param</th>
-							<th>Type</th>
-							<th>Default</th>
-							<th>Description</th>
+							<th>Parámetro</th>
+							<th>Tipo</th>
+							<th>Por defecto</th>
+							<th>Descripción</th>
 						</tr>
 						<tr>
 							<th>delimiter</th>
@@ -118,10 +118,10 @@
 				<table class="config">
 					<tbody>
 						<tr class="header">
-							<th>Param</th>
-							<th>Type</th>
-							<th>Default</th>
-							<th>Description</th>
+							<th>Parámetro</th>
+							<th>Tipo</th>
+							<th>Por defecto</th>
+							<th>Descripción</th>
 						</tr>
 						<tr>
 							<th>basenode</th>
@@ -148,10 +148,10 @@
 				<table class="config">
 					<tbody>
 						<tr class="header">
-							<th>Param</th>
-							<th>Type</th>
-							<th>Default</th>
-							<th>Description</th>
+							<th>Parámetro</th>
+							<th>Tipo</th>
+							<th>Por defecto</th>
+							<th>Descripción</th>
 						</tr>
 						<tr>
 							<th>options</th>
@@ -173,17 +173,17 @@
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$data</kbd></th>
@@ -204,11 +204,11 @@
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Fuel\Core\Format Object</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$array = array('foo' => 'bar');
 print_r(Format::forge($array));
@@ -237,17 +237,17 @@ Fuel\Core\Format Object
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$data</kbd></th>
@@ -258,11 +258,11 @@ Fuel\Core\Format Object
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$json_string = '{"foo":"bar","baz":"qux"}';
 print_r(Format::forge($json_string, 'json')->to_array());
@@ -286,17 +286,17 @@ Array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$data</kbd></th>
@@ -322,11 +322,11 @@ Array
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>string</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$array = array('foo' => 'bar', 'baz' => 'qux');
 print_r(Format::forge($array)->to_xml());
@@ -350,17 +350,17 @@ print_r(Format::forge($array)->to_xml());
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$data</kbd></th>
@@ -386,11 +386,11 @@ print_r(Format::forge($array)->to_xml());
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>string</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$json_string = '{"foo":"bar","baz":"qux","nr":1}';
 print_r(Format::forge($json_string, 'json')->to_csv(null, null, false));
@@ -417,15 +417,15 @@ print_r(Format::forge($json_string, 'json')->to_csv(null, null, false, array('th
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>string</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$array = array('foo' => 'bar', 'baz' => 'qux');
 print_r(Format::forge($array)->to_json());
@@ -445,15 +445,15 @@ print_r(Format::forge($array)->to_json());
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>string</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$array = array('foo' => 'bar', 'baz' => 'qux');
 print_r(Format::forge($array)->to_serialized());
@@ -473,15 +473,15 @@ print_r(Format::forge($array)->to_serialized());
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>string</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$array = array(1, 2, array('a', 'b', 'c'));
 print_r(Format::forge($array)->to_php());

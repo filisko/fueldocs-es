@@ -13,7 +13,7 @@
 		var class_prefix = "Cli::";
 	</script>
 	<script src="./../assets/js/combined.js"></script>
-	<title>Cli - Classes - FuelPHP Documentación</title>
+	<title>Cli - Clases - FuelPHP Documentación</title>
 </head>
 <body>
 	<div id="container">
@@ -47,42 +47,42 @@
 
 		<div id="main">
 
-			<h2>Cli Class</h2>
+			<h2>Clase Cli</h2>
 
-			<p>Interact with the command line by accepting input options, parameters and output text.</p>
+			<p>Interactuar con la línea de comandos aceptando opciones de entrada, parámetros y texto de salida.</p>
 
 			<article>
 				<h4 class="method" id="method_beep">beep($num = 1)</h4>
-				<p>The <strong>beep</strong> method fires a system beep on the computer running the command.</p>
+				<p>El método <strong>beep</strong> hará que suene un beep del sistema en el ordenador donde se ejecute el comando.</p>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$num</kbd></th>
 									<td><em>1</em></td>
-									<td>Number of beeps.</td>
+									<td>Número de beeps.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
-						<td>void</td>
+						<th>Devuelve</th>
+						<td>nada</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>Cli::beep(25);</code></pre>
 						</td>
@@ -94,51 +94,51 @@
 
 			<article>
 				<h4 class="method" id="method_color">color($text, $foreground, $background = null, $format = null)</h4>
-				<p>The <strong>color</strong> method changes the color of a piece of text.</p>
+				<p>El método <strong>color</strong> cambia el color del trozo de texto.</p>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$text</kbd></th>
-									<td><i>Required</i></td>
-									<td>String to be colored.</td>
+									<td><i>requerido</i></td>
+									<td>Cadena a ser colorida.</td>
 								</tr>
 								<tr>
 									<th><kbd>$foreground</kbd></th>
-									<td><i>Required</i></td>
-									<td>Foreground color of the string.</td>
+									<td><i>requerido</i></td>
+									<td>Color principal de la cadena de texto.</td>
 								</tr>
 								<tr>
 									<th><kbd>$background</kbd></th>
 									<td><i>null</i></td>
-									<td>Background color of the string.</td>
+									<td>Color de fondo de la cadena de texto.</td>
 								</tr>
 								<tr>
 									<th><kbd>$format</kbd></th>
 									<td><i>null</i></td>
-									<td>Other formatting to apply. Currently only the format 'underline' is support.</td>
+									<td>Otro formateo a aplicar. Actualmente solo el formato 'underline' (subrayar) es soportado.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>string</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>if (true === false)
 {
@@ -160,36 +160,36 @@ Cli::write($message);</code></pre>
 
 			<article>
 				<h4 class="method" id="method_error">error($text)</h4>
-				<p>The <strong>error</strong> method will write a line of text to the command line as an error (similar to <strong>write</strong> but uses STDERR instead of STDOUT).</p>
+				<p>El método <strong>error</strong> escribirá una línea de texto a la línea de comandos como error (parecido a <strong>write</strong> pero usa STDERR en vez de STDOUT).</p>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$text</kbd></th>
-									<td><i>empty string</i></td>
-									<td>Text to output to STDERR for the output.</td>
+									<td><i>cadena de texto vacía</i></td>
+									<td>Texto a imprimir a STDERR para la salida.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
-						<td>void</td>
+						<th>Devuelve</th>
+						<td>nada</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>Cli::error('Failure: You hit the wrong key with your chubby hands, try using a stick to poke the keyboard.');</code></pre>
 						</td>
@@ -201,52 +201,52 @@ Cli::write($message);</code></pre>
 
 			<article>
 				<h4 class="method" id="method_prompt">prompt($question = null, $options = array())</h4>
-				<p>The <strong>prompt</strong> method prompts the user for input.</p>
+				<p>El método <strong>prompt</strong> solicitará al usuario a que introduzca algún dato.</p>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$question</kbd></th>
 									<td><i>null</i></td>
-									<td>Ask the user a question and wait for input.</td>
+									<td>Preguntar al usuario una pregunta y esperar a que introduzca algo.</td>
 								</tr>
 								<tr>
 									<th><kbd>$options</kbd></th>
 									<td><i>array()</i></td>
-									<td>An array of options for the user to select from.</td>
+									<td>Una matríz de opciones para el usuario las cuales podrá seleccionar.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>string</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
-							<pre class="php"><code>// Waits for any key press
+							<pre class="php"><code>// Espera por cualquier tecla de entrada
 Cli::prompt();
 
-// Takes any input
+// Permite cualquier valor
 $color = Cli::prompt('What is your favorite color?');
 
-// Takes any input, but offers default
+// Permite cualquier valor, pero ofrece un valor por defecto
 $color = Cli::prompt('What is your favorite color?', 'white');
 
-// Will only accept the options in the array
+// Solo aceptará las opciones del array
 $ready = Cli::prompt('Are you ready?', array('y','n'));</code></pre>
 						</td>
 					</tr>
@@ -257,41 +257,41 @@ $ready = Cli::prompt('Are you ready?', array('y','n'));</code></pre>
 
 			<article>
 				<h4 class="method" id="method_option">option($name, null)</h4>
-				<p>The <strong>option</strong> accepts an option from the initial command.</p>
+				<p>El método <strong>option</strong> acepta una opción desde el comando inicial.</p>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$name</kbd></th>
-									<td><em>Required</em></td>
-									<td>Name of the option.</td>
+									<td><em>requerido</em></td>
+									<td>Nombre de la opción.</td>
 								</tr>
 								<tr>
 									<th><kbd>$default</kbd></th>
 									<td><em>null</em></td>
-									<td>A default value in case the option is not provided.</td>
+									<td>Un valor por defecto en caso de que ninguna opción sea introducida.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>string</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="cli"><code>$ php index.php user -v --v -name=John --name=John</code></pre>
 						</td>
@@ -303,21 +303,21 @@ $ready = Cli::prompt('Are you ready?', array('y','n'));</code></pre>
 
 			<article>
 				<h4 class="method" id="method_wait">wait($seconds = 0, $countdown = false)</h4>
-				<p>The <strong>wait</strong> method will make the cli output wait for a given number of seconds and optionally show a countdown.</p>
+				<p>El método <strong>wait</strong> hará que la salida de la línea de comandos espere por un número determinado de segundos establecidos y opcionalmente mostrar la cuenta atrás.</p>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$seconds</kbd></th>
@@ -333,11 +333,11 @@ $ready = Cli::prompt('Are you ready?', array('y','n'));</code></pre>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
-						<td>void</td>
+						<th>Devuelve</th>
+						<td>nada</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>Cli::write('Loading...');
 Cli::wait(5, true);</code></pre>
@@ -350,46 +350,46 @@ Cli::wait(5, true);</code></pre>
 
 			<article>
 				<h4 class="method" id="method_write">write($text = '', $foreground = null, $background = null)</h4>
-				<p>The <strong>write</strong> method will write a line of text to the command line.</p>
+				<p>El método <strong>write</strong> escribirá una línea de texto a la línea de comandos.</p>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$text</kbd></th>
 									<td><i>empty string</i></td>
-									<td>Text to output to the command line.</td>
+									<td>Texto a imprimir en la salida de la línea de comandos.</td>
 								</tr>
 								<tr>
 									<th><kbd>$foreground</kbd></th>
 									<td><i>null</i></td>
-									<td>Foreground color of the string.</td>
+									<td>Color de la cadena de texto.</td>
 								</tr>
 								<tr>
 									<th><kbd>$background</kbd></th>
 									<td><i>null</i></td>
-									<td>Background color of the string.</td>
+									<td>Color de fondo de la cadena de texto.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
-						<td>void</td>
+						<th>Devuelve</th>
+						<td>nada</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>Cli::write('Hello World!');</code></pre>
 						</td>
@@ -401,40 +401,39 @@ Cli::wait(5, true);</code></pre>
 			<article>
 				<h4 class="method" id="method_stdout">stdout($resource = null)</h4>
 				<p>
-					Changes or retrieves the current stdout stream. This is STDOUT by default.<br/>
+					Cambia o devuelve el flujo de salida estándar actual. Esto es STDOUT por defecto.<br/>
 					<br/>
-					Note the public property <code>$nocolor</code> can be set to true to force all output
-					to plaintext.
+					Date cuenta que la propiedad pública <code>$nocolor</code> puede ser establecida a verdadero (true) para forzar la toda la salida a texto plano.
 				</p>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$resource</kbd></th>
 									<td><i>null</i></td>
-									<td>Any writable filehandle, or null to retrieve the current filehandle.</td>
+									<td>Cualquier manejador de archivos escribible, o nulo para devolver el manejador de archivos actual.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
-						<td>The previous value of the filehandle (or current value if you are not changing it)</td>
+						<th>Devuelve</th>
+						<td>El valor anterior del manejador de archivos (o el valor actual si no lo estás cambiando)</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$buffer = fopen('php://temp', 'w+');
 $stdout = Cli::stdout($buffer);
@@ -458,40 +457,39 @@ file_put_contents('out.log', stream_get_contents($buffer));
 			<article>
 				<h4 class="method" id="method_stderr">stderr($resource = null)</h4>
 				<p>
-					Changes or retrieves the current stderr stream. This is STDERR by default.<br/>
+					Cambia o devuelve el flujo de stderr actual. Esto es STDERR por defecto.<br/>
 					<br/>
-					Note the public property <code>$nocolor</code> can be set to true to force all output
-					to plaintext.
+					Date cuenta que la propiedad pública <code>$nocolor</code> puede ser establecida a verdadero (true) para forzar la toda la salida a texto plano.
 				</p>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$resource</kbd></th>
 									<td><i>null</i></td>
-									<td>Any writable filehandle, or null to retrieve the current filehandle.</td>
+									<td>Cualquier manejador de archivos escribible, o nulo para devolver el manejador de archivos actual.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
-						<td>The previous value of the filehandle (or current value if you are not changing it)</td>
+						<th>Devuelve</th>
+						<td>El valor anterior del manejador de archivos (o el valor actual si no lo estás cambiando)</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$errors = fopen('php://temp', 'w+');
 $stderr = Cli::stderr($errors);

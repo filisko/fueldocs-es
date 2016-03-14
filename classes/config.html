@@ -125,21 +125,21 @@ key=value</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$item</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>The name of the item to retrieve.  Groups and multi-dimensional arrays can be accessed by separating the levels by a dot (<kbd>.</kbd>)</td>
 								</tr>
 								<tr>
@@ -151,11 +151,11 @@ key=value</code></pre>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Either <kbd>$item</kbd>, or <kbd>$default</kbd> if <kbd>$item</kbd> does not exist.  If <kbd>$item</kbd> is a group than an <kbd>array</kbd> containing the entire group.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Outputs the current language set in config.php
 echo Config::get('language');
@@ -190,37 +190,37 @@ $dev_host = Config::get('db.dev.connection.hostname');</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$item</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>The name of the item to set.  Groups and multi-dimensional arrays can be set by separating the levels by a dot (<kbd>.</kbd>).  If <kbd>$item</kbd> does not exist it will be created.</td>
 								</tr>
 								<tr>
 									<th><kbd>$value</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>The value to set <kbd>$item</kbd> to.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>This method always returns <kbd>true</kbd>.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Sets the current language
 Config::set('language', 'en');
@@ -245,32 +245,32 @@ Config::set('blog.items_to_display', 5);</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$item</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>The name of the item to delete.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
-						<td>void</td>
+						<th>Devuelve</th>
+						<td>nada</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Remove a configuration item using dot notation
 Config::delete('blog.items_to_display');</code></pre>
@@ -286,21 +286,21 @@ Config::delete('blog.items_to_display');</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$file</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>The path to the config file, relative to the config directory.  Do not include the file extension (".php" is assumed). You can prefix this with a module name to force loading a config file from a loaded module.</td>
 								</tr>
 								<tr>
@@ -322,11 +322,11 @@ Config::delete('blog.items_to_display');</code></pre>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>An <kbd>array</kbd> containing the configuration that has been loaded.  If the config file has already been loaded then it will return <kbd>false</kbd></td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// This merges the "custom" config file in with the root config.
 Config::load('custom');
@@ -354,37 +354,37 @@ Config::load('foo::custom', 'bar');</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$file</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>The path to the config file, relative to the config directory.  Do not include the file extension (".php" is assumed). You can prefix this with a namespace to load a config file from a loaded package or module.</td>
 								</tr>
 								<tr>
 									<th><kbd>$config</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>If this is a string, it specifies a group name to save. If it is an array, it is assumed to contain the configuration to be saved.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td><kbd>true</kbd> if the config was saved, <kbd>false</kbd> if an error occurred</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// This loads the "custom" config file in a group named "foo".
 Config::load('custom', 'foo');

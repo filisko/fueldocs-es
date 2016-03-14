@@ -13,7 +13,7 @@
 		var class_prefix = "Crypt::";
 	</script>
 	<script src="./../../assets/js/combined.js"></script>
-	<title>Crypt Configuration - Classes - FuelPHP Documentación</title>
+	<title>Configuración Crypt - Clases - FuelPHP Documentación</title>
 </head>
 <body>
 	<div id="container">
@@ -47,37 +47,34 @@
 
 		<div id="main">
 
-			<h2>Crypt Class</h2>
+			<h2>Clase Crypt</h2>
 
-			<p>
-				The Crypt class allows encrypt or decrypt a string. The Crypt class is also used internally by for example the Fuel Sessions class.
-			</p>
-			<p>It uses the encryption and hashing methods provided by PHPSecLib, so it's not dependent on external modules being available, such as mcrypt.</p>
+			<p>La clase Crypt permite cifrar o descifrar una cadena de texto. La clase Crypt también es usada internamente por ejemplo por la clase Session de Fuel.</p>
+			<p>Usa los métodos de cifrado y hasheo proporcionados por PHPSecLib, así que no es dependiente de que haya o no módulos externos disponibles, como mcrypt.</p>
 
 			<section>
-				<h3 id="configuration">Configuration</h3>
+				<h3 id="configuration">Configuración</h3>
 
 				<p>
-					The Crypt class is configured through the <kbd>app/config/crypt.php</kbd> configuration file. It will be generated and populated with random values when you first use the Crypt class or if one of the required configuration values is missing.
-				</p>
+					La clase Crypt está configurada a través del archivo de configuración <kbd>app/config/crypt.php</kbd>. Que será generado y rellenado con valores aleatorios la primera vez que uses la clase Crypt o si una configuración requerida no es encontrada.</p>
 				<p class="note">
-					Note that this will require write access to app/config/crypt.php! If this is not possible, make sure all configuration settings are set!
+					¡Date cuenta de que esto requerirá tener acceso de escritura a app/config/crypt.php! Si esto no es posible, ¡asegúrate de que todos los ajustes de configuración están establecidos!
 				</p>
-				<p>The following configuration settings can be defined:</p>
+				<p>Los siguientes ajustes de configuración pueden ser establecidos:</p>
 				<table class="config">
 					<tbody>
 						<tr class="header">
-							<th>Param</th>
-							<th>Type</th>
-							<th>Default</th>
-							<th>Description</th>
+							<th>Parámetro</th>
+							<th>Tipo</th>
+							<th>Por defecto</th>
+							<th>Descripción</th>
 						</tr>
 						<tr>
 							<th>crypto_key</th>
 							<td>string</td>
 							<td>n/a</td>
 							<td>
-								Random encryption key value used in the encryption routines. Make sure you set this to something unique and random!
+								Valor aleatorio de cifrado usado en las rutas de cifrado. ¡Asegúrese de configurar esto a algo único y al azar!
 							</td>
 						</tr>
 						<tr>
@@ -85,7 +82,7 @@
 							<td>string</td>
 							<td>n/a</td>
 							<td>
-								Random encryption initialisation vector used in the encryption routines. Make sure you set this to something unique and random!
+								Vector de inicialización de cifrado aleatorio usado en las rutas de cifrado. ¡Asegúrese de configurar esto a algo único y al azar!
 							</td>
 						</tr>
 						<tr>
@@ -93,13 +90,13 @@
 							<td>string</td>
 							<td>n/a</td>
 							<td>
-								Random value used in the Hash-based Message Authentication Code (HMAC) routines. Make sure you set this to something unique and random!
+                                                            Valor aleatorio usado en las rutinas de <a href="https://es.wikipedia.org/wiki/HMAC">Hash-based Message Authentication Code</a> (HMAC). Asegúrese de configurar esto a algo único y al azar!
 							</td>
 						</tr>
 					</tbody>
 				</table>
 				<p class="note">
-					If you assign keys manually, note that they are base64_encoded, and the length must be a multiple of 4 to be able to decode it. Make sure the length is correct!
+					Si asignas llaves manualmente, date cuenta de que están codificados a través de base64 (base64_encoded), y la longitud debe ser múltiplo de 4 para que sea posible decodificarlo. ¡Asegúrate de que la longitud sea la correcta!
 				</p>
 			</section>
 

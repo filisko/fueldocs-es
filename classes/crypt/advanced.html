@@ -13,7 +13,7 @@
 		var class_prefix = "Crypt::";
 	</script>
 	<script src="./../../assets/js/combined.js"></script>
-	<title>Crypt Advanced - Classes - FuelPHP Documentación</title>
+	<title>Avanzado Crypt- Clases - FuelPHP Documentación</title>
 </head>
 <body>
 	<div id="container">
@@ -47,79 +47,70 @@
 
 		<div id="main">
 
-			<h2>Crypt Class</h2>
+			<h2>Clase Crypt</h2>
 
-			<p>
-				The Crypt class allows encrypt or decrypt a string. The Crypt class is also used internally by for example the Fuel Sessions class.
-			</p>
-			<p>It uses the encryption and hashing methods provided by PHPSecLib, so it's not dependent on external modules being available, such as mcrypt.</p>
+			<p>La clase Crypt permite cifrar o descifrar una cadena de texto. La clase Crypt también es usada internamente por ejemplo por la clase Session de Fuel.</p>
+			<p>Usa los métodos de cifrado y hasheo proporcionados por PHPSecLib, así que no es dependiente de que haya o no módulos externos disponibles, como mcrypt.</p>
 
 			<section>
-				<h3>Advanced usage</h3>
+				<h3>Uso avanzado</h3>
 
 				<p>
-					The Crypt class supports the use of multiple instances. This might prove useful if you require multiple encryption
-					key sets.
+					La clase Crypt soporta el uso de instancias múltiples. Esto te puede resultar útil si requieres conjuntos de claves de cifrado múltiple.
 				</p>
 				<p>
-					You can use the same methods on an crypt instance as you would when you the static methods. For the method
-					definition see the <a href="./usage.html">class usage</a> page.
+					Puedes usar los mismos métodos en una instancia Crypt como lo haría usando métodos estáticos. Para el método  You can use the same methods on an crypt instance as you would when you the static methods. Para la definición del método consulte la <a href="./usage.html">página del uso de la clase</a>.
 				</p>
 
 				<article>
 					<h4 class="method" id="method_forge">forge($config = array())</h4>
 					<p>
-						The <strong>forge</strong> method allows you to manually instantiate a crypt instance.
+						El método <strong>forge</strong> te permite instanciar manualmente una instacia de Crypt.
 					</p>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th>Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th>Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$name</kbd></th>
 										<td><pre class="php"><code>null</code></pre></td>
 										<td>
-											Name of the instance requested. If it doesn't exist, it will be forged. If no name is
-											given, the default instance is returned.
+											Nombre de la instancia solicitada. Si no existe, será forzada. Si no se establece ningún nombre, la instancia por defecto será devuelta.
 										</td>
 									</tr>
 									<tr>
 										<th><kbd>$config</kbd></th>
 										<td><pre class="php"><code>array()</code></pre></td>
 										<td>
-											You can pass a custom configuration when forging a new crypt instance. The configuration array
-											has the same structure as the crypt configuration file. The custom config will be merged with
-											a default configuration as documented <a href="./config.html">here</a> and with the
-											configuration in your crypt config file, so you only have to pass values you want changed.
-										</td>
+											Puedes pasar configuración personalizada cuando se forcejee una instancia Crypt nueva. La matríz de configuración tiene la misma estructura que el archivo de configuración de Crypt. La configuración personalizada será fusionada con la configuración por defecto documentada <a href="./config.html">aquí</a> y con la configuración de tu archivo de configuración crypt, por lo tanto solo tienes que establecer los valores que quieras cambiar.</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
-							<td>object - The instantiated crypt object.</td>
+							<th>Devuelve</th>
+							<td>object - El objeto Crypt instanciado.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
-								<pre class="php"><code>// instantiate a crypt object with a custom key value
+								<pre class="php"><code>// instancia un objeto Crypt con una clave personalizada
 $crypt = \Crypt::forge(array(
 	'crypto_key' => 'kj$Huhliuh7p*UHHhdas6%#@',
 ));
 
-// and encode some data with it
+// y codifica alguna información con ell
 $encoded = $crypt->encode('This is a very secure piece of data!');</code></pre>
 							</td>
 						</tr>
@@ -130,45 +121,44 @@ $encoded = $crypt->encode('This is a very secure piece of data!');</code></pre>
 				<article>
 					<h4 class="method" id="method_instance">instance($name = null)</h4>
 					<p>
-						The <strong>instance</strong> method allows you load a named instance of the crypt class.
+						El método <strong>instance</strong> te permite cargar una instancia con nombre de la clase Crypt.
 					</p>
 					<table class="method">
 						<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th>Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th>Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$name</kbd></th>
 										<td><pre class="php"><code>null</code></pre></td>
 										<td>
-											Name of the instance requested. If it doesn't exist, false is returned. If no name is
-											given, the default instance is returned.
+											Nombre de la instancia solicitada. Si no existe, será forzada. Si no se establece ningún nombre, la instancia por defecto será devuelta.
 										</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
-							<td>mixed - The named crypt instance or false if the instance does not exist.</td>
+							<th>Devuelve</th>
+							<td>mezcla - El nombre de la instancia Crypt o falso si la instancia no existe.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
-								<pre class="php"><code>// instantiate a named crypt object with a custom key
+								<pre class="php"><code>// instancia un objeto Crypt con nombre con una clave personalizada
 $crypt = \Crypt::instance('custom', array('crypto_key' => 'kj$Huhliuh7p*UHHhdas6%#@'));
 
-// and encode some data with it
+// y codifica alguna información con ello
 $encoded = $crypt->encode('This is a very secure piece of data!');</code></pre>
 							</td>
 						</tr>
@@ -177,9 +167,7 @@ $encoded = $crypt->encode('This is a very secure piece of data!');</code></pre>
 				</article>
 
 				<p class="note">
-					 The static methods of the Crypt class will also use the default instance. Remember this if you
-					 alter the configuration of the default instance!
-				</p>
+					 Los métodos estáticos de la clase Crypt también usan la instancia por defecto. Recuerda esto si alteras la configuración de la instancia por defecto.</p>
 
 			</section>
 

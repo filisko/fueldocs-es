@@ -70,32 +70,32 @@ $soap = Request::forge('http://soap.example.org/api/v1/this/info', 'soap');
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$params</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>Array of parameters for the request.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Request_Soap, for chaining</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Soap object
 $soap = Request::forge('http://soap.example.org/api/v1/this/info', 'soap');
@@ -120,37 +120,37 @@ $soap->set_params(array('userid' => 12, 'data' => $payload));
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$option</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>SoapClient option to set.</td>
 								</tr>
 								<tr>
 									<th><kbd>$value</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>Value to set this option to.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Request_Soap, for chaining</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Soap object
 $soap = Request::forge('http://soap.example.org/api/v1/this/info', 'soap');
@@ -170,32 +170,32 @@ $soap->set_option('login', $username);
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$options</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>Array of SoapClient options and values to set.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Request_Soap, for chaining</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Soap object
 $soap = Request::forge('http://soap.example.org/api/v1/this/info', 'soap');
@@ -219,21 +219,21 @@ $soap->set_options(array(
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$param</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>Name of the parameter to set, or an array of parameters and values.</td>
 								</tr>
 								<tr>
@@ -245,11 +245,11 @@ $soap->set_options(array(
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Request_Soap, for chaining</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Soap object
 $soap = Request::forge('http://soap.example.org/api/v1/this/info', 'soap');
@@ -272,21 +272,21 @@ $soap->add_param('data', $payload);
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$header</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>The name of the HTTP header entry.</td>
 								</tr>
 								<tr>
@@ -298,11 +298,11 @@ $soap->add_param('data', $payload);
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Request_Soap, for chaining</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Soap object
 $soap = Request::forge('http://soap.example.org/api/v1/this/info', 'soap');
@@ -323,21 +323,21 @@ $soap->set_header('auth-token', 'WV4YaeV8QeWVVVOE');
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							None.
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Array, all headers set.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Soap object
 $soap = Request::forge('http://soap.example.org/api/v1/this/info', 'soap');
@@ -360,32 +360,32 @@ $headers = $soap->get_headers();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$auto_format</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>True if you want the returned response to be converted into an array, false if you want to access it as it is received.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Request_Soap, for chaining</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Soap object
 $soap = Request::forge('http://soap.example.org/api/v1/this/info', 'soap');
@@ -424,17 +424,17 @@ $soap->set_auto_format(true);
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$additional_params</kbd></th>
@@ -445,11 +445,11 @@ $soap->set_auto_format(true);
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Request_Soap, for chaining</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Soap object
 $soap = Request::forge('http://soap.example.org/api/v1/this/info', 'soap');
@@ -469,26 +469,26 @@ $result = $soap->execute();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$body</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>The data to be set as the response body.</td>
 								</tr>
 								<tr>
 									<th><kbd>$status</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>The HTTP status of the created response.</td>
 								</tr>
 								<tr>
@@ -505,11 +505,11 @@ $result = $soap->execute();
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Response, the created response object.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Soap object
 $soap = Request::forge('http://soap.example.org/api/v1/this/info', 'soap');
@@ -530,21 +530,21 @@ $soap->set_response($body, $this->response_info('http_code', 200), 'xml', array(
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							None.
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Response, the created response object.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Soap object
 $soap = Request::forge('http://soap.example.org/api/v1/this/info', 'soap');
@@ -567,17 +567,17 @@ $result = $soap->response();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$key</kbd></th>
@@ -593,11 +593,11 @@ $result = $soap->response();
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Mixed, depending on the data type of the requested value.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Soap object
 $soap = Request::forge('http://soap.example.org/api/v1/this/info', 'soap');
@@ -621,32 +621,32 @@ $size = $soap->response_info('SOAPAction', false);
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$function</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>The name of the SOAP function to call.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Request_Soap, for chaining</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Soap object
 $soap = Request::forge('http://soap.example.org/api/v1/this/info', 'soap');
@@ -666,21 +666,21 @@ $soap->set_function('GetUserInfo');
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							None.
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Array of available SOAP functions</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Soap object
 $soap = Request::forge('http://soap.example.org/api/v1/this/info', 'soap');
@@ -701,21 +701,21 @@ $functions = $soap->get_functions();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							None.
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>String, The last XML request</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Soap object
 $soap = Request::forge('http://soap.example.org/api/v1/this/info', 'soap');
@@ -738,21 +738,21 @@ $request = $soap->get_request_xml();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							None.
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>String, the SOAP headers from the last request. May contain newlines.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Soap object
 $soap = Request::forge('http://soap.example.org/api/v1/this/info', 'soap');
@@ -775,21 +775,21 @@ $headers = $soap->get_request_headers();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							None.
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>String, The last XML response</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Soap object
 $soap = Request::forge('http://soap.example.org/api/v1/this/info', 'soap');
@@ -812,21 +812,21 @@ $response = $soap->get_response_xml();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							None.
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>String, the SOAP headers from the last response. May contain newlines.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Soap object
 $soap = Request::forge('http://soap.example.org/api/v1/this/info', 'soap');
@@ -849,21 +849,21 @@ $response = $soap->get_response_headers();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							None.
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array of SOAP types, detailing all structures and types.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Soap object
 $soap = Request::forge('http://soap.example.org/api/v1/this/info', 'soap');
@@ -884,21 +884,21 @@ $types = $soap->get_types();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$name</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>The name of the cookie.</td>
 								</tr>
 								<tr>
@@ -910,7 +910,7 @@ $types = $soap->get_types();
 						</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Soap object
 $soap = Request::forge('http://soap.example.org/api/v1/this/info', 'soap');
@@ -930,28 +930,28 @@ $soap->set_cookie('auth-token', 'WV4YaeV8QeWVVVOE');
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$location</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>The new endpoint URL.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Soap object
 $soap = Request::forge('http://soap.example.org/api/v1/this/info', 'soap');

@@ -403,7 +403,7 @@ panes.main = {
 			"Rest":			"general/controllers/rest.html",
 			"Híbrido":		"general/controllers/hybrid.html"
 		},
-		"Espacios de nombre":		"general/namespacing.html",
+		"Espacio de nombres":		"general/namespacing.html",
 		"Enrutamiento":			"general/routing.html",
 		"Seguridad":			"general/security.html",
 		"Módulos":			"general/modules.html",

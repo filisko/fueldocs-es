@@ -70,32 +70,32 @@ $curl = Request::forge('http://rest.example.org/api/v1/this/info', 'curl');
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$method</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>The HTTP method (GET, HEAD, POST, PUT, DELETE) to use for this request.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Request_Curl, for chaining</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Curl object
 $curl = Request::forge('http://rest.example.org/api/v1/this/info', 'curl');
@@ -115,21 +115,21 @@ $curl->set_method('post');
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							None.
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>mixed, defined HTTP method in uppercase, or <strong>null</strong> if none set.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Curl object
 $curl = Request::forge('http://rest.example.org/api/v1/this/info', 'curl');
@@ -152,32 +152,32 @@ $method = $curl->get_method();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$params</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>Array of parameters for the request.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Request_Curl, for chaining</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Curl object
 $curl = Request::forge('http://rest.example.org/api/v1/this/info', 'curl');
@@ -221,37 +221,37 @@ $curl->set_params(array('form-data' => $params));
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$option</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>cURL option to set. Usually, this is one of the cURL constants.</td>
 								</tr>
 								<tr>
 									<th><kbd>$value</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>Value to set this option to.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Request_Curl, for chaining</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Curl object
 $curl = Request::forge('http://rest.example.org/api/v1/this/info', 'curl');
@@ -271,32 +271,32 @@ $curl->set_option(CURLOPT_USERPWD, $username . ':' . $password);
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$options</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>Array of cURL options and values to set.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Request_Curl, for chaining</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Curl object
 $curl = Request::forge('http://rest.example.org/api/v1/this/info', 'curl');
@@ -320,21 +320,21 @@ $curl->set_options(array(
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$param</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>Name of the parameter to set, or an array of parameters and values.</td>
 								</tr>
 								<tr>
@@ -346,11 +346,11 @@ $curl->set_options(array(
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Request_Curl, for chaining</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Curl object
 $curl = Request::forge('http://rest.example.org/api/v1/this/info', 'curl');
@@ -373,21 +373,21 @@ $curl->add_param('data', $payload);
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$header</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>The name of the HTTP header entry.</td>
 								</tr>
 								<tr>
@@ -399,11 +399,11 @@ $curl->add_param('data', $payload);
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Request_Curl, for chaining</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Curl object
 $curl = Request::forge('http://rest.example.org/api/v1/this/info', 'curl');
@@ -424,21 +424,21 @@ $curl->set_header('auth-token', 'WV4YaeV8QeWVVVOE');
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							None.
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Array, all headers set.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Curl object
 $curl = Request::forge('http://rest.example.org/api/v1/this/info', 'curl');
@@ -461,21 +461,21 @@ $headers = $curl->get_headers();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$mime</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>
 										The mime type of the requested response. This will be used to set the ACCEPT header.
 			<pre class="php"><code>// currently supported types are:
@@ -491,11 +491,11 @@ $headers = $curl->get_headers();
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Request_Curl, for chaining</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Curl object
 $curl = Request::forge('http://rest.example.org/api/v1/this/info', 'curl');
@@ -519,32 +519,32 @@ $curl->set_mime_type('json');
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$auto_format</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>True if you want the returned response to be converted into an array, false if you want to access it as it is received.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Request_Curl, for chaining</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Curl object
 $curl = Request::forge('http://rest.example.org/api/v1/this/info', 'curl');
@@ -583,17 +583,17 @@ $curl->set_auto_format(true);
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$additional_params</kbd></th>
@@ -604,11 +604,11 @@ $curl->set_auto_format(true);
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Request_Curl, for chaining</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Curl object
 $curl = Request::forge('http://rest.example.org/api/v1/this/info', 'curl');
@@ -628,26 +628,26 @@ $result = $curl->execute();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$body</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>The data to be set as the response body.</td>
 								</tr>
 								<tr>
 									<th><kbd>$status</kbd></th>
-									<td><i>required</i></td>
+									<td><i>requerido</i></td>
 									<td>The HTTP status of the created response.</td>
 								</tr>
 								<tr>
@@ -664,11 +664,11 @@ $result = $curl->execute();
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Response, the created response object.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Curl object
 $curl = Request::forge('http://rest.example.org/api/v1/this/info', 'curl');
@@ -689,21 +689,21 @@ $curl->set_response($body, $this->response_info('http_code', 200), 'json', array
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							None.
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Response, the created response object.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Curl object
 $curl = Request::forge('http://rest.example.org/api/v1/this/info', 'curl');
@@ -726,17 +726,17 @@ $result = $curl->response();
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$key</kbd></th>
@@ -752,11 +752,11 @@ $result = $curl->response();
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Mixed, depending on the data type of the requested value.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Curl object
 $curl = Request::forge('http://rest.example.org/api/v1/this/info', 'curl');
@@ -779,17 +779,17 @@ $size = $curl->response_info(CURLINFO_SIZE_DOWNLOAD, false);
 					<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$username</kbd></th>
@@ -810,11 +810,11 @@ $size = $curl->response_info(CURLINFO_SIZE_DOWNLOAD, false);
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Response, the created response object.</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 			<pre class="php"><code>// create a Request_Curl object
 $curl = Request::forge('http://rest.example.org/api/v1/this/info', 'curl');

@@ -123,21 +123,21 @@ $file->rename('textfile');
 					<table class="method">
 						<tbody>
 							<tr>
-								<th>Static</th>
-								<td>Yes</td>
+								<th>Estático</th>
+								<td>Sí</td>
 							</tr>
 							<tr>
-								<th>Parameters</th>
+								<th>Parámetros</th>
 								<td>
 									<table class="parameters">
 										<tr>
-											<th>Param</th>
-											<th>Default</th>
-											<th class="description">Description</th>
+											<th>Parámetro</th>
+											<th>Por defecto</th>
+											<th class="description">Descripción</th>
 										</tr>
 										<tr>
 											<th><kbd>$path</kbd></th>
-											<td><em>required</em></td>
+											<td><em>requerido</em></td>
 											<td>path to the file</td>
 										</tr>
 										<tr>
@@ -159,11 +159,11 @@ $file->rename('textfile');
 								</td>
 							</tr>
 							<tr>
-								<th>Returns</th>
+								<th>Devuelve</th>
 								<td>Returns a new File_Handler_File object.</td>
 							</tr>
 							<tr>
-								<th>Example</th>
+								<th>Ejemplo</th>
 								<td>
 									<pre class="php"><code>$handler = File_Handler_File::forge('path/to/file.txt', $config_array, $my_file_area);</code></pre>
 								</td>
@@ -178,17 +178,17 @@ $file->rename('textfile');
 					<table class="method">
 						<tbody>
 							<tr>
-								<th>Static</th>
+								<th>Estático</th>
 								<td>No</td>
 							</tr>
 							<tr>
-								<th>Parameters</th>
+								<th>Parámetros</th>
 								<td>
 									<table class="parameters">
 										<tr>
-											<th>Param</th>
-											<th>Default</th>
-											<th class="description">Description</th>
+											<th>Parámetro</th>
+											<th>Por defecto</th>
+											<th class="description">Descripción</th>
 										</tr>
 										<tr>
 											<th><kbd>$as_string</kbd></th>
@@ -199,11 +199,11 @@ $file->rename('textfile');
 								</td>
 							</tr>
 							<tr>
-								<th>Returns</th>
+								<th>Devuelve</th>
 								<td>Returns IO or string (file contents)</td>
 							</tr>
 							<tr>
-								<th>Example</th>
+								<th>Ejemplo</th>
 								<td>
 									<pre class="php"><code>$file_content = $handler->read(true);</code></pre>
 								</td>
@@ -218,21 +218,21 @@ $file->rename('textfile');
 					<table class="method">
 						<tbody>
 							<tr>
-								<th>Static</th>
+								<th>Estático</th>
 								<td>No</td>
 							</tr>
 							<tr>
-								<th>Parameters</th>
+								<th>Parámetros</th>
 								<td>
 									<table class="parameters">
 										<tr>
-											<th>Param</th>
-											<th>Default</th>
-											<th class="description">Description</th>
+											<th>Parámetro</th>
+											<th>Por defecto</th>
+											<th class="description">Descripción</th>
 										</tr>
 										<tr>
 											<th><kbd>$new_name</kbd></th>
-											<td><em>required</em></td>
+											<td><em>requerido</em></td>
 											<td>the new filename</td>
 										</tr>
 										<tr>
@@ -244,11 +244,11 @@ $file->rename('textfile');
 								</td>
 							</tr>
 							<tr>
-								<th>Returns</th>
+								<th>Devuelve</th>
 								<td>boolean, result form <em>rename()</em></td>
 							</tr>
 							<tr>
-								<th>Example</th>
+								<th>Ejemplo</th>
 								<td>
 									<pre class="php"><code>$handler->rename('new_name');</code></pre>
 								</td>
@@ -263,32 +263,32 @@ $file->rename('textfile');
 					<table class="method">
 						<tbody>
 							<tr>
-								<th>Static</th>
+								<th>Estático</th>
 								<td>No</td>
 							</tr>
 							<tr>
-								<th>Parameters</th>
+								<th>Parámetros</th>
 								<td>
 									<table class="parameters">
 										<tr>
-											<th>Param</th>
-											<th>Default</th>
-											<th class="description">Description</th>
+											<th>Parámetro</th>
+											<th>Por defecto</th>
+											<th class="description">Descripción</th>
 										</tr>
 										<tr>
 											<th><kbd>$new_path</kbd></th>
-											<td><em>required</em></td>
+											<td><em>requerido</em></td>
 											<td>path to new directory, must be valid</td>
 										</tr>
 									</table>
 								</td>
 							</tr>
 							<tr>
-								<th>Returns</th>
+								<th>Devuelve</th>
 								<td>boolean, result form <em>rename()</em></td>
 							</tr>
 							<tr>
-								<th>Example</th>
+								<th>Ejemplo</th>
 								<td>
 									<pre class="php"><code>$handler->move(DOCROOT.'/new/parent/directory/');</code></pre>
 								</td>
@@ -303,32 +303,32 @@ $file->rename('textfile');
 					<table class="method">
 						<tbody>
 							<tr>
-								<th>Static</th>
+								<th>Estático</th>
 								<td>No</td>
 							</tr>
 							<tr>
-								<th>Parameters</th>
+								<th>Parámetros</th>
 								<td>
 									<table class="parameters">
 										<tr>
-											<th>Param</th>
-											<th>Default</th>
-											<th class="description">Description</th>
+											<th>Parámetro</th>
+											<th>Por defecto</th>
+											<th class="description">Descripción</th>
 										</tr>
 										<tr>
 											<th><kbd>$new_path</kbd></th>
-											<td><em>required</em></td>
+											<td><em>requerido</em></td>
 											<td>path to directory to copy to, must be valid</td>
 										</tr>
 									</table>
 								</td>
 							</tr>
 							<tr>
-								<th>Returns</th>
+								<th>Devuelve</th>
 								<td>boolean, result form <em>copy()</em></td>
 							</tr>
 							<tr>
-								<th>Example</th>
+								<th>Ejemplo</th>
 								<td>
 									<pre class="php"><code>$handler->copy(DOCROOT.'/directory/');</code></pre>
 								</td>
@@ -343,32 +343,32 @@ $file->rename('textfile');
 					<table class="method">
 						<tbody>
 							<tr>
-								<th>Static</th>
+								<th>Estático</th>
 								<td>No</td>
 							</tr>
 							<tr>
-								<th>Parameters</th>
+								<th>Parámetros</th>
 								<td>
 									<table class="parameters">
 										<tr>
-											<th>Param</th>
-											<th>Default</th>
-											<th class="description">Description</th>
+											<th>Parámetro</th>
+											<th>Por defecto</th>
+											<th class="description">Descripción</th>
 										</tr>
 										<tr>
 											<th><kbd>$new_content</kbd></th>
-											<td><em>required</em></td>
+											<td><em>requerido</em></td>
 											<td>the new file content</td>
 										</tr>
 									</table>
 								</td>
 							</tr>
 							<tr>
-								<th>Returns</th>
+								<th>Devuelve</th>
 								<td>true on success</td>
 							</tr>
 							<tr>
-								<th>Example</th>
+								<th>Ejemplo</th>
 								<td>
 									<pre class="php"><code>$handler->update('the new content');</code></pre>
 								</td>
@@ -383,15 +383,15 @@ $file->rename('textfile');
 					<table class="method">
 						<tbody>
 							<tr>
-								<th>Static</th>
+								<th>Estático</th>
 								<td>No</td>
 							</tr>
 							<tr>
-								<th>Returns</th>
+								<th>Devuelve</th>
 								<td>bool, result from <em>unlink()</em></td>
 							</tr>
 							<tr>
-								<th>Example</th>
+								<th>Ejemplo</th>
 								<td>
 									<pre class="php"><code>$handler->delete();</code></pre>
 								</td>
@@ -406,15 +406,15 @@ $file->rename('textfile');
 					<table class="method">
 						<tbody>
 							<tr>
-								<th>Static</th>
+								<th>Estático</th>
 								<td>No</td>
 							</tr>
 							<tr>
-								<th>Returns</th>
+								<th>Devuelve</th>
 								<td>The public url</td>
 							</tr>
 							<tr>
-								<th>Example</th>
+								<th>Ejemplo</th>
 								<td>
 									<pre class="php"><code>$url = $handler->get_url();</code></pre>
 								</td>
@@ -429,15 +429,15 @@ $file->rename('textfile');
 					<table class="method">
 						<tbody>
 							<tr>
-								<th>Static</th>
+								<th>Estático</th>
 								<td>No</td>
 							</tr>
 							<tr>
-								<th>Returns</th>
+								<th>Devuelve</th>
 								<td>The octal file permissions</td>
 							</tr>
 							<tr>
-								<th>Example</th>
+								<th>Ejemplo</th>
 								<td>
 									<pre class="php"><code>$permissions = $handler->get_permissions();</code></pre>
 								</td>
@@ -452,17 +452,17 @@ $file->rename('textfile');
 					<table class="method">
 						<tbody>
 							<tr>
-								<th>Static</th>
+								<th>Estático</th>
 								<td>No</td>
 							</tr>
 							<tr>
-								<th>Parameters</th>
+								<th>Parámetros</th>
 								<td>
 									<table class="parameters">
 										<tr>
-											<th>Param</th>
-											<th>Default</th>
-											<th class="description">Description</th>
+											<th>Parámetro</th>
+											<th>Por defecto</th>
+											<th class="description">Descripción</th>
 										</tr>
 										<tr>
 											<th><kbd>$type</kbd></th>
@@ -473,11 +473,11 @@ $file->rename('textfile');
 								</td>
 							</tr>
 							<tr>
-								<th>Returns</th>
+								<th>Devuelve</th>
 								<td>The file's created or modified timestamp</td>
 							</tr>
 							<tr>
-								<th>Example</th>
+								<th>Ejemplo</th>
 								<td>
 									<pre class="php"><code>$created_at = $handler->get_time('created');
 
@@ -497,15 +497,15 @@ $modified_at = $handler->get_time();
 					<table class="method">
 						<tbody>
 							<tr>
-								<th>Static</th>
+								<th>Estático</th>
 								<td>No</td>
 							</tr>
 							<tr>
-								<th>Returns</th>
+								<th>Devuelve</th>
 								<td>The file size in bytes</td>
 							</tr>
 							<tr>
-								<th>Example</th>
+								<th>Ejemplo</th>
 								<td>
 									<pre class="php"><code>$file_size = $handler->get_size();</code></pre>
 								</td>
@@ -520,15 +520,15 @@ $modified_at = $handler->get_time();
 					<table class="method">
 						<tbody>
 							<tr>
-								<th>Static</th>
+								<th>Estático</th>
 								<td>No</td>
 							</tr>
 							<tr>
-								<th>Returns</th>
+								<th>Devuelve</th>
 								<td>The file path</td>
 							</tr>
 							<tr>
-								<th>Example</th>
+								<th>Ejemplo</th>
 								<td>
 									<pre class="php"><code>$file_path = $handler->get_path();
 									// returns "/path/to/file.txt"</code></pre>
@@ -556,21 +556,21 @@ $modified_at = $handler->get_time();
 					<table class="method">
 						<tbody>
 							<tr>
-								<th>Static</th>
-								<td>Yes</td>
+								<th>Estático</th>
+								<td>Sí</td>
 							</tr>
 							<tr>
-								<th>Parameters</th>
+								<th>Parámetros</th>
 								<td>
 									<table class="parameters">
 										<tr>
-											<th>Param</th>
-											<th>Default</th>
-											<th class="description">Description</th>
+											<th>Parámetro</th>
+											<th>Por defecto</th>
+											<th class="description">Descripción</th>
 										</tr>
 										<tr>
 											<th><kbd>$path</kbd></th>
-											<td><em>required</em></td>
+											<td><em>requerido</em></td>
 											<td>path to the directory</td>
 										</tr>
 										<tr>
@@ -592,11 +592,11 @@ $modified_at = $handler->get_time();
 								</td>
 							</tr>
 							<tr>
-								<th>Returns</th>
+								<th>Devuelve</th>
 								<td>Returns a new File_Handler_File object.</td>
 							</tr>
 							<tr>
-								<th>Example</th>
+								<th>Ejemplo</th>
 								<td>
 									<pre class="php"><code>$handler = File_Handler_Directory::forge('path/to/dir');</code></pre>
 								</td>
@@ -611,17 +611,17 @@ $modified_at = $handler->get_time();
 					<table class="method">
 						<tbody>
 							<tr>
-								<th>Static</th>
+								<th>Estático</th>
 								<td>No</td>
 							</tr>
 							<tr>
-								<th>Parameters</th>
+								<th>Parámetros</th>
 								<td>
 									<table class="parameters">
 										<tr>
-											<th>Param</th>
-											<th>Default</th>
-											<th class="description">Description</th>
+											<th>Parámetro</th>
+											<th>Por defecto</th>
+											<th class="description">Descripción</th>
 										</tr>
 										<tr>
 											<th><kbd>$depth</kbd></th>
@@ -637,11 +637,11 @@ $modified_at = $handler->get_time();
 								</td>
 							</tr>
 							<tr>
-								<th>Returns</th>
+								<th>Devuelve</th>
 								<td>Returns directory contents in an array</td>
 							</tr>
 							<tr>
-								<th>Example</th>
+								<th>Ejemplo</th>
 								<td>
 									<pre class="php"><code>$dir_contents = $handler->read();</code></pre>
 								</td>
@@ -656,21 +656,21 @@ $modified_at = $handler->get_time();
 					<table class="method">
 						<tbody>
 							<tr>
-								<th>Static</th>
+								<th>Estático</th>
 								<td>No</td>
 							</tr>
 							<tr>
-								<th>Parameters</th>
+								<th>Parámetros</th>
 								<td>
 									<table class="parameters">
 										<tr>
-											<th>Param</th>
-											<th>Default</th>
-											<th class="description">Description</th>
+											<th>Parámetro</th>
+											<th>Por defecto</th>
+											<th class="description">Descripción</th>
 										</tr>
 										<tr>
 											<th><kbd>$new_name</kbd></th>
-											<td><em>required</em></td>
+											<td><em>requerido</em></td>
 											<td>the new directory name</td>
 										</tr>
 
@@ -678,11 +678,11 @@ $modified_at = $handler->get_time();
 								</td>
 							</tr>
 							<tr>
-								<th>Returns</th>
+								<th>Devuelve</th>
 								<td>boolean, result form <em>rename()</em></td>
 							</tr>
 							<tr>
-								<th>Example</th>
+								<th>Ejemplo</th>
 								<td>
 									<pre class="php"><code>$handler->rename('new_name');</code></pre>
 								</td>
@@ -697,32 +697,32 @@ $modified_at = $handler->get_time();
 					<table class="method">
 						<tbody>
 							<tr>
-								<th>Static</th>
+								<th>Estático</th>
 								<td>No</td>
 							</tr>
 							<tr>
-								<th>Parameters</th>
+								<th>Parámetros</th>
 								<td>
 									<table class="parameters">
 										<tr>
-											<th>Param</th>
-											<th>Default</th>
-											<th class="description">Description</th>
+											<th>Parámetro</th>
+											<th>Por defecto</th>
+											<th class="description">Descripción</th>
 										</tr>
 										<tr>
 											<th><kbd>$new_path</kbd></th>
-											<td><em>required</em></td>
+											<td><em>requerido</em></td>
 											<td>path to new directory, must be valid</td>
 										</tr>
 									</table>
 								</td>
 							</tr>
 							<tr>
-								<th>Returns</th>
+								<th>Devuelve</th>
 								<td>boolean, result form <em>rename()</em></td>
 							</tr>
 							<tr>
-								<th>Example</th>
+								<th>Ejemplo</th>
 								<td>
 									<pre class="php"><code>$handler->move(DOCROOT.'/new/parent/directory/');</code></pre>
 								</td>
@@ -737,32 +737,32 @@ $modified_at = $handler->get_time();
 					<table class="method">
 						<tbody>
 							<tr>
-								<th>Static</th>
+								<th>Estático</th>
 								<td>No</td>
 							</tr>
 							<tr>
-								<th>Parameters</th>
+								<th>Parámetros</th>
 								<td>
 									<table class="parameters">
 										<tr>
-											<th>Param</th>
-											<th>Default</th>
-											<th class="description">Description</th>
+											<th>Parámetro</th>
+											<th>Por defecto</th>
+											<th class="description">Descripción</th>
 										</tr>
 										<tr>
 											<th><kbd>$new_path</kbd></th>
-											<td><em>required</em></td>
+											<td><em>requerido</em></td>
 											<td>path to directory to copy to, must be valid</td>
 										</tr>
 									</table>
 								</td>
 							</tr>
 							<tr>
-								<th>Returns</th>
+								<th>Devuelve</th>
 								<td>boolean, result form <em>copy()</em></td>
 							</tr>
 							<tr>
-								<th>Example</th>
+								<th>Ejemplo</th>
 								<td>
 									<pre class="php"><code>$handler->copy(DOCROOT.'/directory/');</code></pre>
 								</td>
@@ -777,17 +777,17 @@ $modified_at = $handler->get_time();
 					<table class="method">
 						<tbody>
 							<tr>
-								<th>Static</th>
+								<th>Estático</th>
 								<td>No</td>
 							</tr>
 							<tr>
-								<th>Parameters</th>
+								<th>Parámetros</th>
 								<td>
 									<table class="parameters">
 										<tr>
-											<th>Param</th>
-											<th>Default</th>
-											<th class="description">Description</th>
+											<th>Parámetro</th>
+											<th>Por defecto</th>
+											<th class="description">Descripción</th>
 										</tr>
 										<tr>
 											<th><kbd>$recursive</kbd></th>
@@ -803,11 +803,11 @@ $modified_at = $handler->get_time();
 								</td>
 							</tr>
 							<tr>
-								<th>Returns</th>
+								<th>Devuelve</th>
 								<td>true on success</td>
 							</tr>
 							<tr>
-								<th>Example</th>
+								<th>Ejemplo</th>
 								<td>
 									<pre class="php"><code>$handler->delete();</code></pre>
 								</td>
@@ -822,15 +822,15 @@ $modified_at = $handler->get_time();
 					<table class="method">
 						<tbody>
 							<tr>
-								<th>Static</th>
+								<th>Estático</th>
 								<td>No</td>
 							</tr>
 							<tr>
-								<th>Returns</th>
+								<th>Devuelve</th>
 								<td>The octal directory permissions</td>
 							</tr>
 							<tr>
-								<th>Example</th>
+								<th>Ejemplo</th>
 								<td>
 									<pre class="php"><code>$permissions = $handler->get_permissions();</code></pre>
 								</td>
@@ -845,17 +845,17 @@ $modified_at = $handler->get_time();
 					<table class="method">
 						<tbody>
 							<tr>
-								<th>Static</th>
+								<th>Estático</th>
 								<td>No</td>
 							</tr>
 							<tr>
-								<th>Parameters</th>
+								<th>Parámetros</th>
 								<td>
 									<table class="parameters">
 										<tr>
-											<th>Param</th>
-											<th>Default</th>
-											<th class="description">Description</th>
+											<th>Parámetro</th>
+											<th>Por defecto</th>
+											<th class="description">Descripción</th>
 										</tr>
 										<tr>
 											<th><kbd>$type</kbd></th>
@@ -866,11 +866,11 @@ $modified_at = $handler->get_time();
 								</td>
 							</tr>
 							<tr>
-								<th>Returns</th>
+								<th>Devuelve</th>
 								<td>The directory's created or modified timestamp</td>
 							</tr>
 							<tr>
-								<th>Example</th>
+								<th>Ejemplo</th>
 								<td>
 									<pre class="php"><code>$created_at = $handler->get_time('created');
 

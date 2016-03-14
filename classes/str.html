@@ -57,21 +57,21 @@
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$string</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>The string to increment.</td>
 									</tr>
 									<tr>
@@ -83,11 +83,11 @@
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>$string = "filename";
 Str::increment($string); // returns filename_1
@@ -110,17 +110,17 @@ Str::increment($string, 3); // returns filename_3
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$type</kbd></th>
@@ -136,11 +136,11 @@ Str::increment($string, 3); // returns filename_3
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// alnum (uppercase and lowercase letters mixed with numbers)
 Str::random('alnum', 16);
@@ -189,26 +189,26 @@ Str::random('uuid');
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$string</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>The string to truncate.</td>
 									</tr>
 									<tr>
 										<th><kbd>$limit</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>The number of characters to allow in the string.</td>
 									</tr>
 									<tr>
@@ -225,11 +225,11 @@ Str::random('uuid');
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>$string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
 Str::truncate($string, 15); // returns Lorem ipsum dol...
@@ -251,32 +251,32 @@ Str::truncate($string, 15, '...Read More'); // returns Lorem ipsum dol...Read Mo
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>*$args</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>As many arguments as you need to alternate</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Closure</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>$alt = Str::alternator('one', 'two', 'three', 'four');
 echo $alt(); // outputs 'one'
@@ -298,23 +298,23 @@ echo $alt(); // outputs 'one'
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$string</kbd></th>
 										<td><em>string</em></td>
-										<td><em>Required</em></td>
+										<td><em>requerido</em></td>
 										<td>The input string.</td>
 									</tr>
 									<tr>
@@ -327,11 +327,11 @@ echo $alt(); // outputs 'one'
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>Str::upper('User Data'); // returns 'USER DATA'</code></pre>
 							</td>
@@ -346,23 +346,23 @@ echo $alt(); // outputs 'one'
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$string</kbd></th>
 										<td><em>string</em></td>
-										<td><em>Required</em></td>
+										<td><em>requerido</em></td>
 										<td>The input string.</td>
 									</tr>
 									<tr>
@@ -375,11 +375,11 @@ echo $alt(); // outputs 'one'
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>Str::lower('User Data'); // returns 'user data'</code></pre>
 							</td>
@@ -394,23 +394,23 @@ echo $alt(); // outputs 'one'
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$string</kbd></th>
 										<td><em>string</em></td>
-										<td><em>Required</em></td>
+										<td><em>requerido</em></td>
 										<td>The input string.</td>
 									</tr>
 									<tr>
@@ -423,11 +423,11 @@ echo $alt(); // outputs 'one'
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>Str::tr('Hello :name', array('name' => 'World')); // returns 'Hello World'</code></pre>
 							</td>
@@ -442,34 +442,34 @@ echo $alt(); // outputs 'one'
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$string</kbd></th>
 										<td><em>string</em></td>
-										<td><em>Required</em></td>
+										<td><em>requerido</em></td>
 										<td>The input string.</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>bool</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>Str::is_json('{"0":"An","encoded":["string"]}'); // returns true</code></pre>
 							</td>
@@ -484,34 +484,34 @@ echo $alt(); // outputs 'one'
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$string</kbd></th>
 										<td><em>string</em></td>
-										<td><em>Required</em></td>
+										<td><em>requerido</em></td>
 										<td>The input string.</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>bool</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>Str::is_serialized('a:2:{i:0;s:2:"An";s:7:"encoded";a:1:{i:0;s:6:"string";}}');
 // returns true</code></pre>
@@ -527,34 +527,34 @@ echo $alt(); // outputs 'one'
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$string</kbd></th>
 										<td><em>string</em></td>
-										<td><em>Required</em></td>
+										<td><em>requerido</em></td>
 										<td>The input string.</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>bool</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>Str::is_html('Lorem ipsum &lt;b>dolor sit amet&lt;/b>, consectetur &lt;u>adipiscing&lt;/u> elit.');
 // returns true</code></pre>
@@ -570,34 +570,34 @@ echo $alt(); // outputs 'one'
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Type</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Tipo</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$string</kbd></th>
 										<td><em>string</em></td>
-										<td><em>Required</em></td>
+										<td><em>requerido</em></td>
 										<td>The input string.</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>bool</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>Str::is_xml('&lt;?xml version="1.0" encoding="utf-8"?>&lt;xml>&lt;foo>bar&lt;/foo>&lt;/xml>');
 // returns true</code></pre>
@@ -613,26 +613,26 @@ echo $alt(); // outputs 'one'
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$str</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>The string to check.</td>
 									</tr>
 									<tr>
 										<th><kbd>$start</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>The beginning to check for.</td>
 									</tr>
 									<tr>
@@ -644,11 +644,11 @@ echo $alt(); // outputs 'one'
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>bool</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>$string = "Lorem ipsum dolor sit amet";
 
@@ -668,26 +668,26 @@ Str::starts_with($string, 'lorem', true); // returns true
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$str</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>The string to check.</td>
 									</tr>
 									<tr>
 										<th><kbd>$end</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>The ending to check for.</td>
 									</tr>
 									<tr>
@@ -699,11 +699,11 @@ Str::starts_with($string, 'lorem', true); // returns true
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>bool</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>$string = "Lorem ipsum dolor sit amet";
 
@@ -723,26 +723,26 @@ Str::ends_with($string, 'Amet', true); // returns true
 				<table class="method">
 					<tbody>
 						<tr>
-							<th class="legend">Static</th>
-							<td>Yes</td>
+							<th class="legend">Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$str</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>The input string.</td>
 									</tr>
 									<tr>
 										<th><kbd>$start</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>Position of first character. See <a href="http://php.net/substr" target="_blank">php.net</a> for detailed usage.</td>
 									</tr>
 									<tr>
@@ -759,11 +759,11 @@ Str::ends_with($string, 'Amet', true); // returns true
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>string</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>Str::sub('User Data', 3, -1); // returns 'r Dat'</code></pre>
 							</td>

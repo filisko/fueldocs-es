@@ -59,10 +59,10 @@
 				<table class="config">
 					<tbody>
 						<tr class="header">
-							<th>Param</th>
-							<th>Type</th>
-							<th>Default</th>
-							<th>Description</th>
+							<th>Parámetro</th>
+							<th>Tipo</th>
+							<th>Por defecto</th>
+							<th>Descripción</th>
 						</tr>
 						<tr>
 							<th>hostname</th>
@@ -140,17 +140,17 @@
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
-						<td>Yes</td>
+						<th class="legend">Estático</th>
+						<td>Sí</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$config</kbd></th>
@@ -166,11 +166,11 @@
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>Ftp object</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Connect to the default server
 $ftp = Ftp::forge();
@@ -213,21 +213,21 @@ else
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							None
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>the current FTP object, for chaining</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// create an ftp object, but don't connect
 $ftp = Ftp::forge(array(
@@ -257,17 +257,17 @@ $ftp->connect();</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$path</kbd></th>
@@ -278,11 +278,11 @@ $ftp->connect();</code></pre>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>boolean</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Move to /user/phil/public_html/some/path/
 $ftp->change_dir('/public_html/some/path/');</code></pre>
@@ -298,21 +298,21 @@ $ftp->change_dir('/public_html/some/path/');</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$path</kbd></th>
-									<td><i>Required</i></td>
+									<td><i>requerido</i></td>
 									<td>Remote directory to create.</td>
 								</tr>
 								<tr>
@@ -324,11 +324,11 @@ $ftp->change_dir('/public_html/some/path/');</code></pre>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>boolean</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Make a write-able uploads folder
 $ftp->mkdir('/public_html/uploads/', 0777);</code></pre>
@@ -344,26 +344,26 @@ $ftp->mkdir('/public_html/uploads/', 0777);</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$local_path</kbd></th>
-									<td><i>Required</i></td>
+									<td><i>requerido</i></td>
 									<td>Local server path.</td>
 								</tr>
 								<tr>
 									<th><kbd>$remote_path</kbd></th>
-									<td><i>Required</i></td>
+									<td><i>requerido</i></td>
 									<td>Remote server path.</td>
 								</tr>
 								<tr>
@@ -382,11 +382,11 @@ $ftp->mkdir('/public_html/uploads/', 0777);</code></pre>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>boolean</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Upload myfile.html
 $ftp->upload('/local/path/to/myfile.html', '/public_html/myfile.html', 'ascii', 0775);</code></pre>
@@ -402,26 +402,26 @@ $ftp->upload('/local/path/to/myfile.html', '/public_html/myfile.html', 'ascii', 
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$remote_path</kbd></th>
-									<td><i>Required</i></td>
+									<td><i>requerido</i></td>
 									<td>Remote server path.</td>
 								</tr>
 								<tr>
 									<th><kbd>$local_path</kbd></th>
-									<td><i>Required</i></td>
+									<td><i>requerido</i></td>
 									<td>Local server path.</td>
 								</tr>
 								<tr>
@@ -436,11 +436,11 @@ $ftp->upload('/local/path/to/myfile.html', '/public_html/myfile.html', 'ascii', 
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>boolean</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// Download myotherfile.html
 $ftp->download('/public_html/myfile.html', '/local/path/to/myfile.html', 'ascii');</code></pre>
@@ -458,26 +458,26 @@ $ftp->download('/public_html/myfile.html', '/local/path/to/myfile.html', 'ascii'
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$old_file</kbd></th>
-									<td><i>Required</i></td>
+									<td><i>requerido</i></td>
 									<td>File to be renamed or moved.</td>
 								</tr>
 								<tr>
 									<th><kbd>$new_file</kbd></th>
-									<td><i>Required</i></td>
+									<td><i>requerido</i></td>
 									<td>File to move or rename to.</td>
 								</tr>
 								<tr>
@@ -492,11 +492,11 @@ $ftp->download('/public_html/myfile.html', '/local/path/to/myfile.html', 'ascii'
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>boolean</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// connect to an FTP server
 $ftp = Ftp::forge($config);
@@ -527,32 +527,32 @@ $ftp->close();</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$filepath</kbd></th>
-									<td><i>Required</i></td>
+									<td><i>requerido</i></td>
 									<td>File to be deleted.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>boolean</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// connect to an FTP server
 $ftp = Ftp::forge($config);
@@ -579,32 +579,32 @@ $ftp->close();</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$filepath</kbd></th>
-									<td><i>Required</i></td>
+									<td><i>requerido</i></td>
 									<td>File to be deleted.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>boolean</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// connect to an FTP server
 $ftp = Ftp::forge($config);
@@ -631,37 +631,37 @@ $ftp->close();</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$path</kbd></th>
-									<td><i>Required</i></td>
+									<td><i>requerido</i></td>
 									<td>File to change the permissions on.</td>
 								</tr>
 								<tr>
 									<th><kbd>$perm</kbd></th>
-									<td><i>Required</i></td>
+									<td><i>requerido</i></td>
 									<td>Permissions, defined unix style, as an octal value.</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>boolean</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// connect to an FTP server
 $ftp = Ftp::forge($config);
@@ -688,17 +688,17 @@ $ftp->close();</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$path</kbd></th>
@@ -709,11 +709,11 @@ $ftp->close();</code></pre>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>array</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// connect to an FTP server
 $ftp = Ftp::forge($config);
@@ -757,17 +757,17 @@ $ftp->close();</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							<table class="parameters">
 								<tr>
-									<th>Param</th>
-									<th>Default</th>
-									<th class="description">Description</th>
+									<th>Parámetro</th>
+									<th>Por defecto</th>
+									<th class="description">Descripción</th>
 								</tr>
 								<tr>
 									<th><kbd>$local_path</kbd></th>
@@ -783,11 +783,11 @@ $ftp->close();</code></pre>
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>boolean</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>$ftp = Ftp::forge();
 
@@ -810,21 +810,21 @@ $ftp->close();</code></pre>
 				<table class="method">
 					<tbody>
 					<tr>
-						<th class="legend">Static</th>
+						<th class="legend">Estático</th>
 						<td>No</td>
 					</tr>
 					<tr>
-						<th>Parameters</th>
+						<th>Parámetros</th>
 						<td>
 							None
 						</td>
 					</tr>
 					<tr>
-						<th>Returns</th>
+						<th>Devuelve</th>
 						<td>boolean</td>
 					</tr>
 					<tr>
-						<th>Example</th>
+						<th>Ejemplo</th>
 						<td>
 							<pre class="php"><code>// close a connection
 if ( ! $ftp->close())

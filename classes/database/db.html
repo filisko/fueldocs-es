@@ -65,21 +65,21 @@
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$query</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td>SQL query</td>
 									</tr>
 									<tr>
@@ -91,11 +91,11 @@
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns a Database_Query object of the requested type.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// Will prepare: SELECT * FROM `users`
 $query = DB::query('SELECT * FROM `users`');
@@ -121,17 +121,17 @@ $query = DB::query('SELECT * FROM `users`');
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$db</kbd></th>
@@ -142,7 +142,7 @@ $query = DB::query('SELECT * FROM `users`');
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>an instance of Database_Connection.</td>
 						</tr>
 						<tr>
@@ -150,7 +150,7 @@ $query = DB::query('SELECT * FROM `users`');
 							<td>FuelException, if the connection name passed is not defined in your database configuration.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// get the default connection
 $db = DB::instance();
@@ -175,17 +175,17 @@ $db = DB::instance('backup');</code></pre>
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$db</kbd></th>
@@ -196,11 +196,11 @@ $db = DB::instance('backup');</code></pre>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>The last executed SQL query.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// execute a query
 $user = DB::select()->from('users')->where('id', 1)->execute();
@@ -220,17 +220,17 @@ echo DB::last_query();
 					<table class="method">
 						<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$columns</kbd></th>
@@ -241,11 +241,11 @@ echo DB::last_query();
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns a <a href="qb_select.html">Database_Query_Builder_Select</a> object.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// Will prepare: SELECT *
 $query = DB::select();
@@ -265,17 +265,17 @@ $query = DB::select('id', 'name');
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$columns</kbd></th>
@@ -286,11 +286,11 @@ $query = DB::select('id', 'name');
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns a <a href="qb_select.html">Database_Query_Builder_Select</a> object.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// Will prepare: SELECT *
 $query = DB::select_array();
@@ -310,17 +310,17 @@ $query = DB::select_array(array('id', 'name'));
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$table</kbd></th>
@@ -336,11 +336,11 @@ $query = DB::select_array(array('id', 'name'));
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns a <a href="qb_insert.html">Database_Query_Builder_Insert</a> object.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// Will prepare: INSERT INTO `table_name`
 $query = DB::insert('table_name');
@@ -360,17 +360,17 @@ $query = DB::insert('table_name', array('id', 'name'));
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$table</kbd></th>
@@ -381,11 +381,11 @@ $query = DB::insert('table_name', array('id', 'name'));
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns a <a href="qb_update.html">Database_Query_Builder_Update</a> object.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// Will prepare: UPDATE `table_name`
 $query = DB::update('table_name');
@@ -402,17 +402,17 @@ $query = DB::update('table_name');
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$table</kbd></th>
@@ -423,11 +423,11 @@ $query = DB::update('table_name');
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns a <a href="qb_delete.html">Database_Query_Builder_Delete</a> object.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// Will prepare: DELETE FROM `table_name`
 $query = DB::delete('table_name');
@@ -444,17 +444,17 @@ $query = DB::delete('table_name');
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$expression</kbd></th>
@@ -465,11 +465,11 @@ $query = DB::delete('table_name');
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns a Database_Expression object.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// returns new Database_Expression('COUNT(table_name.table_column)');
 $expr = DB::expr('COUNT(table_name.table_column)');
@@ -492,21 +492,21 @@ $expr = DB::expr('columnname + 1');</code></pre>
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$string</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td class="description">The string to quote</td>
 									</tr>
 									<tr>
@@ -518,11 +518,11 @@ $expr = DB::expr('columnname + 1');</code></pre>
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns a Database_Expression object.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// returns 'something\'s quoted'.
 $query = DB::quote("'something's quoted'");
@@ -542,21 +542,21 @@ $query = DB::quote("'something's quoted'", $db_connection);
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$string</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td class="description">The string, or array of strings, to quote.</td>
 									</tr>
 									<tr>
@@ -568,11 +568,11 @@ $query = DB::quote("'something's quoted'", $db_connection);
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns a quoted string for an SQL query.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// `users`.`name`
 print_r(DB::quote_identifier('users.name'));
@@ -594,21 +594,21 @@ print_r(DB::quote_identifier(array('users.name')));
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$string</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td class="description">The string, or array of strings, to quote.</td>
 									</tr>
 									<tr>
@@ -620,11 +620,11 @@ print_r(DB::quote_identifier(array('users.name')));
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns a quoted string for an SQL query.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// `users`
 print_r(DB::quote_table('users'));
@@ -647,21 +647,21 @@ print_r(DB::quote_identifier(array('users')));
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$table</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td class="description">The table name to prefix.</td>
 									</tr>
 									<tr>
@@ -673,11 +673,11 @@ print_r(DB::quote_identifier(array('users')));
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns the prefixed table name or the table name.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// prefixed_table_name
 print_r(DB::table_prefix('table_name'));
@@ -694,21 +694,21 @@ print_r(DB::table_prefix('table_name'));
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$string</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td class="description">The string to escape.</td>
 									</tr>
 									<tr>
@@ -720,11 +720,11 @@ print_r(DB::table_prefix('table_name'));
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns an escaped string for an SQL query.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// 'or *\' \"'
 print_r(DB::escape('or *\' "'));
@@ -742,17 +742,17 @@ print_r(DB::escape('or *\' "'));
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$table</kbd></th>
@@ -773,11 +773,11 @@ print_r(DB::escape('or *\' "'));
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns an array with field data.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>/*
 Array
@@ -853,17 +853,17 @@ print_r(DB::list_columns('users','%name%'));
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$like</kbd></th>
@@ -879,11 +879,11 @@ print_r(DB::list_columns('users','%name%'));
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns an array with table names.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>/*
 Array
@@ -917,21 +917,21 @@ DB::list_tables('%sessions%');
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$type</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td class="description">The SQL data type.</td>
 									</tr>
 									<tr>
@@ -943,11 +943,11 @@ DB::list_tables('%sessions%');
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns a normalized array describing the SQL data type.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>/*
 Array
@@ -970,21 +970,21 @@ DB::datatype('char');
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$table</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td class="description">The table to count records from.</td>
 									</tr>
 									<tr>
@@ -996,11 +996,11 @@ DB::datatype('char');
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns the number of records in a table.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// (int) 14
 DB::count_records('users');
@@ -1017,17 +1017,17 @@ DB::count_records('users');
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$db</kbd></th>
@@ -1038,11 +1038,11 @@ DB::count_records('users');
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td>Returns the number of records in the last query, without LIMIT or OFFSET applied.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>// SELECT * FROM `users` WHERE `active` = "yes" LIMIT 10;
 $limited_result = DB::select()->from('users')->where('active', '=', 'yes')->limit(10)->execute();
@@ -1062,21 +1062,21 @@ DB::count_last_query();
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$charset</kbd></th>
-										<td><em>required</em></td>
+										<td><em>requerido</em></td>
 										<td class="description">The character set name.</td>
 									</tr>
 									<tr>
@@ -1088,11 +1088,11 @@ DB::count_last_query();
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
-							<td><em>void</em></td>
+							<th>Devuelve</th>
+							<td><em>Nada</em></td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>DB::set_charset('utf8');</code></pre>
 							</td>
@@ -1107,21 +1107,21 @@ DB::count_last_query();
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								None
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td><em>array($unified_code, $platform_code, $error_text)</em></td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>$lasterror = DB::error_info();</code></pre>
 							</td>
@@ -1136,18 +1136,18 @@ DB::count_last_query();
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tbody>
 										<tr>
-											<th>Param</th>
-											<th>Default</th>
-											<th class="description">Description</th>
+											<th>Parámetro</th>
+											<th>Por defecto</th>
+											<th class="description">Descripción</th>
 										</tr>
 										<tr>
 											<th><kbd>$db</kbd></th>
@@ -1159,11 +1159,11 @@ DB::count_last_query();
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td><em>bool</em> - only meaningful with PDO driver. If in the transaction return true. Otherwise return false.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code class="php" >DB::in_transaction();</code></pre>
 							</td>
@@ -1178,17 +1178,17 @@ DB::count_last_query();
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$db</kbd></th>
@@ -1199,12 +1199,12 @@ DB::count_last_query();
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td><em>bool</em> - only meaningful with PDO driver. All others always return true, but
 								throw an Exception when the SQL command fails.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>DB::start_transaction();</code></pre>
 							</td>
@@ -1219,17 +1219,17 @@ DB::count_last_query();
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$db</kbd></th>
@@ -1240,12 +1240,12 @@ DB::count_last_query();
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td><em>bool</em> - only meaningful with PDO driver. All others always return true, but
 								throw an Exception when the SQL command fails.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>DB::commit_transaction();</code></pre>
 							</td>
@@ -1260,17 +1260,17 @@ DB::count_last_query();
 				<table class="method">
 					<tbody>
 						<tr>
-							<th>Static</th>
-							<td>Yes</td>
+							<th>Estático</th>
+							<td>Sí</td>
 						</tr>
 						<tr>
-							<th>Parameters</th>
+							<th>Parámetros</th>
 							<td>
 								<table class="parameters">
 									<tr>
-										<th>Param</th>
-										<th>Default</th>
-										<th class="description">Description</th>
+										<th>Parámetro</th>
+										<th>Por defecto</th>
+										<th class="description">Descripción</th>
 									</tr>
 									<tr>
 										<th><kbd>$db</kbd></th>
@@ -1286,12 +1286,12 @@ DB::count_last_query();
 							</td>
 						</tr>
 						<tr>
-							<th>Returns</th>
+							<th>Devuelve</th>
 							<td><em>bool</em> - only meaningful with PDO driver. All others always return true, but
 								throw an Exception when the SQL command fails.</td>
 						</tr>
 						<tr>
-							<th>Example</th>
+							<th>Ejemplo</th>
 							<td>
 								<pre class="php"><code>DB::rollback_transaction();</code></pre>
 							</td>
