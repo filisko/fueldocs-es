@@ -13,7 +13,7 @@
 		var class_prefix = "DB::";
 	</script>
 	<script src="./../../assets/js/combined.js"></script>
-	<title>DB - Classes - FuelPHP Documentación</title>
+	<title>DB - Clases - FuelPHP Documentación</title>
 </head>
 <body>
 	<div id="container">
@@ -47,20 +47,20 @@
 
 		<div id="main">
 
-			<h2>DB Class</h2>
+			<h2>Clase DB</h2>
 
-			<p>The DB class allows you to build and execute database queries and fetch the result.</p>
+			<p>La clase DB te permite construir y ejecutar consultas y ver el resultado.</p>
 
 			<article>
 				<h4 class="method" id="method_query">query($sql, $type = null)</h4>
 				<p>
-					The <strong>query</strong> method returns a new Database_Query object. A Database_Query object can be used to execute a SQL query, or to bind variables to the query.
+					El método <strong>query</strong> devuelve un objeto Database_Query. Un objeto Database_Query puede ser usado para ejecutar una consulta SQL, o enlazar variables a la consulta.
 				</p>
 				<p>
-					The first parameter is a SQL string which can contain placeholders. See <a href="usage.html#binding">Query binding</a>.
+					El primer parámetro es una cadena SQL que puede contener "marcadores" (placeholders). Vea <a href="usage.html#binding">Query binding</a>.
 				</p>
 				<p>
-					The result of the execution depends on the second parameter.  If no type was passed, Fuel tries to detect the type automatically. For example, Fuel chooses DB::SELECT if the SQL query begins with 'SELECT', and the result of the execution will be fetched rows. Same is true for the SQL query begins with 'INSERT', 'UPDATE' or 'DELETE'. In each case, the result will be the same as when the query was done by <a href="qb.html">Query Builder</a>. See <a href="usage.html#inserting">Inserting</a>, <a href="usage.html#updating">Updating</a>, and <a href="usage.html#deleting">Deleting</a>.
+					El resultado de la ejecución depende del segundo parámetro. Si ningún tipo fue establecido, Fuel intentará detectar el tipo automáticamente. Por ejemplo, Fuel elegirá DB::SELECT si la consulta SQL comienza con 'SELECT', y el resultado de la ejecución serán los registros (filas) obtenidos. Lo mismo ocurrirá si una consulta SQL comienza con 'INSERT', 'UPDATE' o 'DELETE'. En cada caso, el resultado será el mismo ya que la consulta fue hecha con <a href="qb.html">Query Builder</a>. Vea <a href="usage.html#inserting">Inserting</a> (Insertando), <a href="usage.html#updating">Updating</a> (Actualizando), y <a href="usage.html#deleting">Deleting</a> (Eliminando).
 				</p>
 				<table class="method">
 					<tbody>
@@ -80,24 +80,24 @@
 									<tr>
 										<th><kbd>$query</kbd></th>
 										<td><em>requerido</em></td>
-										<td>SQL query</td>
+										<td>Consulta SQL</td>
 									</tr>
 									<tr>
 										<th><kbd>$type</kbd></th>
 										<td><em>null</em></td>
-										<td>SQL query type. Possible types are: DB::SELECT, DB::INSERT, DB::UPDATE and DB::DELETE.</td>
+										<td>Tipo de consulta SQL. Los posibles tipos son: DB::SELECT, DB::INSERT, DB::UPDATE y DB::DELETE.</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
 							<th>Devuelve</th>
-							<td>Returns a Database_Query object of the requested type.</td>
+							<td>Devuelve un objeto Database_Query del tipo solicitado.</td>
 						</tr>
 						<tr>
 							<th>Ejemplo</th>
 							<td>
-								<pre class="php"><code>// Will prepare: SELECT * FROM `users`
+								<pre class="php"><code>// Preparará: SELECT * FROM `users`
 $query = DB::query('SELECT * FROM `users`');
 </code></pre>
 							</td>
@@ -105,17 +105,14 @@ $query = DB::query('SELECT * FROM `users`');
 					</tbody>
 				</table>
 				<p class="note">
-					Note that it is important to pass the correct type. The database driver
-					will treat them differently.
-					If you have a query that must return a resultset, but is not a SELECT, use
-					DB::SELECT to make sure the result is returned correctly.
+					Date cuenta de que es importante establecer el tipo de consulta correcta. El driver de la base de datos los tratará de formas diferentes. Si tienes una consulta que debe devolver un conjunto de resultados, pero no es un SELECT, usa DB::SELECT para asegurarte de que el resultado sea devuelto correctamente.
 				</p>
 			</article>
 
 			<article>
 				<h4 class="method" id="method_instance">instance()</h4>
 				<p>
-					The <strong>instance</strong> method returns an instance of Database_Connection. It allows you to directly access a database instance, for example
+					El método <strong>instance</strong> method returns an instance of Database_Connection. It allows you to directly access a database instance, for example
 					when you have a need to use multiple database connections at the same time.
 				</p>
 				<table class="method">
