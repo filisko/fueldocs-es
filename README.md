@@ -1,5 +1,5 @@
 ## Documentación de FuelPHP en español
-Este repositorio está dedicado a la creación y mantenimiento al español de la documentación oficial del framework FuelPHP.
+Este repositorio está dedicado a la traducción de la documentación oficial de FuelPHP framework al español.
 
 #### Propósitos
 Los propósitos y objetivos principales de este pequeño proyecto son:
